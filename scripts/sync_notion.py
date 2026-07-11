@@ -25,17 +25,17 @@ MODEL_SLUGS = {
 }
 
 SET_PATTERN = re.compile(
-    r"(?:\\bset\\s*(\\d+)\\b|(\\d+)\\s*세트)",
+    r"(?:\bset\s*(\d+)\b|(\d+)\s*세트)",
     re.IGNORECASE,
 )
 CUT_PATTERN = re.compile(
     r"(?:"
-    r"\\bcut\\s*(\\d+)(?:[.\\-](\\d+))?"
+    r"\bcut\s*(\d+)(?:[.\-](\d+))?"
     r"|"
-    r"(\\d+)\\s*[-.]\\s*(\\d+)\\s*컷"
+    r"(\d+)\s*[-.]\s*(\d+)\s*컷"
     r"|"
-    r"(\\d+)\\s*컷"
-    r")\\s*(.*)",
+    r"(\d+)\s*컷"
+    r")\s*(.*)",
     re.IGNORECASE,
 )
 
