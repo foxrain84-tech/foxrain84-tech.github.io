@@ -185,6 +185,8 @@ def extract_prompt_cuts(token, page_id):
     current_set = None
     current_cut = None
     waiting_for_prompt_code = False
+    implicit_prompt_title = ""
+    implicit_prompt_mode = False
     found = []
 
     for block in blocks:
@@ -231,15 +233,21 @@ def extract_prompt_cuts(token, page_id):
                     "title": title or f"Cut {set_number}.{cut_number}",
                 }
                 waiting_for_prompt_code = False
+                implicit_prompt_mode = False
+                implicit_prompt_title = ""
                 continue
 
             normalized = re.sub(r"\s+", "", text).lower()
 
-            if (
-                current_cut
-                and normalized in {"프롬프트", "prompt", "prompt문"}
-            ):
+            if "프롬프트" in normalized or normalized == "prompt":
                 waiting_for_prompt_code = True
+
+                if current_cut is None:
+                    implicit_prompt_mode = True
+                    implicit_prompt_title = (
+                        text.replace("입력란", "").strip()
+                        or "Prompt"
+                    )
                 continue
 
         if waiting_for_prompt_code and block_type == "code":
@@ -247,14 +255,33 @@ def extract_prompt_cuts(token, page_id):
             prompt = plain_text(code_payload.get("rich_text"))
 
             if prompt:
+                if implicit_prompt_mode or current_cut is None:
+                    cut_number = len(found) + 1
+                    prompt_cut = {
+                        "set": current_set or 1,
+                        "cut": cut_number,
+                        "title": (
+                            implicit_prompt_title
+                            if implicit_prompt_title
+                            not in {"프롬프트", "Prompt"}
+                            else f"Cut {cut_number}"
+                        ),
+                    }
+                else:
+                    prompt_cut = current_cut
+
                 found.append({
-                    "set": current_cut["set"],
-                    "cut": current_cut["cut"],
-                    "title": current_cut["title"],
+                    "set": prompt_cut["set"],
+                    "cut": prompt_cut["cut"],
+                    "title": prompt_cut["title"],
                     "prompt": prompt,
                 })
 
             waiting_for_prompt_code = False
+
+            if implicit_prompt_mode:
+                current_cut = None
+                implicit_prompt_title = ""
 
     return found
 
