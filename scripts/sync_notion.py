@@ -2,23 +2,37 @@
 
 import json
 import os
+import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from collections import defaultdict
 from pathlib import Path
 
 
 NOTION_API_VERSION = "2025-09-03"
-DATA_SOURCE_ID = "cef155d8-2c3c-4f62-945a-f3c7e929057a"
+PLANNING_DATA_SOURCE_ID = "c26ebfe0-ff00-4e94-a659-fa445701c506"
 OUTPUT_FILE = Path("prompts.json")
 
+MODEL_SLUGS = {
+    "유림": "yulim",
+    "아린": "arin",
+    "수지": "suji",
+    "하윤": "hayoon",
+    "서린": "seorin",
+    "지은": "jieun",
+}
 
-def call_notion_api(url, token, body=None):
-    data = None
+SET_PATTERN = re.compile(r"\bset\s*(\d+)\b", re.IGNORECASE)
+CUT_PATTERN = re.compile(
+    r"\bcut\s*(\d+)(?:\.(\d+))?\s*(.*)",
+    re.IGNORECASE,
+)
 
-    if body is not None:
-        data = json.dumps(body).encode("utf-8")
+
+def notion_request(url, token, body=None):
+    data = None if body is None else json.dumps(body).encode("utf-8")
 
     request = urllib.request.Request(
         url,
@@ -34,7 +48,6 @@ def call_notion_api(url, token, body=None):
     try:
         with urllib.request.urlopen(request, timeout=30) as response:
             return json.load(response)
-
     except urllib.error.HTTPError as error:
         detail = error.read().decode("utf-8", errors="replace")
         raise RuntimeError(
@@ -42,199 +55,275 @@ def call_notion_api(url, token, body=None):
         ) from error
 
 
-def get_rich_text(property_data):
-    items = property_data.get("rich_text", [])
-
+def plain_text(items):
     return "".join(
         item.get("plain_text", "")
-        for item in items
+        for item in (items or [])
     ).strip()
 
 
-def get_title(property_data):
-    items = property_data.get("title", [])
+def property_text(prop):
+    prop_type = prop.get("type")
 
-    return "".join(
-        item.get("plain_text", "")
-        for item in items
-    ).strip()
+    if prop_type == "title":
+        return plain_text(prop.get("title"))
 
+    if prop_type == "rich_text":
+        return plain_text(prop.get("rich_text"))
 
-def get_number(property_data):
-    value = property_data.get("number")
+    if prop_type == "select":
+        selected = prop.get("select") or {}
+        return selected.get("name", "").strip()
 
-    if value is None:
-        raise ValueError("Set 또는 Cut 값이 비어 있습니다.")
+    if prop_type == "date":
+        date_value = prop.get("date") or {}
+        return date_value.get("start", "").strip()
 
-    return int(value)
-
-
-def get_select(property_data):
-    selected = property_data.get("select")
-
-    if not selected:
-        return ""
-
-    return selected.get("name", "").strip().lower()
+    return ""
 
 
 def normalize_date(value):
-    return (
-        value
-        .replace("-", "")
-        .replace(".", "")
-        .replace("/", "")
-        .replace(" ", "")
-    )
+    digits = re.sub(r"\D", "", value or "")
+    return digits[:8]
 
 
-def query_published_prompts(token):
+def query_all_planning_pages(token):
     url = (
         "https://api.notion.com/v1/data_sources/"
-        f"{DATA_SOURCE_ID}/query"
+        f"{PLANNING_DATA_SOURCE_ID}/query"
     )
 
     body = {
         "page_size": 100,
-        "filter": {
-            "property": "Published",
-            "checkbox": {
-                "equals": True
-            }
-        },
         "sorts": [
             {
-                "property": "Model",
-                "direction": "ascending"
-            },
-            {
-                "property": "Date",
-                "direction": "ascending"
-            },
-            {
-                "property": "Set",
-                "direction": "ascending"
-            },
-            {
-                "property": "Cut",
-                "direction": "ascending"
+                "property": "기획일",
+                "direction": "ascending",
             }
-        ]
+        ],
     }
 
     rows = []
 
     while True:
-        response = call_notion_api(url, token, body)
+        response = notion_request(url, token, body)
         rows.extend(response.get("results", []))
 
         if not response.get("has_more"):
             break
 
-        next_cursor = response.get("next_cursor")
-
-        if not next_cursor:
+        cursor = response.get("next_cursor")
+        if not cursor:
             break
 
-        body["start_cursor"] = next_cursor
+        body["start_cursor"] = cursor
 
     return rows
 
 
-def build_pages(rows):
+def fetch_block_children(token, block_id):
+    encoded_id = urllib.parse.quote(block_id, safe="")
+    url = (
+        "https://api.notion.com/v1/blocks/"
+        f"{encoded_id}/children?page_size=100"
+    )
+
+    blocks = []
+
+    while True:
+        response = notion_request(url, token)
+        blocks.extend(response.get("results", []))
+
+        if not response.get("has_more"):
+            break
+
+        cursor = response.get("next_cursor")
+        if not cursor:
+            break
+
+        url = (
+            "https://api.notion.com/v1/blocks/"
+            f"{encoded_id}/children?page_size=100"
+            f"&start_cursor={urllib.parse.quote(cursor, safe='')}"
+        )
+
+    return blocks
+
+
+def flatten_blocks(token, parent_id):
+    flattened = []
+
+    for block in fetch_block_children(token, parent_id):
+        flattened.append(block)
+
+        if block.get("has_children"):
+            flattened.extend(
+                flatten_blocks(token, block["id"])
+            )
+
+    return flattened
+
+
+def block_text(block):
+    block_type = block.get("type", "")
+    payload = block.get(block_type, {})
+    return plain_text(payload.get("rich_text"))
+
+
+def extract_prompt_cuts(token, page_id):
+    blocks = flatten_blocks(token, page_id)
+
+    current_set = None
+    current_cut = None
+    waiting_for_prompt_code = False
+    found = []
+
+    for block in blocks:
+        block_type = block.get("type", "")
+        text = block_text(block).strip()
+
+        if block_type in {
+            "heading_1",
+            "heading_2",
+            "heading_3",
+        }:
+            set_match = SET_PATTERN.search(text)
+            if set_match:
+                current_set = int(set_match.group(1))
+
+            cut_match = CUT_PATTERN.search(text)
+            if cut_match:
+                major = int(cut_match.group(1))
+                minor = cut_match.group(2)
+
+                cut_number = int(minor) if minor else major
+                set_number = current_set or major
+
+                title = cut_match.group(3).strip(" .:-–—")
+                current_cut = {
+                    "set": set_number,
+                    "cut": cut_number,
+                    "title": title or f"Cut {set_number}.{cut_number}",
+                }
+                waiting_for_prompt_code = False
+                continue
+
+            normalized = re.sub(r"\s+", "", text).lower()
+
+            if (
+                current_cut
+                and normalized in {"프롬프트", "prompt", "prompt문"}
+            ):
+                waiting_for_prompt_code = True
+                continue
+
+        if waiting_for_prompt_code and block_type == "code":
+            code_payload = block.get("code", {})
+            prompt = plain_text(code_payload.get("rich_text"))
+
+            if prompt:
+                found.append({
+                    "set": current_cut["set"],
+                    "cut": current_cut["cut"],
+                    "title": current_cut["title"],
+                    "prompt": prompt,
+                })
+
+            waiting_for_prompt_code = False
+
+    return found
+
+
+def build_site_pages(token, rows):
     grouped = defaultdict(list)
+    used_routes = set()
 
     for row in rows:
-        properties = row.get("properties", {})
+        props = row.get("properties", {})
 
-        model = get_select(properties["Model"])
+        model_name = property_text(props.get("모델", {}))
+        model_slug = MODEL_SLUGS.get(model_name)
+
         date = normalize_date(
-            get_rich_text(properties["Date"])
-        )
-        set_number = get_number(properties["Set"])
-        cut_number = get_number(properties["Cut"])
-        title = get_title(properties["Title"])
-        prompt = get_rich_text(properties["Prompt"])
-
-        if not model:
-            raise ValueError(
-                f"Model 값이 비어 있습니다: {row.get('url')}"
-            )
-
-        if len(date) != 8 or not date.isdigit():
-            raise ValueError(
-                f"Date는 20260711 형식이어야 합니다: "
-                f"{row.get('url')}"
-            )
-
-        if not title:
-            raise ValueError(
-                f"Title이 비어 있습니다: {row.get('url')}"
-            )
-
-        if not prompt:
-            raise ValueError(
-                f"Prompt가 비어 있습니다: {row.get('url')}"
-            )
-
-        key = (model, date, set_number)
-
-        grouped[key].append({
-            "cut": cut_number,
-            "title": title,
-            "prompt": prompt
-        })
-
-    pages = {}
-
-    for key, cuts in grouped.items():
-        model, date, set_number = key
-
-        cuts.sort(key=lambda item: item["cut"])
-
-        route = (
-            f"/{model}/{date}/"
-            f"set{set_number:02d}"
+            property_text(props.get("기획일", {}))
         )
 
-        pages[route] = {
-            "model": model,
-            "date": date,
-            "set": set_number,
-            "cuts": cuts
-        }
+        if not model_slug or len(date) != 8:
+            continue
 
-    return dict(sorted(pages.items()))
+        page_id = row.get("id")
+        cuts = extract_prompt_cuts(token, page_id)
+
+        if not cuts:
+            continue
+
+        page_groups = defaultdict(list)
+
+        for cut in cuts:
+            page_groups[cut["set"]].append({
+                "cut": cut["cut"],
+                "title": cut["title"],
+                "prompt": cut["prompt"],
+            })
+
+        for original_set, set_cuts in sorted(page_groups.items()):
+            set_number = original_set
+            route = (
+                f"/{model_slug}/{date}/"
+                f"set{set_number:02d}"
+            )
+
+            while route in used_routes:
+                set_number += 1
+                route = (
+                    f"/{model_slug}/{date}/"
+                    f"set{set_number:02d}"
+                )
+
+            used_routes.add(route)
+            set_cuts.sort(key=lambda item: item["cut"])
+
+            grouped[route] = {
+                "model": model_slug,
+                "date": date,
+                "set": set_number,
+                "cuts": set_cuts,
+            }
+
+    return dict(sorted(grouped.items()))
 
 
 def main():
-    token = os.environ.get(
-        "NOTION_TOKEN",
-        ""
-    ).strip()
+    token = os.environ.get("NOTION_TOKEN", "").strip()
 
     if not token:
         print(
             "NOTION_TOKEN이 등록되지 않았습니다.",
-            file=sys.stderr
+            file=sys.stderr,
         )
         return 1
 
-    rows = query_published_prompts(token)
-    pages = build_pages(rows)
+    planning_pages = query_all_planning_pages(token)
+    site_pages = build_site_pages(token, planning_pages)
 
     OUTPUT_FILE.write_text(
         json.dumps(
-            pages,
+            site_pages,
             ensure_ascii=False,
-            indent=2
+            indent=2,
         ) + "\n",
-        encoding="utf-8"
+        encoding="utf-8",
+    )
+
+    total_cuts = sum(
+        len(page["cuts"])
+        for page in site_pages.values()
     )
 
     print(
-        f"{len(rows)}개 컷, "
-        f"{len(pages)}개 세트를 prompts.json에 저장했습니다."
+        f"{len(planning_pages)}개 기획서를 확인했고, "
+        f"{len(site_pages)}개 세트 / "
+        f"{total_cuts}개 프롬프트를 저장했습니다."
     )
 
     return 0
