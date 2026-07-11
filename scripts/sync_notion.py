@@ -24,9 +24,18 @@ MODEL_SLUGS = {
     "지은": "jieun",
 }
 
-SET_PATTERN = re.compile(r"\bset\s*(\d+)\b", re.IGNORECASE)
+SET_PATTERN = re.compile(
+    r"(?:\\bset\\s*(\\d+)\\b|(\\d+)\\s*세트)",
+    re.IGNORECASE,
+)
 CUT_PATTERN = re.compile(
-    r"\bcut\s*(\d+)(?:\.(\d+))?\s*(.*)",
+    r"(?:"
+    r"\\bcut\\s*(\\d+)(?:[.\\-](\\d+))?"
+    r"|"
+    r"(\\d+)\\s*[-.]\\s*(\\d+)\\s*컷"
+    r"|"
+    r"(\\d+)\\s*컷"
+    r")\\s*(.*)",
     re.IGNORECASE,
 )
 
@@ -189,17 +198,33 @@ def extract_prompt_cuts(token, page_id):
         }:
             set_match = SET_PATTERN.search(text)
             if set_match:
-                current_set = int(set_match.group(1))
+                set_value = set_match.group(1) or set_match.group(2)
+                current_set = int(set_value)
 
             cut_match = CUT_PATTERN.search(text)
             if cut_match:
-                major = int(cut_match.group(1))
-                minor = cut_match.group(2)
+                english_major = cut_match.group(1)
+                english_minor = cut_match.group(2)
+                korean_set = cut_match.group(3)
+                korean_cut = cut_match.group(4)
+                simple_cut = cut_match.group(5)
+                title = cut_match.group(6).strip(" .:-–—·")
 
-                cut_number = int(minor) if minor else major
-                set_number = current_set or major
+                if korean_set and korean_cut:
+                    set_number = int(korean_set)
+                    cut_number = int(korean_cut)
+                elif english_major:
+                    major = int(english_major)
+                    cut_number = (
+                        int(english_minor)
+                        if english_minor
+                        else major
+                    )
+                    set_number = current_set or major
+                else:
+                    cut_number = int(simple_cut)
+                    set_number = current_set or 1
 
-                title = cut_match.group(3).strip(" .:-–—")
                 current_cut = {
                     "set": set_number,
                     "cut": cut_number,
