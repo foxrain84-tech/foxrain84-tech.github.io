@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>KIRA Prompt</title>
+<style>
+:root{--bg:#f4f4f5;--card:#fff;--text:#18181b;--muted:#71717a;--line:#e4e4e7;--btn:#111827;--btnText:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1012;--card:#191a1e;--text:#f4f4f5;--muted:#a1a1aa;--line:#2d2e34;--btn:#f4f4f5;--btnText:#18181b}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:24px 16px}
+main{max-width:620px;margin:auto}.brand{font-size:.76rem;letter-spacing:.18em;color:var(--muted);margin:8px 2px 18px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px 20px}
+h1{margin:0 0 6px}.meta{color:var(--muted);margin-bottom:20px}
+.cut{border-top:1px solid var(--line);padding:18px 0}.cut:first-child{border-top:0}
+.num{font-size:.78rem;font-weight:800;letter-spacing:.14em;color:var(--muted)}
+.title{font-size:1.1rem;font-weight:700;margin:7px 0 14px}
+button{width:100%;border:0;border-radius:13px;background:var(--btn);color:var(--btnText);padding:15px;font-size:1rem;font-weight:750}
+.status{height:20px;text-align:center;margin-top:8px;color:#16a34a;font-size:.88rem}
+.note{font-size:.8rem;color:var(--muted);text-align:center;margin-top:14px;line-height:1.5}
+</style>
+</head>
+<body>
+<main>
+<div class="brand">KIRA PROMPT</div>
+<div class="panel">
+<h1 id="h">Prompt Copy</h1>
+<div class="meta" id="m">공유받은 세트 링크로 접속해 주세요.</div>
+<div id="c"></div>
+</div>
+<div class="note">각 버튼은 해당 컷의 프롬프트만 복사합니다.</div>
+</main>
+<script>
+const pages={
+"/jieun/20260711/set01":{model:"JIEUN",date:"2026.07.11",set:"SET 01",cuts:[
+["아침 피드 메인 히어로","[PROMPT NOT INSERTED]"],
+["초원길을 걷는 여행자","[PROMPT NOT INSERTED]"],
+["바람에 멈춰 선 순간","[PROMPT NOT INSERTED]"]]},
+"/jieun/20260711/set02":{model:"JIEUN",date:"2026.07.11",set:"SET 02",cuts:[
+["유리 피라미드 앞의 발견","[PROMPT NOT INSERTED]"],
+["반사된 하늘을 담기 전","[PROMPT NOT INSERTED]"],
+["빛과 구조 사이의 인물","[PROMPT NOT INSERTED]"]]},
+"/jieun/20260711/set03":{model:"JIEUN",date:"2026.07.11",set:"SET 03",cuts:[
+["라벤더 길의 첫걸음","[PROMPT NOT INSERTED]"],
+["향기 사이를 걷는 오후","[PROMPT NOT INSERTED]"],
+["바람에 흔들리는 라벤더 드레스","[PROMPT NOT INSERTED]"]]},
+"/jieun/20260711/set04":{model:"JIEUN",date:"2026.07.11",set:"SET 04",cuts:[
+["여행지의 조용한 휴식","[PROMPT NOT INSERTED]"],
+["창가에 머문 시선","[PROMPT NOT INSERTED]"],
+["여름 오후의 작은 기록","[PROMPT NOT INSERTED]"]]},
+"/jieun/20260711/set05":{model:"JIEUN",date:"2026.07.11",set:"SET 05",cuts:[
+["스케치북에 남긴 여행","[PROMPT NOT INSERTED]"],
+["숲을 바라보는 순간","[PROMPT NOT INSERTED]"],
+["기억하고 싶은 한 장면","[PROMPT NOT INSERTED]"]]},
+"/arin/20260711/set01":{model:"ARIN",date:"2026.07.11",set:"SET 01",cuts:[
+["Pink Watercolor Profile","[PROMPT NOT INSERTED]"],
+["I Wonder About You","[PROMPT NOT INSERTED]"]]}
+};
+const path=location.pathname.replace(/\/+$/,"")||"/";
+const p=pages[path];
+if(p){
+ document.getElementById("h").textContent=p.model;
+ document.getElementById("m").textContent=p.date+" · "+p.set;
+ const box=document.getElementById("c");
+ p.cuts.forEach((x,i)=>{
+  const d=document.createElement("section");d.className="cut";
+  d.innerHTML='<div class="num">CUT '+String(i+1).padStart(2,"0")+'</div><div class="title"></div><button>📋 Copy Prompt</button><div class="status"></div>';
+  d.querySelector(".title").textContent=x[0];
+  const b=d.querySelector("button"),s=d.querySelector(".status");
+  b.onclick=async()=>{
+   if(x[1]==="[PROMPT NOT INSERTED]"){s.textContent="프롬프트 준비 중";setTimeout(()=>s.textContent="",1500);return}
+   try{await navigator.clipboard.writeText(x[1]);s.textContent="✓ Prompt copied"}catch(e){s.textContent="복사 실패"}
+   setTimeout(()=>s.textContent="",1500)
+  };
+  box.appendChild(d)
+ })
+}
+</script>
+</body>
+</html>
