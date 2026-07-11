@@ -197,6 +197,7 @@ def extract_prompt_cuts(token, page_id):
             "heading_1",
             "heading_2",
             "heading_3",
+            "heading_4",
         }:
             set_match = SET_PATTERN.search(text)
             if set_match:
