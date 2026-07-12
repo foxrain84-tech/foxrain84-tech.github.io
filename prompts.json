@@ -16,6 +16,116 @@
       }
     ]
   },
+  "/arin/20260713/set01": {
+    "model": "arin",
+    "date": "20260713",
+    "set": 1,
+    "cuts": [
+      {
+        "cut": 1,
+        "title": "무채색 아침",
+        "prompt": "An ultra-realistic cinematic office romance editorial still featuring Arin, a beautiful young Korean woman with a small V-line face, clear fair skin, large almond-shaped eyes with natural double eyelids, a straight high nose bridge, soft pink lips, and a short dark brown bob with inward C-curls and light see-through bangs. She stands small within a high-ceiling modern office lobby atelier during a quiet morning arrival, wearing a tailored beige linen sleeveless jacket and a cream-white pintuck midi A-line skirt. Full-body wide shot, eye-level 35mm lens, vertical 3:4 frame, tall glass windows and clean architectural lines dominating the composition. Soft neutral daylight enters from the side at 45 degrees, subtle white bounce fill keeps her face readable, while the deeper lobby remains half a stop darker. Her posture is upright and composed, expression emotionally reserved, eyes away from the camera. Kodak Portra 160, fine grain, muted tones, gentle highlight rolloff, low contrast. Keep Arin’s identity fully consistent across the entire series."
+      },
+      {
+        "cut": 2,
+        "title": "처음 발견한 색",
+        "prompt": "The same Arin in the same modern office lobby, shown in a waist-up 50mm medium shot beyond a softly out-of-focus vivid vermilion gerbera in a clear glass cylinder vase in the foreground. She pauses as if she has noticed either the flower or someone standing just beyond it. Her expression shows the first tiny emotional shift. Use bright diffused window light from a front-side 30-degree angle, a delicate frontal fill to keep the eyes and skin clean, and a very subtle rim light along her short bob. Preserve the mostly monochrome office palette while allowing the vermilion flower to become the first clear color accent. Vertical 3:4, Kodak Portra 160, soft editorial realism, fine grain, restrained saturation, no object-only composition, no visible male face. Keep Arin’s facial identity and hairstyle fully consistent."
+      },
+      {
+        "cut": 3,
+        "title": "세상이 조각되는 순간",
+        "prompt": "The same Arin stands near the vermilion gerbera in the office lobby but does not touch it. Medium full-body 50mm composition, vertical 3:4. Geometric sunlight and architectural shadows divide the pale stone floor and wall around her, visually suggesting that her previously blunt world is being reshaped into something beautiful. A barely visible blurred shoulder or indistinct silhouette appears only at the far edge of the frame. Soft directional window light comes from behind and to the side, with a gentle reflector fill on her face and a delicate rim along the hair and shoulder. Her lips hold the first genuine hint of a smile. Kodak Portra 160, refined daylight, low contrast, creamy skin, restrained color opening. Keep Arin fully consistent and do not reveal the other person’s face."
+      }
+    ]
+  },
+  "/arin/20260713/set02": {
+    "model": "arin",
+    "date": "20260713",
+    "set": 2,
+    "cuts": [
+      {
+        "cut": 1,
+        "title": "문득 놓인 봄",
+        "prompt": "The same Arin at a neatly organized personal office workstation with a warm walnut desk, clean documents, restrained stationery, and soft neutral walls. She notices a cold iced latte with vivid red strawberry syrup layers and clear condensation, as if someone has quietly left it for her. Medium shot from across the desk, vertical 3:4, 50mm lens. A departing hand or shirt sleeve may be barely implied at the edge but no person is clearly shown. Arin wears a lemon yellow terry collared knit top and white cotton bermuda pants. Combine soft office ambient light from above with subtle window-side fill, 4800–5000K, keeping her face luminous while the workspace remains cool and orderly. Fujifilm Pro 400H, airy pastel color, soft mint-neutral shadows, delicate grain, no object-only focus. Keep Arin’s identity consistent."
+      },
+      {
+        "cut": 2,
+        "title": "봄을 앓는 얼굴",
+        "prompt": "A close-up 85mm portrait of the same Arin at her office desk after discovering the drink. She looks toward the direction where the unseen person has just gone, with a surprised but softening expression, as if spring has suddenly entered a cold routine. Her short bob and see-through bangs move slightly in the air-conditioning breeze. Use soft diffused side daylight at about 5100K, very gentle frontal fill, a small clean catchlight in the eyes, and an almost invisible rim on the hair. Her skin is luminous and natural with fresh coral blush and a strawberry-coral lip. Vertical 3:4, Fujifilm Pro 400H, cool airy pastel office romance, gentle contrast, consistent facial identity."
+      },
+      {
+        "cut": 3,
+        "title": "그대라는 계절",
+        "prompt": "The same Arin sits beside her walnut office desk with work documents open, but her attention has drifted elsewhere. She holds the strawberry syrup iced latte gently with both hands without drinking it. Her body faces the desk while her eyes rest toward the unseen person’s workspace. Slight high-angle medium full-body 50mm shot, vertical 3:4. Soft 5000K side window light and natural desk bounce keep her face clear, while the background falls slightly darker. Lemon yellow clothing and strawberry red become springlike color accents inside the cool office. Fujifilm Pro 400H, pale highlights, mint-neutral shadows, subtle grain, emotionally quiet and realistic. Keep Arin consistent."
+      }
+    ]
+  },
+  "/arin/20260713/set03": {
+    "model": "arin",
+    "date": "20260713",
+    "set": 3,
+    "cuts": [
+      {
+        "cut": 1,
+        "title": "일하다 떠오른 얼굴",
+        "prompt": "The same Arin in an office pantry beside a large window at sunset, pausing while filling a flexible holographic glass tumbler because she has suddenly thought of someone. Medium full-body profile, 50mm lens, vertical 3:4, with purple-orange sunset visible beyond the glass. She wears an oversized peach-pink short-sleeve top with subtle sleeve gathering and an ivory linen long skirt. Use soft directional sunset side light based around 5600K, balanced with gentle bounce fill so her facial features remain clean. Faint holographic pink and purple reflections touch her cheek and jaw without becoming fantasy effects. Her smile is private and involuntary. Kodak Vision3 250D, cinematic film still, wide dynamic range, natural skin, consistent identity."
+      },
+      {
+        "cut": 2,
+        "title": "너와 만든 하루의 상상",
+        "prompt": "A close-up 85mm image of the same Arin at the office pantry window, showing both her real face and her reflection in the glass. Leave a meaningful empty reflected space beside her, as though someone could stand there in the day she is imagining. Her eyes look toward that empty space rather than at the camera. Soft sunset window light at 5400–5600K and gentle indirect reflection illuminate both the real face and the reflection without blown highlights. Add only restrained holographic pink-purple color hints. Vertical 3:4, Kodak Vision3 250D, cinematic, low contrast, poetic but grounded, natural skin texture, same facial identity."
+      },
+      {
+        "cut": 3,
+        "title": "매일 기다리는 시간",
+        "prompt": "A medium-long 85mm shot from the office pantry entrance showing the same Arin turning after hearing someone approach. The corridor contains only a blurred presence or a warm hint of arrival, never a clear male face. She holds or has just set down the holographic tumbler. Mixed lighting combines soft 5000K interior ambient light with warm sunset side light, gentle facial fill, and a thin rim along her bob and shoulder. Her expression captures expectation and involuntary happiness just before a smile fully appears. Vertical 3:4, Kodak Vision3 250D, cinematic office romance, refined sunset color, coherent same-day continuity."
+      }
+    ]
+  },
+  "/arin/20260713/set04": {
+    "model": "arin",
+    "date": "20260713",
+    "set": 4,
+    "cuts": [
+      {
+        "cut": 1,
+        "title": "그의 자리 근처",
+        "prompt": "The same Arin hesitates near a stylish office lounge corridor corner with pastel furniture and refined art posters. Medium-long 70mm shot, vertical 3:4, partially obscured by the wall in the foreground to create a lingering, almost hidden viewpoint. She wears a watercolor-like lavender pink chiffon blouse and light blue denim jeans, holding a sage green matte leather diary. Soft 5100K corridor side daylight leaves her slightly in shade while the direction of the unseen person is a little brighter. Her posture shows that she was walking forward but stopped just before turning the corner. Kodak Portra 400, soft skin, muted but clear colors, subtle grain, no visible male face, consistent Arin identity."
+      },
+      {
+        "cut": 2,
+        "title": "꺼내지 못한 한마디",
+        "prompt": "A close-up 85mm portrait of the same Arin holding a sage green matte leather diary close to her chest as she tries to gather the courage to speak. Her lips part slightly and stop; her eyes move between the unseen person and the floor. Capture the emotional tension in her eyes, mouth, and fingertips. Use soft 5200K front-side light, delicate fill below the eyes and chin, and a faint rim on her short bob. Her cheeks show a subtle natural blush, and her rose-pink lips remain softly luminous. Vertical 3:4, Kodak Portra 400, elegant low-contrast romance, natural skin detail, consistent identity."
+      },
+      {
+        "cut": 3,
+        "title": "한 걸음의 용기",
+        "prompt": "The same Arin takes one deliberate step forward in the office corridor after hesitating. Medium full-body 50mm shot, vertical 3:4. She looks not into the lens but toward the unseen person standing just beside the camera. The sage green diary has been lowered from her chest, opening her posture. Use clean diffused frontal light at 5200–5300K, even gentle fill, and a subtle edge light along the shoulder to separate her from the pastel corridor. Her expression is nervous but brave, with steady eyes and restrained breathing. Kodak Portra 400, refined Korean office romance editorial, natural skin, consistent face and hairstyle."
+      }
+    ]
+  },
+  "/arin/20260713/set05": {
+    "model": "arin",
+    "date": "20260713",
+    "set": 5,
+    "cuts": [
+      {
+        "cut": 1,
+        "title": "네 앞에 앉는 순간",
+        "prompt": "The same Arin sits down on a sofa across from the unseen person in a plant-filled office lounge during late afternoon. Medium full-body 50mm shot from the other person’s point of view, vertical 3:4, with only a blurred shoulder or arm at the lower edge if needed. She wears a soft apricot modal cropped cardigan and a light white cotton midi skirt. Warm soft 5400K side sunlight enters diagonally, balanced by natural bounce from the sofa and floor, while green leaves carry gentle ambient highlights. Her expression is tender, slightly nervous, and hopeful. Kodak Portra 400 with only a faint Kodak Gold 200 warmth, creamy skin, subtle grain, coherent visual continuity."
+      },
+      {
+        "cut": 2,
+        "title": "꿈에서 했던 말",
+        "prompt": "A chest-up 85mm close-up of the same Arin in the office lounge, looking directly toward the unseen person with clear sincere eyes as she begins to say the words she had only imagined before. Her lips are slightly parted, her breath controlled, and her expression vulnerable but calm. Use soft warm 5500K front-side sunlight, very delicate fill, and clean catchlights in the eyes. A subtle apricot reflection from her cardigan warms the skin while green plants remain softly blurred behind her. Vertical 3:4, Kodak Portra 400 with faint golden warmth, tender confession mood, realistic skin texture, fully consistent identity."
+      },
+      {
+        "cut": 3,
+        "title": "어떠니, 나와 함께 웃는 게",
+        "prompt": "A medium-wide 50mm shot in the same plant-filled office lounge, showing the same Arin smiling brightly after finally expressing her feelings. She leans forward slightly, relaxed and happy, as though an ordinary shared future has just begun. The unseen person may be suggested only by a hand or sleeve gently moving a small lemon pie plate into the shared space. Use warm diagonal late-afternoon light at about 5600K, soft bounce fill across the whole frame, and a delicate warm rim along her short bob. Harmonize the green plants, apricot cardigan, white skirt, and fresh lemon accent into a gentle happy-ending palette. Vertical 3:4, Kodak Portra 400 with very subtle Kodak Gold 200 warmth, realistic, emotionally complete, consistent Arin identity, no visible male face."
+      }
+    ]
+  },
   "/jieun/20260711/set01": {
     "model": "jieun",
     "date": "20260711",
