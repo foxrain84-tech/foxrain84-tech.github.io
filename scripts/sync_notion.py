@@ -24,6 +24,13 @@ MODEL_SLUGS = {
     "지은": "jieun",
 }
 
+# v6: 공개 필터에 사용하는 속성 이름
+PUBLIC_CHECKBOX_PROP = "목록 공개"
+PUBLIC_SETS_PROP = "공개 세트"
+
+# "Set 01" ~ "Set 05" → 세트 번호 추출용
+PUBLIC_SET_OPTION_PATTERN = re.compile(r"set\s*0*(\d+)", re.IGNORECASE)
+
 SET_PATTERN = re.compile(
     r"(?:\bset\s*(\d+)\b|(\d+)\s*세트)",
     re.IGNORECASE,
@@ -89,6 +96,36 @@ def property_text(prop):
         return date_value.get("start", "").strip()
 
     return ""
+
+
+def property_checkbox(prop):
+    """v6: 체크박스 속성 값을 bool로 반환한다."""
+    if prop.get("type") != "checkbox":
+        return False
+    return bool(prop.get("checkbox"))
+
+
+def property_multi_select_names(prop):
+    """v6: 다중 선택 속성에서 선택된 옵션 이름 목록을 반환한다."""
+    if prop.get("type") != "multi_select":
+        return []
+    return [
+        option.get("name", "").strip()
+        for option in (prop.get("multi_select") or [])
+        if option.get("name")
+    ]
+
+
+def parse_public_set_numbers(option_names):
+    """v6: ["Set 01", "Set 03"] → {1, 3} 형태로 변환한다."""
+    numbers = set()
+
+    for name in option_names:
+        match = PUBLIC_SET_OPTION_PATTERN.search(name)
+        if match:
+            numbers.add(int(match.group(1)))
+
+    return numbers
 
 
 def normalize_date(value):
@@ -291,8 +328,33 @@ def build_site_pages(token, rows):
     grouped = defaultdict(list)
     used_routes = set()
 
+    skipped_private_pages = 0
+    skipped_private_sets = 0
+
     for row in rows:
         props = row.get("properties", {})
+
+        # v6 필터 1: 목록 공개가 체크되지 않은 기획서는 전체 제외
+        is_public = property_checkbox(
+            props.get(PUBLIC_CHECKBOX_PROP, {})
+        )
+
+        if not is_public:
+            skipped_private_pages += 1
+            continue
+
+        # v6 필터 2: 공개 세트에 선택된 세트 번호만 허용
+        public_set_numbers = parse_public_set_numbers(
+            property_multi_select_names(
+                props.get(PUBLIC_SETS_PROP, {})
+            )
+        )
+
+        # 목록 공개는 체크됐지만 공개 세트가 비어 있으면
+        # 공개할 세트가 없는 것이므로 제외
+        if not public_set_numbers:
+            skipped_private_pages += 1
+            continue
 
         model_name = property_text(props.get("모델", {}))
         model_slug = MODEL_SLUGS.get(model_name)
@@ -320,6 +382,12 @@ def build_site_pages(token, rows):
             })
 
         for original_set, set_cuts in sorted(page_groups.items()):
+            # v6 필터 2 적용: 공개 세트에 선택되지 않은 세트는
+            # prompts.json에 아예 넣지 않는다
+            if original_set not in public_set_numbers:
+                skipped_private_sets += 1
+                continue
+
             set_number = original_set
             route = (
                 f"/{model_slug}/{date}/"
@@ -343,7 +411,7 @@ def build_site_pages(token, rows):
                 "cuts": set_cuts,
             }
 
-    return dict(sorted(grouped.items()))
+    return dict(sorted(grouped.items())), skipped_private_pages, skipped_private_sets
 
 
 def main():
@@ -357,7 +425,9 @@ def main():
         return 1
 
     planning_pages = query_all_planning_pages(token)
-    site_pages = build_site_pages(token, planning_pages)
+    site_pages, skipped_pages, skipped_sets = build_site_pages(
+        token, planning_pages
+    )
 
     OUTPUT_FILE.write_text(
         json.dumps(
@@ -376,7 +446,9 @@ def main():
     print(
         f"{len(planning_pages)}개 기획서를 확인했고, "
         f"{len(site_pages)}개 세트 / "
-        f"{total_cuts}개 프롬프트를 저장했습니다."
+        f"{total_cuts}개 프롬프트를 저장했습니다. "
+        f"(비공개 기획서 {skipped_pages}건, "
+        f"비공개 세트 {skipped_sets}건 제외)"
     )
 
     return 0
