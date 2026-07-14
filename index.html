@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<title>KIRA Prompt</title>
+
+<style>
+:root{
+  --bg:#f4f4f5;
+  --card:#fff;
+  --text:#18181b;
+  --muted:#71717a;
+  --line:#e4e4e7;
+  --btn:#111827;
+  --btnText:#fff;
+  --ok:#15803d;
+  --warn:#b45309;
+}
+
+@media(prefers-color-scheme:dark){
+  :root{
+    --bg:#0f1012;
+    --card:#191a1e;
+    --text:#f4f4f5;
+    --muted:#a1a1aa;
+    --line:#2d2e34;
+    --btn:#f4f4f5;
+    --btnText:#18181b;
+    --ok:#6ee7a0;
+    --warn:#fbbf24;
+  }
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  background:var(--bg);
+  color:var(--text);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  padding:24px 16px 48px;
+}
+
+main{
+  width:min(100%,620px);
+  margin:auto;
+}
+
+.brand{
+  font-size:.76rem;
+  letter-spacing:.18em;
+  color:var(--muted);
+  margin:8px 2px 18px;
+}
+
+.panel{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:25px 20px 18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+h1{
+  font-size:1.8rem;
+  margin:0 0 5px;
+}
+
+.meta{
+  color:var(--muted);
+  font-size:.96rem;
+  margin-bottom:22px;
+}
+
+.cut{
+  border-top:1px solid var(--line);
+  padding:19px 0 17px;
+}
+
+.cut:first-child{
+  border-top:0;
+  padding-top:2px;
+}
+
+.cut-number{
+  font-size:.78rem;
+  font-weight:800;
+  letter-spacing:.14em;
+  color:var(--muted);
+}
+
+.cut-title{
+  font-size:1.12rem;
+  font-weight:720;
+  margin:7px 0 15px;
+  line-height:1.35;
+}
+
+.copy{
+  width:100%;
+  border:0;
+  border-radius:13px;
+  background:var(--btn);
+  color:var(--btnText);
+  padding:15px 16px;
+  font-size:1rem;
+  font-weight:750;
+  cursor:pointer;
+}
+
+.copy:active{
+  transform:scale(.99);
+}
+
+.copy:disabled{
+  opacity:.65;
+  cursor:default;
+}
+
+.status{
+  min-height:21px;
+  margin-top:8px;
+  font-size:.88rem;
+  color:var(--ok);
+  text-align:center;
+}
+
+.warning{
+  color:var(--warn);
+}
+
+.notice{
+  font-size:.8rem;
+  color:var(--muted);
+  text-align:center;
+  margin:16px 2px 0;
+  line-height:1.5;
+}
+
+.back{
+  display:inline-block;
+  margin:0 2px 14px;
+  font-size:.88rem;
+  color:var(--muted);
+  text-decoration:none;
+}
+
+.back:hover{
+  color:var(--text);
+}
+
+a.list-link{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  border:1px solid var(--line);
+  border-radius:13px;
+  padding:16px 18px;
+  margin-top:12px;
+  text-decoration:none;
+  color:var(--text);
+  background:var(--card);
+}
+
+a.list-link:first-of-type{
+  margin-top:2px;
+}
+
+a.list-link:hover{
+  border-color:var(--muted);
+}
+
+.list-name{
+  font-size:1.05rem;
+  font-weight:750;
+}
+
+.list-sub{
+  font-size:.85rem;
+  color:var(--muted);
+}
+
+.list-go{
+  font-size:.85rem;
+  color:var(--muted);
+  white-space:nowrap;
+}
+</style>
+</head>
+
+<body>
+<main>
+
+  <div class="brand">KIRA PROMPT</div>
+
+  <a
+    class="back"
+    id="back"
+    href="/"
+    hidden
+  >
+    ← 뒤로가기
+  </a>
+
+  <div class="panel">
+
+    <h1 id="title">
+      Prompt Archive
+    </h1>
+
+    <div
+      class="meta"
+      id="meta"
+    >
+      데이터를 불러오는 중...
+    </div>
+
+    <div id="content"></div>
+
+  </div>
+
+  <div
+    class="notice"
+    id="notice"
+  ></div>
+
+</main>
+
+<script>
+function cleanPath(){
+  let path = decodeURIComponent(location.pathname)
+    .replace(/\/+$/, '');
+
+  return path || '/';
+}
+
+function formatDate(date){
+  return String(date).replace(
+    /(\d{4})(\d{2})(\d{2})/,
+    '$1.$2.$3'
+  );
+}
+
+function fallbackCopy(text){
+  const textarea = document.createElement('textarea');
+
+  textarea.value = text;
+  textarea.setAttribute('readonly', '');
+  textarea.style.position = 'fixed';
+  textarea.style.opacity = '0';
+
+  document.body.appendChild(textarea);
+
+  textarea.select();
+  textarea.setSelectionRange(
+    0,
+    textarea.value.length
+  );
+
+  const result = document.execCommand('copy');
+
+  document.body.removeChild(textarea);
+
+  if(!result){
+    throw new Error('copy failed');
+  }
+}
+
+async function copyText(text){
+  if(
+    navigator.clipboard &&
+    window.isSecureContext
+  ){
+    await navigator.clipboard.writeText(text);
+  }else{
+    fallbackCopy(text);
+  }
+}
+
+function resetBack(){
+  document.getElementById('back').hidden = true;
+}
+
+function showBack(href, label){
+  const back = document.getElementById('back');
+
+  back.href = href;
+  back.textContent = label;
+  back.hidden = false;
+}
+
+function showError(message){
+  document.getElementById('title').textContent =
+    '페이지를 찾을 수 없어요.';
+
+  document.getElementById('meta').textContent =
+    message;
+
+  document.getElementById('content').innerHTML =
+    '';
+
+  document.getElementById('notice').textContent =
+    '';
+
+  showBack(
+    '/',
+    '← 전체 목록'
+  );
+}
+
+function addListLink(
+  content,
+  href,
+  name,
+  sub,
+  go
+){
+  const link = document.createElement('a');
+
+  link.className = 'list-link';
+  link.href = href;
+
+  const left = document.createElement('span');
+
+  const title = document.createElement('span');
+
+  title.className = 'list-name';
+  title.textContent = name;
+
+  const detail = document.createElement('span');
+
+  detail.className = 'list-sub';
+  detail.textContent = sub;
+
+  left.append(
+    title,
+    detail
+  );
+
+  const arrow = document.createElement('span');
+
+  arrow.className = 'list-go';
+  arrow.textContent = go;
+
+  link.append(
+    left,
+    arrow
+  );
+
+  content.appendChild(link);
+}
+
+function renderHome(pages){
+  const title =
+    document.getElementById('title');
+
+  const meta =
+    document.getElementById('meta');
+
+  const content =
+    document.getElementById('content');
+
+  const notice =
+    document.getElementById('notice');
+
+  const groups = new Map();
+
+  Object.values(pages).forEach(page => {
+    if(
+      !page ||
+      !page.model ||
+      !page.date
+    ){
+      return;
+    }
+
+    const model =
+      String(page.model).toLowerCase();
+
+    const date =
+      String(page.date);
+
+    const key =
+      `${model}|${date}`;
+
+    if(!groups.has(key)){
+      groups.set(key, {
+        model:model,
+        date:date,
+        sets:0,
+        cuts:0
+      });
+    }
+
+    const group =
+      groups.get(key);
+
+    group.sets += 1;
+
+    group.cuts +=
+      (page.cuts || []).length;
+  });
+
+  const items =
+    [...groups.values()]
+      .sort((a, b) => {
+        const dateCompare =
+          b.date.localeCompare(a.date);
+
+        if(dateCompare !== 0){
+          return dateCompare;
+        }
+
+        return a.model.localeCompare(
+          b.model
+        );
+      });
+
+  document.title =
+    'KIRA Prompt Archive';
+
+  title.textContent =
+    'Prompt Archive';
+
+  meta.textContent =
+    `공개된 날짜 ${items.length}개`;
+
+  content.innerHTML = '';
+
+  resetBack();
+
+  if(items.length === 0){
+    meta.textContent =
+      '현재 공개된 프롬프트가 없습니다.';
+
+    notice.textContent = '';
+
+    return;
+  }
+
+  items.forEach(item => {
+    addListLink(
+      content,
+
+      `/archive/${encodeURIComponent(
+        item.model
+      )}/${item.date}`,
+
+      formatDate(item.date),
+
+      ` · ${item.model.toUpperCase()} · ${item.sets}세트`,
+
+      '목록 →'
+    );
+  });
+
+  notice.textContent =
+    '날짜를 선택하면 공개된 프롬프트 세트가 표시됩니다.';
+}
+
+function parseArchivePath(path){
+  const match = path.match(
+    /^\/archive\/([a-z0-9_-]+)\/(\d{8})$/i
+  );
+
+  if(!match){
+    return null;
+  }
+
+  return {
+    model:match[1].toLowerCase(),
+    date:match[2]
+  };
+}
+
+function renderArchive(
+  pages,
+  model,
+  date
+){
+  const title =
+    document.getElementById('title');
+
+  const meta =
+    document.getElementById('meta');
+
+  const content =
+    document.getElementById('content');
+
+  const notice =
+    document.getElementById('notice');
+
+  const sets =
+    Object.keys(pages)
+      .map(route => ({
+        route:route,
+        page:pages[route]
+      }))
+      .filter(item => {
+        if(!item.page){
+          return false;
+        }
+
+        return (
+          String(item.page.model)
+            .toLowerCase() === model &&
+
+          String(item.page.date) === date
+        );
+      })
+      .sort((a, b) => {
+        return a.page.set - b.page.set;
+      });
+
+  if(sets.length === 0){
+    showError(
+      '이 날짜에 공개된 세트가 없습니다.'
+    );
+
+    return;
+  }
+
+  document.title =
+    `${model.toUpperCase()} ${date} Prompt Sets`;
+
+  title.textContent =
+    formatDate(date);
+
+  meta.textContent =
+    `${model.toUpperCase()} · 공개 세트 ${sets.length}개`;
+
+  content.innerHTML = '';
+
+  showBack(
+    '/',
+    '← 날짜 목록'
+  );
+
+  sets.forEach(item => {
+    addListLink(
+      content,
+
+      item.route,
+
+      `SET ${String(
+        item.page.set
+      ).padStart(2, '0')}`,
+
+      ` · ${(item.page.cuts || []).length}컷`,
+
+      '복사 →'
+    );
+  });
+
+  notice.textContent =
+    '세트를 선택하면 원클릭 복사 페이지로 이동합니다.';
+}
+
+function renderPrompt(page){
+  const title =
+    document.getElementById('title');
+
+  const meta =
+    document.getElementById('meta');
+
+  const content =
+    document.getElementById('content');
+
+  const notice =
+    document.getElementById('notice');
+
+  document.title =
+    `${String(page.model).toUpperCase()} ${page.date} SET ${String(page.set).padStart(2, '0')} Prompt Copy`;
+
+  title.textContent =
+    String(page.model).toUpperCase();
+
+  meta.textContent =
+    `${formatDate(page.date)} · SET ${String(page.set).padStart(2, '0')}`;
+
+  content.innerHTML = '';
+
+  showBack(
+    `/archive/${String(page.model).toLowerCase()}/${page.date}`,
+    '← 세트 목록'
+  );
+
+  (page.cuts || []).forEach(cut => {
+    const section =
+      document.createElement('section');
+
+    section.className =
+      'cut';
+
+    section.innerHTML = `
+      <div class="cut-number">
+        CUT ${String(cut.cut).padStart(2, '0')}
+      </div>
+
+      <div class="cut-title"></div>
+
+      <button
+        class="copy"
+        type="button"
+      >
+        📋 Copy Prompt
+      </button>
+
+      <div
+        class="status"
+        aria-live="polite"
+      ></div>
+    `;
+
+    section
+      .querySelector('.cut-title')
+      .textContent = cut.title;
+
+    const button =
+      section.querySelector('.copy');
+
+    const status =
+      section.querySelector('.status');
+
+    button.onclick = async () => {
+      button.disabled = true;
+
+      try{
+        await copyText(cut.prompt);
+
+        status.className =
+          'status';
+
+        status.textContent =
+          '✓ Prompt copied';
+
+      }catch(error){
+        status.className =
+          'status warning';
+
+        status.textContent =
+          '복사에 실패했습니다.';
+
+      }finally{
+        setTimeout(() => {
+          status.textContent = '';
+          button.disabled = false;
+        }, 1800);
+      }
+    };
+
+    content.appendChild(section);
+  });
+
+  notice.innerHTML =
+    '각 버튼은 해당 컷의 프롬프트만 복사합니다.<br>프롬프트 전문은 화면에 표시되지 않습니다.';
+}
+
+(async function(){
+  try{
+    const response = await fetch(
+      '/prompts.json?v=' + Date.now(),
+      {
+        cache:'no-store'
+      }
+    );
+
+    if(!response.ok){
+      throw new Error(
+        'prompts.json load failed'
+      );
+    }
+
+    const pages =
+      await response.json();
+
+    const path =
+      cleanPath();
+
+    if(path === '/'){
+      renderHome(pages);
+      return;
+    }
+
+    const archive =
+      parseArchivePath(path);
+
+    if(archive){
+      renderArchive(
+        pages,
+        archive.model,
+        archive.date
+      );
+
+      return;
+    }
+
+    const page =
+      pages[path];
+
+    if(!page){
+      showError(
+        '공개된 세트가 없거나 주소가 잘못되었습니다.'
+      );
+
+      return;
+    }
+
+    renderPrompt(page);
+
+  }catch(error){
+    console.error(error);
+
+    showError(
+      '프롬프트 데이터를 불러오지 못했습니다.'
+    );
+  }
+})();
+</script>
+</body>
+</html>
