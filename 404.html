@@ -17,11 +17,21 @@ h1{font-size:1.8rem;margin:0 0 5px}.meta{color:var(--muted);font-size:.96rem;mar
 .copy{width:100%;border:0;border-radius:13px;background:var(--btn);color:var(--btnText);padding:15px 16px;font-size:1rem;font-weight:750;cursor:pointer}.copy:active{transform:scale(.99)}
 .status{min-height:21px;margin-top:8px;font-size:.88rem;color:var(--ok);text-align:center}.warning{color:var(--warn)}
 .notice{font-size:.8rem;color:var(--muted);text-align:center;margin:16px 2px 0;line-height:1.5}
+/* v2: 뒤로가기 + 아카이브 세트 목록 */
+.back{display:inline-block;margin:0 2px 14px;font-size:.88rem;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--text)}
+a.set-link{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--line);border-radius:13px;padding:16px 18px;margin-top:12px;text-decoration:none;color:var(--text);background:var(--card)}
+a.set-link:first-of-type{margin-top:2px}
+a.set-link:hover{border-color:var(--muted)}
+.set-name{font-size:1.05rem;font-weight:750}
+.set-cuts{font-size:.85rem;color:var(--muted)}
+.set-go{font-size:.85rem;color:var(--muted)}
 </style>
 </head>
 <body>
 <main>
 <div class="brand">KIRA PROMPT</div>
+<a class="back" id="back" href="/" hidden>← 뒤로가기</a>
 <div class="panel">
 <h1 id="title">Prompt Copy</h1>
 <div class="meta" id="meta">데이터를 불러오는 중...</div>
@@ -33,11 +43,13 @@ h1{font-size:1.8rem;margin:0 0 5px}.meta{color:var(--muted);font-size:.96rem;mar
 function cleanPath(){let p=location.pathname.replace(/\/+$/,'');return p||'/'}
 function fallbackCopy(text){const a=document.createElement('textarea');a.value=text;a.setAttribute('readonly','');a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();a.setSelectionRange(0,a.value.length);const ok=document.execCommand('copy');document.body.removeChild(a);if(!ok)throw new Error('copy failed')}
 async function copyText(text){if(navigator.clipboard&&window.isSecureContext)await navigator.clipboard.writeText(text);else fallbackCopy(text)}
-function showError(message){document.getElementById('title').textContent='페이지를 찾을 수 없어요.';document.getElementById('meta').textContent=message;document.getElementById('content').innerHTML=''}
+function showError(message){document.getElementById('title').textContent='페이지를 찾을 수 없어요.';document.getElementById('meta').textContent=message;document.getElementById('content').innerHTML='';showBack('/','← 전체 목록')}
+function showBack(href,label){const back=document.getElementById('back');back.href=href;back.textContent=label;back.hidden=false}
 function render(page){
  const title=document.getElementById('title'),meta=document.getElementById('meta'),content=document.getElementById('content'),notice=document.getElementById('notice');
  document.title=`${page.model.toUpperCase()} ${page.date} SET ${String(page.set).padStart(2,'0')} Prompt Copy`;
  title.textContent=page.model.toUpperCase();meta.textContent=`${page.date.replace(/(\d{4})(\d{2})(\d{2})/,'$1.$2.$3')} · SET ${String(page.set).padStart(2,'0')}`;content.innerHTML='';
+ showBack(`/archive/${page.model}/${page.date}`,'← 세트 목록');
  page.cuts.forEach((cut,i)=>{
    const section=document.createElement('section');section.className='cut';
    section.innerHTML=`<div class="cut-number">CUT ${String(cut.cut).padStart(2,'0')}</div><div class="cut-title"></div><button class="copy" type="button">📋 Copy Prompt</button><div class="status" aria-live="polite"></div>`;
@@ -48,11 +60,46 @@ function render(page){
  });
  notice.innerHTML='각 버튼은 해당 컷의 프롬프트만 복사합니다.<br>프롬프트 전문은 화면에 표시되지 않습니다.';
 }
+/* v2: /archive/{model}/{YYYYMMDD} → 해당 날짜의 공개 세트 목록 */
+function parseArchivePath(path){
+ const m=path.match(/^\/archive\/([a-z0-9_-]+)\/(\d{8})$/i);
+ return m?{model:m[1].toLowerCase(),date:m[2]}:null;
+}
+function renderArchive(pages,model,date){
+ const title=document.getElementById('title'),meta=document.getElementById('meta'),content=document.getElementById('content'),notice=document.getElementById('notice');
+ /* prompts.json에는 공개된 세트만 담겨 있으므로 model+date 매칭이 곧 공개 목록 */
+ const sets=Object.keys(pages)
+   .map(route=>({route,page:pages[route]}))
+   .filter(item=>item.page&&item.page.model===model&&String(item.page.date)===date)
+   .sort((a,b)=>a.page.set-b.page.set); /* 세트 번호 오름차순 */
+ if(sets.length===0){showError('이 날짜에 공개된 세트가 없습니다.');return}
+ document.title=`${model.toUpperCase()} ${date} Prompt Sets`;
+ title.textContent=model.toUpperCase();
+ meta.textContent=`${date.replace(/(\d{4})(\d{2})(\d{2})/,'$1.$2.$3')} · 공개 세트 ${sets.length}개`;
+ content.innerHTML='';
+ showBack('/','← 전체 목록');
+ sets.forEach(item=>{
+   const a=document.createElement('a');
+   a.className='set-link';
+   a.href=item.route; /* 기존 /model/YYYYMMDD/setNN 복사 페이지로 이동 */
+   const left=document.createElement('span');
+   const name=document.createElement('span');name.className='set-name';name.textContent=`SET ${String(item.page.set).padStart(2,'0')}`;
+   const cuts=document.createElement('span');cuts.className='set-cuts';cuts.textContent=` · ${(item.page.cuts||[]).length}컷`;
+   left.appendChild(name);left.appendChild(cuts);
+   const go=document.createElement('span');go.className='set-go';go.textContent='복사 페이지 →';
+   a.appendChild(left);a.appendChild(go);
+   content.appendChild(a);
+ });
+ notice.textContent='세트를 선택하면 원클릭 복사 페이지로 이동합니다.';
+}
 (async()=>{
  try{
    const res=await fetch('/prompts.json?v='+Date.now(),{cache:'no-store'});
    if(!res.ok)throw new Error('data');
-   const pages=await res.json(),page=pages[cleanPath()];
+   const pages=await res.json(),path=cleanPath();
+   const archive=parseArchivePath(path);
+   if(archive){renderArchive(pages,archive.model,archive.date);return}
+   const page=pages[path];
    if(!page){showError('공개된 세트가 없거나 주소가 잘못되었습니다.');return}
    render(page);
  }catch(e){showError('프롬프트 데이터를 불러오지 못했습니다.')}
