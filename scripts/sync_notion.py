@@ -22,6 +22,7 @@ MODEL_SLUGS = {
     "하윤": "hayoon",
     "서린": "seorin",
     "지은": "jieun",
+    "나린": "narin",
 }
 
 # v6: 공개 필터에 사용하는 속성 이름
