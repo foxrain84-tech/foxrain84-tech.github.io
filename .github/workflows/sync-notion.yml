@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: notion-prompt-sync
+  group: notion-prompt-sync-v2
   cancel-in-progress: true
 
 jobs:
