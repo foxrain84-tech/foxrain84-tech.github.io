@@ -129,6 +129,42 @@ def parse_public_set_numbers(option_names):
     return numbers
 
 
+def selected_model_names(prop):
+    if prop.get("type") == "multi_select":
+        names = property_multi_select_names(prop)
+    else:
+        name = property_text(prop)
+        names = [name] if name else []
+    names = list(dict.fromkeys(names))
+    if not names or any(name not in MODEL_SLUGS for name in names):
+        raise ValueError("모델 속성에 지원되는 모델을 선택해 주세요.")
+    return names
+
+
+def heading_model_names(text):
+    return [
+        name for name, slug in MODEL_SLUGS.items()
+        if re.search(r"(?<![\\w])" + re.escape(name) + r"(?![\\w])", text)
+        or re.search(r"(?<![a-z])" + re.escape(slug) + r"(?![a-z])",
+                     text, re.IGNORECASE)
+        or (name == "하윤" and re.search(r"\\bhayun\\b", text, re.IGNORECASE))
+    ]
+
+
+def resolve_set_models(model_names, set_cuts, page_id, set_number):
+    if len(model_names) == 1:
+        return model_names
+    assignments = {tuple(cut.get("model_names", [])) for cut in set_cuts}
+    if len(assignments) != 1 or not next(iter(assignments), ()):
+        raise ValueError(
+            f"{page_id} SET {set_number:02d}: 세트 제목에 모델명을 명시해 주세요."
+        )
+    assigned = list(next(iter(assignments)))
+    if any(name not in model_names for name in assigned):
+        raise ValueError(f"{page_id}: 세트 모델이 기획서 모델 선택과 다릅니다.")
+    return assigned
+
+
 def normalize_date(value):
     digits = re.sub(r"\D", "", value or "")
     return digits[:8]
@@ -221,6 +257,7 @@ def extract_prompt_cuts(token, page_id):
     blocks = flatten_blocks(token, page_id)
 
     current_set = None
+    current_models = []
     current_cut = None
     waiting_for_prompt_code = False
     implicit_prompt_title = ""
@@ -241,6 +278,7 @@ def extract_prompt_cuts(token, page_id):
             if set_match:
                 set_value = set_match.group(1) or set_match.group(2)
                 current_set = int(set_value)
+                current_models = heading_model_names(text)
 
             cut_match = CUT_PATTERN.search(text)
             if cut_match:
@@ -314,6 +352,7 @@ def extract_prompt_cuts(token, page_id):
                     "cut": prompt_cut["cut"],
                     "title": prompt_cut["title"],
                     "prompt": prompt,
+                    "model_names": list(current_models),
                 })
 
             waiting_for_prompt_code = False
@@ -357,15 +396,14 @@ def build_site_pages(token, rows):
             skipped_private_pages += 1
             continue
 
-        model_name = property_text(props.get("모델", {}))
-        model_slug = MODEL_SLUGS.get(model_name)
+        model_names = selected_model_names(props.get("모델", {}))
 
         date = normalize_date(
             property_text(props.get("기획일", {}))
         )
 
-        if not model_slug or len(date) != 8:
-            continue
+        if len(date) != 8:
+            raise ValueError(f"{row.get('id')}: 기획일을 확인해 주세요.")
 
         page_id = row.get("id")
         cuts = extract_prompt_cuts(token, page_id)
@@ -380,6 +418,7 @@ def build_site_pages(token, rows):
                 "cut": cut["cut"],
                 "title": cut["title"],
                 "prompt": cut["prompt"],
+                "model_names": cut.get("model_names", []),
             })
 
         for original_set, set_cuts in sorted(page_groups.items()):
@@ -389,28 +428,33 @@ def build_site_pages(token, rows):
                 skipped_private_sets += 1
                 continue
 
-            set_number = original_set
-            route = (
-                f"/{model_slug}/{date}/"
-                f"set{set_number:02d}"
-            )
-
-            while route in used_routes:
-                set_number += 1
+            for model_name in resolve_set_models(
+                model_names, set_cuts, page_id, original_set
+            ):
+                model_slug = MODEL_SLUGS[model_name]
+                set_number = original_set
                 route = (
                     f"/{model_slug}/{date}/"
                     f"set{set_number:02d}"
                 )
 
-            used_routes.add(route)
-            set_cuts.sort(key=lambda item: item["cut"])
+                while route in used_routes:
+                    set_number += 1
+                    route = (
+                        f"/{model_slug}/{date}/"
+                        f"set{set_number:02d}"
+                    )
 
-            grouped[route] = {
-                "model": model_slug,
-                "date": date,
-                "set": set_number,
-                "cuts": set_cuts,
-            }
+                used_routes.add(route)
+                set_cuts.sort(key=lambda item: item["cut"])
+
+                grouped[route] = {
+                    "model": model_slug,
+                    "date": date,
+                    "set": set_number,
+                    "cuts": [{k: v for k, v in cut.items() if k != "model_names"}
+                             for cut in set_cuts],
+                }
 
     return dict(sorted(grouped.items())), skipped_private_pages, skipped_private_sets
 
@@ -457,3 +501,4 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
