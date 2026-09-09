@@ -136,7 +136,7 @@ def selected_model_names(prop):
         name = property_text(prop)
         names = [name] if name else []
     names = list(dict.fromkeys(names))
-    if not names or any(name not in MODEL_SLUGS for name in names):
+    if any(name not in MODEL_SLUGS for name in names):
         raise ValueError("모델 속성에 지원되는 모델을 선택해 주세요.")
     return names
 
@@ -370,6 +370,7 @@ def build_site_pages(token, rows):
 
     skipped_private_pages = 0
     skipped_private_sets = 0
+    skipped_missing_models = 0
 
     for row in rows:
         props = row.get("properties", {})
@@ -397,6 +398,11 @@ def build_site_pages(token, rows):
             continue
 
         model_names = selected_model_names(props.get("모델", {}))
+        if not model_names:
+            skipped_missing_models += 1
+            title = property_text(props.get("기획서", {})) or row.get("id", "unknown")
+            print(f"WARNING: 모델 미선택 기획서 제외: {title}", file=sys.stderr)
+            continue
 
         date = normalize_date(
             property_text(props.get("기획일", {}))
@@ -456,6 +462,10 @@ def build_site_pages(token, rows):
                              for cut in set_cuts],
                 }
 
+    if skipped_missing_models:
+        print(f"모델 미선택 {skipped_missing_models}건 제외", file=sys.stderr)
+        if not grouped:
+            raise ValueError("모델 미선택 항목이 있고 생성 결과가 0건이므로 기존 파일을 보존합니다.")
     return dict(sorted(grouped.items())), skipped_private_pages, skipped_private_sets
 
 
@@ -501,4 +511,3 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
