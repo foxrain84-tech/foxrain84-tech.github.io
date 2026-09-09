@@ -23,6 +23,10 @@ MODEL_SLUGS = {
     "서린": "seorin",
     "지은": "jieun",
     "나린": "narin",
+    "태건": "taegeon",
+    "강태오": "kangtaeo",
+    "차시혁": "chasihyuk",
+    "이도현": "leedohyun",
 }
 
 # v6: 공개 필터에 사용하는 속성 이름
@@ -136,18 +140,20 @@ def selected_model_names(prop):
         name = property_text(prop)
         names = [name] if name else []
     names = list(dict.fromkeys(names))
-    if any(name not in MODEL_SLUGS for name in names):
-        raise ValueError("모델 속성에 지원되는 모델을 선택해 주세요.")
     return names
 
 
-def heading_model_names(text):
+def model_slug(name):
+    # Stable existing URLs; deterministic ASCII routes for future models.
+    return MODEL_SLUGS.get(name) or "model-" + name.encode("utf-8").hex()
+
+
+def heading_model_names(text, candidates=None):
     return [
-        name for name, slug in MODEL_SLUGS.items()
-        if re.search(r"(?<![\\w])" + re.escape(name) + r"(?![\\w])", text)
-        or re.search(r"(?<![a-z])" + re.escape(slug) + r"(?![a-z])",
-                     text, re.IGNORECASE)
-        or (name == "하윤" and re.search(r"\\bhayun\\b", text, re.IGNORECASE))
+        name for name in (candidates if candidates is not None else MODEL_SLUGS)
+        if re.search(r"(?<![가-힣A-Za-z0-9_])" + re.escape(name) + r"(?![가-힣A-Za-z0-9_])", text)
+        or re.search(r"(?<![a-z])" + re.escape(model_slug(name)) + r"(?![a-z])", text, re.IGNORECASE)
+        or (name == "하윤" and re.search(r"(?<![a-z])hayun(?![a-z])", text, re.IGNORECASE))
     ]
 
 
@@ -253,7 +259,7 @@ def block_text(block):
     return plain_text(payload.get("rich_text"))
 
 
-def extract_prompt_cuts(token, page_id):
+def extract_prompt_cuts(token, page_id, model_names=None):
     blocks = flatten_blocks(token, page_id)
 
     current_set = None
@@ -278,7 +284,7 @@ def extract_prompt_cuts(token, page_id):
             if set_match:
                 set_value = set_match.group(1) or set_match.group(2)
                 current_set = int(set_value)
-                current_models = heading_model_names(text)
+                current_models = heading_model_names(text, model_names)
 
             cut_match = CUT_PATTERN.search(text)
             if cut_match:
@@ -412,7 +418,7 @@ def build_site_pages(token, rows):
             raise ValueError(f"{row.get('id')}: 기획일을 확인해 주세요.")
 
         page_id = row.get("id")
-        cuts = extract_prompt_cuts(token, page_id)
+        cuts = extract_prompt_cuts(token, page_id, model_names)
 
         if not cuts:
             continue
@@ -437,17 +443,17 @@ def build_site_pages(token, rows):
             for model_name in resolve_set_models(
                 model_names, set_cuts, page_id, original_set
             ):
-                model_slug = MODEL_SLUGS[model_name]
+                route_model = model_slug(model_name)
                 set_number = original_set
                 route = (
-                    f"/{model_slug}/{date}/"
+                    f"/{route_model}/{date}/"
                     f"set{set_number:02d}"
                 )
 
                 while route in used_routes:
                     set_number += 1
                     route = (
-                        f"/{model_slug}/{date}/"
+                        f"/{route_model}/{date}/"
                         f"set{set_number:02d}"
                     )
 
@@ -455,7 +461,7 @@ def build_site_pages(token, rows):
                 set_cuts.sort(key=lambda item: item["cut"])
 
                 grouped[route] = {
-                    "model": model_slug,
+                    "model": route_model,
                     "date": date,
                     "set": set_number,
                     "cuts": [{k: v for k, v in cut.items() if k != "model_names"}
