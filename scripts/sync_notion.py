@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 import json
+import math
+import random
+import time
 import os
 import re
 import sys
@@ -52,9 +55,35 @@ CUT_PATTERN = re.compile(
 )
 
 
-def notion_request(url, token, body=None):
-    data = None if body is None else json.dumps(body).encode("utf-8")
+# This script sends requests sequentially; share pacing across all API calls.
+MIN_REQUEST_INTERVAL = 0.5
+MAX_REQUEST_ATTEMPTS = 6  # Initial attempt plus up to five retries.
+_last_request_started = None
 
+
+def _retry_delay(headers, detail, attempt):
+    values = [headers.get("Retry-After") if headers else None]
+    try:
+        payload = json.loads(detail)
+        if isinstance(payload, dict):
+            additional = payload.get("additional_data")
+            if isinstance(additional, dict):
+                values.append(additional.get("retry_after"))
+    except (ValueError, TypeError):
+        pass
+    for value in values:
+        try:
+            seconds = float(value)
+        except (TypeError, ValueError):
+            continue
+        if math.isfinite(seconds) and seconds >= 0:
+            return max(seconds, min(2 ** attempt, 30)) + random.uniform(0, 0.25)
+    return min(2 ** attempt, 30) + random.uniform(0, 0.25)
+
+
+def notion_request(url, token, body=None):
+    global _last_request_started
+    data = None if body is None else json.dumps(body).encode("utf-8")
     request = urllib.request.Request(
         url,
         data=data,
@@ -66,14 +95,29 @@ def notion_request(url, token, body=None):
         },
     )
 
-    try:
-        with urllib.request.urlopen(request, timeout=30) as response:
-            return json.load(response)
-    except urllib.error.HTTPError as error:
-        detail = error.read().decode("utf-8", errors="replace")
-        raise RuntimeError(
-            f"Notion API error {error.code}: {detail}"
-        ) from error
+    for attempt in range(MAX_REQUEST_ATTEMPTS):
+        if _last_request_started is not None:
+            remaining = MIN_REQUEST_INTERVAL - (time.monotonic() - _last_request_started)
+            if remaining > 0:
+                time.sleep(remaining)
+        _last_request_started = time.monotonic()
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                return json.load(response)
+        except urllib.error.HTTPError as error:
+            detail = error.read().decode("utf-8", errors="replace")
+            error.close()
+            if error.code not in {429, 529} or attempt == MAX_REQUEST_ATTEMPTS - 1:
+                raise RuntimeError(
+                    f"Notion API error {error.code} after {attempt + 1} attempt(s): {detail}"
+                ) from error
+            delay = _retry_delay(error.headers, detail, attempt)
+            print(
+                f"Notion API {error.code}: waiting {delay:.2f}s; "
+                f"retry {attempt + 1}/{MAX_REQUEST_ATTEMPTS - 1}",
+                file=sys.stderr, flush=True,
+            )
+            time.sleep(delay)
 
 
 def plain_text(items):
