@@ -515,6 +515,9 @@ def build_site_pages(token, rows):
             grouped[route] = {
                 "model": route_model,
                 "models": models,
+                "source_page_id": str(page_id).replace("-", ""),
+                "source_models": sorted(model_slug(name) for name in model_names),
+                "source_set": original_set,
                 "date": date,
                 "set": set_number,
                 "cuts": [{k: v for k, v in cut.items() if k != "model_names"}
