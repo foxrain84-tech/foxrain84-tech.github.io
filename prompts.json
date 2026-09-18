@@ -1,6 +1,9 @@
 {
   "/arin/20260711/set01": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260711",
     "set": 1,
     "cuts": [
@@ -18,6 +21,9 @@
   },
   "/arin/20260713/set01": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260713",
     "set": 1,
     "cuts": [
@@ -40,6 +46,9 @@
   },
   "/arin/20260713/set02": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260713",
     "set": 2,
     "cuts": [
@@ -62,6 +71,9 @@
   },
   "/arin/20260713/set03": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260713",
     "set": 3,
     "cuts": [
@@ -84,6 +96,9 @@
   },
   "/arin/20260713/set04": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260713",
     "set": 4,
     "cuts": [
@@ -106,6 +121,9 @@
   },
   "/arin/20260713/set05": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260713",
     "set": 5,
     "cuts": [
@@ -128,6 +146,9 @@
   },
   "/arin/20260720/set01": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260720",
     "set": 1,
     "cuts": [
@@ -150,6 +171,9 @@
   },
   "/arin/20260720/set02": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260720",
     "set": 2,
     "cuts": [
@@ -172,6 +196,9 @@
   },
   "/arin/20260720/set03": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260720",
     "set": 3,
     "cuts": [
@@ -194,6 +221,9 @@
   },
   "/arin/20260720/set04": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260720",
     "set": 4,
     "cuts": [
@@ -216,6 +246,9 @@
   },
   "/arin/20260720/set05": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260720",
     "set": 5,
     "cuts": [
@@ -238,6 +271,9 @@
   },
   "/arin/20260725/set01": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260725",
     "set": 1,
     "cuts": [
@@ -260,6 +296,9 @@
   },
   "/arin/20260725/set02": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260725",
     "set": 2,
     "cuts": [
@@ -282,6 +321,9 @@
   },
   "/arin/20260725/set03": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260725",
     "set": 3,
     "cuts": [
@@ -304,6 +346,9 @@
   },
   "/arin/20260725/set04": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260725",
     "set": 4,
     "cuts": [
@@ -326,6 +371,9 @@
   },
   "/arin/20260725/set05": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260725",
     "set": 5,
     "cuts": [
@@ -348,6 +396,9 @@
   },
   "/arin/20260726/set01": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260726",
     "set": 1,
     "cuts": [
@@ -380,6 +431,9 @@
   },
   "/arin/20260726/set02": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260726",
     "set": 2,
     "cuts": [
@@ -412,6 +466,9 @@
   },
   "/arin/20260726/set03": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260726",
     "set": 3,
     "cuts": [
@@ -444,6 +501,9 @@
   },
   "/arin/20260726/set04": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260726",
     "set": 4,
     "cuts": [
@@ -476,6 +536,9 @@
   },
   "/arin/20260726/set05": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260726",
     "set": 5,
     "cuts": [
@@ -508,6 +571,9 @@
   },
   "/arin/20260802/set01": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260802",
     "set": 1,
     "cuts": [
@@ -540,6 +606,9 @@
   },
   "/arin/20260802/set02": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260802",
     "set": 2,
     "cuts": [
@@ -572,6 +641,9 @@
   },
   "/arin/20260802/set03": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260802",
     "set": 3,
     "cuts": [
@@ -604,6 +676,9 @@
   },
   "/arin/20260802/set04": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260802",
     "set": 4,
     "cuts": [
@@ -636,6 +711,9 @@
   },
   "/arin/20260802/set05": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260802",
     "set": 5,
     "cuts": [
@@ -668,6 +746,9 @@
   },
   "/arin/20260808/set01": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260808",
     "set": 1,
     "cuts": [
@@ -700,6 +781,9 @@
   },
   "/arin/20260808/set02": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260808",
     "set": 2,
     "cuts": [
@@ -732,6 +816,9 @@
   },
   "/arin/20260808/set03": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260808",
     "set": 3,
     "cuts": [
@@ -764,6 +851,9 @@
   },
   "/arin/20260808/set04": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260808",
     "set": 4,
     "cuts": [
@@ -796,6 +886,9 @@
   },
   "/arin/20260808/set05": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260808",
     "set": 5,
     "cuts": [
@@ -828,6 +921,9 @@
   },
   "/arin/20260831/set01": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260831",
     "set": 1,
     "cuts": [
@@ -860,6 +956,9 @@
   },
   "/arin/20260902/set01": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260902",
     "set": 1,
     "cuts": [
@@ -892,6 +991,9 @@
   },
   "/arin/20260902/set02": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260902",
     "set": 2,
     "cuts": [
@@ -924,6 +1026,9 @@
   },
   "/arin/20260902/set03": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260902",
     "set": 3,
     "cuts": [
@@ -956,6 +1061,9 @@
   },
   "/arin/20260902/set04": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260902",
     "set": 4,
     "cuts": [
@@ -988,6 +1096,9 @@
   },
   "/arin/20260902/set05": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260902",
     "set": 5,
     "cuts": [
@@ -1020,6 +1131,9 @@
   },
   "/arin/20260908/set01": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260908",
     "set": 1,
     "cuts": [
@@ -1052,6 +1166,9 @@
   },
   "/arin/20260908/set02": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260908",
     "set": 2,
     "cuts": [
@@ -1084,6 +1201,9 @@
   },
   "/arin/20260908/set03": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260908",
     "set": 3,
     "cuts": [
@@ -1116,6 +1236,9 @@
   },
   "/arin/20260908/set04": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260908",
     "set": 4,
     "cuts": [
@@ -1148,6 +1271,9 @@
   },
   "/arin/20260908/set05": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260908",
     "set": 5,
     "cuts": [
@@ -1180,6 +1306,9 @@
   },
   "/arin/20260910/set01": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260910",
     "set": 1,
     "cuts": [
@@ -1212,6 +1341,9 @@
   },
   "/arin/20260915/set01": {
     "model": "arin",
+    "models": [
+      "arin"
+    ],
     "date": "20260915",
     "set": 1,
     "cuts": [
@@ -1244,6 +1376,9 @@
   },
   "/chasihyuk/20260911/set01": {
     "model": "chasihyuk",
+    "models": [
+      "chasihyuk"
+    ],
     "date": "20260911",
     "set": 1,
     "cuts": [
@@ -1276,6 +1411,9 @@
   },
   "/chasihyuk/20260911/set02": {
     "model": "chasihyuk",
+    "models": [
+      "chasihyuk"
+    ],
     "date": "20260911",
     "set": 2,
     "cuts": [
@@ -1308,6 +1446,9 @@
   },
   "/hayoon/20260714/set01": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260714",
     "set": 1,
     "cuts": [
@@ -1330,6 +1471,9 @@
   },
   "/hayoon/20260714/set02": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260714",
     "set": 2,
     "cuts": [
@@ -1352,6 +1496,9 @@
   },
   "/hayoon/20260714/set03": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260714",
     "set": 3,
     "cuts": [
@@ -1374,6 +1521,9 @@
   },
   "/hayoon/20260714/set04": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260714",
     "set": 4,
     "cuts": [
@@ -1396,6 +1546,9 @@
   },
   "/hayoon/20260714/set05": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260714",
     "set": 5,
     "cuts": [
@@ -1418,6 +1571,9 @@
   },
   "/hayoon/20260721/set01": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260721",
     "set": 1,
     "cuts": [
@@ -1440,6 +1596,9 @@
   },
   "/hayoon/20260721/set02": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260721",
     "set": 2,
     "cuts": [
@@ -1462,6 +1621,9 @@
   },
   "/hayoon/20260721/set03": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260721",
     "set": 3,
     "cuts": [
@@ -1484,6 +1646,9 @@
   },
   "/hayoon/20260721/set04": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260721",
     "set": 4,
     "cuts": [
@@ -1506,6 +1671,9 @@
   },
   "/hayoon/20260721/set05": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260721",
     "set": 5,
     "cuts": [
@@ -1528,6 +1696,9 @@
   },
   "/hayoon/20260722/set01": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260722",
     "set": 1,
     "cuts": [
@@ -1550,6 +1721,9 @@
   },
   "/hayoon/20260727/set01": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260727",
     "set": 1,
     "cuts": [
@@ -1582,6 +1756,9 @@
   },
   "/hayoon/20260727/set02": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260727",
     "set": 2,
     "cuts": [
@@ -1614,6 +1791,9 @@
   },
   "/hayoon/20260727/set03": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260727",
     "set": 3,
     "cuts": [
@@ -1646,6 +1826,9 @@
   },
   "/hayoon/20260727/set04": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260727",
     "set": 4,
     "cuts": [
@@ -1678,6 +1861,9 @@
   },
   "/hayoon/20260727/set05": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260727",
     "set": 5,
     "cuts": [
@@ -1710,6 +1896,9 @@
   },
   "/hayoon/20260805/set01": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260805",
     "set": 1,
     "cuts": [
@@ -1742,6 +1931,9 @@
   },
   "/hayoon/20260805/set02": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260805",
     "set": 2,
     "cuts": [
@@ -1774,6 +1966,9 @@
   },
   "/hayoon/20260805/set03": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260805",
     "set": 3,
     "cuts": [
@@ -1806,6 +2001,9 @@
   },
   "/hayoon/20260805/set04": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260805",
     "set": 4,
     "cuts": [
@@ -1838,6 +2036,9 @@
   },
   "/hayoon/20260805/set05": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260805",
     "set": 5,
     "cuts": [
@@ -1870,6 +2071,9 @@
   },
   "/hayoon/20260810/set01": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260810",
     "set": 1,
     "cuts": [
@@ -1902,6 +2106,9 @@
   },
   "/hayoon/20260810/set02": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260810",
     "set": 2,
     "cuts": [
@@ -1934,6 +2141,9 @@
   },
   "/hayoon/20260810/set03": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260810",
     "set": 3,
     "cuts": [
@@ -1966,6 +2176,9 @@
   },
   "/hayoon/20260810/set04": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260810",
     "set": 4,
     "cuts": [
@@ -1998,6 +2211,9 @@
   },
   "/hayoon/20260810/set05": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260810",
     "set": 5,
     "cuts": [
@@ -2030,6 +2246,9 @@
   },
   "/hayoon/20260818/set01": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260818",
     "set": 1,
     "cuts": [
@@ -2047,6 +2266,9 @@
   },
   "/hayoon/20260831/set01": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260831",
     "set": 1,
     "cuts": [
@@ -2079,6 +2301,9 @@
   },
   "/hayoon/20260831/set02": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260831",
     "set": 2,
     "cuts": [
@@ -2111,6 +2336,9 @@
   },
   "/hayoon/20260831/set03": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260831",
     "set": 3,
     "cuts": [
@@ -2143,6 +2371,9 @@
   },
   "/hayoon/20260831/set04": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260831",
     "set": 4,
     "cuts": [
@@ -2175,6 +2406,9 @@
   },
   "/hayoon/20260831/set05": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260831",
     "set": 5,
     "cuts": [
@@ -2207,6 +2441,9 @@
   },
   "/hayoon/20260906/set01": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260906",
     "set": 1,
     "cuts": [
@@ -2239,6 +2476,9 @@
   },
   "/hayoon/20260906/set02": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260906",
     "set": 2,
     "cuts": [
@@ -2271,6 +2511,9 @@
   },
   "/hayoon/20260906/set03": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260906",
     "set": 3,
     "cuts": [
@@ -2303,6 +2546,9 @@
   },
   "/hayoon/20260906/set04": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260906",
     "set": 4,
     "cuts": [
@@ -2335,6 +2581,9 @@
   },
   "/hayoon/20260906/set05": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260906",
     "set": 5,
     "cuts": [
@@ -2367,6 +2616,9 @@
   },
   "/hayoon/20260910/set02": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260910",
     "set": 2,
     "cuts": [
@@ -2399,6 +2651,9 @@
   },
   "/hayoon/20260914/set01": {
     "model": "hayoon",
+    "models": [
+      "hayoon"
+    ],
     "date": "20260914",
     "set": 1,
     "cuts": [
@@ -2431,6 +2686,9 @@
   },
   "/jieun/20260711/set01": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260711",
     "set": 1,
     "cuts": [
@@ -2453,6 +2711,9 @@
   },
   "/jieun/20260711/set02": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260711",
     "set": 2,
     "cuts": [
@@ -2475,6 +2736,9 @@
   },
   "/jieun/20260711/set03": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260711",
     "set": 3,
     "cuts": [
@@ -2497,6 +2761,9 @@
   },
   "/jieun/20260711/set04": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260711",
     "set": 4,
     "cuts": [
@@ -2519,6 +2786,9 @@
   },
   "/jieun/20260711/set05": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260711",
     "set": 5,
     "cuts": [
@@ -2541,6 +2811,9 @@
   },
   "/jieun/20260717/set01": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260717",
     "set": 1,
     "cuts": [
@@ -2563,6 +2836,9 @@
   },
   "/jieun/20260717/set02": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260717",
     "set": 2,
     "cuts": [
@@ -2585,6 +2861,9 @@
   },
   "/jieun/20260717/set03": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260717",
     "set": 3,
     "cuts": [
@@ -2607,6 +2886,9 @@
   },
   "/jieun/20260717/set04": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260717",
     "set": 4,
     "cuts": [
@@ -2629,6 +2911,9 @@
   },
   "/jieun/20260717/set05": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260717",
     "set": 5,
     "cuts": [
@@ -2651,6 +2936,9 @@
   },
   "/jieun/20260719/set01": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260719",
     "set": 1,
     "cuts": [
@@ -2663,6 +2951,9 @@
   },
   "/jieun/20260724/set01": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260724",
     "set": 1,
     "cuts": [
@@ -2685,6 +2976,9 @@
   },
   "/jieun/20260724/set02": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260724",
     "set": 2,
     "cuts": [
@@ -2707,6 +3001,9 @@
   },
   "/jieun/20260724/set03": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260724",
     "set": 3,
     "cuts": [
@@ -2729,6 +3026,9 @@
   },
   "/jieun/20260724/set04": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260724",
     "set": 4,
     "cuts": [
@@ -2751,6 +3051,9 @@
   },
   "/jieun/20260724/set05": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260724",
     "set": 5,
     "cuts": [
@@ -2773,6 +3076,9 @@
   },
   "/jieun/20260730/set01": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260730",
     "set": 1,
     "cuts": [
@@ -2805,6 +3111,9 @@
   },
   "/jieun/20260730/set02": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260730",
     "set": 2,
     "cuts": [
@@ -2837,6 +3146,9 @@
   },
   "/jieun/20260730/set03": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260730",
     "set": 3,
     "cuts": [
@@ -2869,6 +3181,9 @@
   },
   "/jieun/20260730/set04": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260730",
     "set": 4,
     "cuts": [
@@ -2901,6 +3216,9 @@
   },
   "/jieun/20260730/set05": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260730",
     "set": 5,
     "cuts": [
@@ -2933,6 +3251,9 @@
   },
   "/jieun/20260801/set01": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260801",
     "set": 1,
     "cuts": [
@@ -2965,6 +3286,9 @@
   },
   "/jieun/20260801/set02": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260801",
     "set": 2,
     "cuts": [
@@ -2997,6 +3321,9 @@
   },
   "/jieun/20260801/set03": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260801",
     "set": 3,
     "cuts": [
@@ -3029,6 +3356,9 @@
   },
   "/jieun/20260801/set04": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260801",
     "set": 4,
     "cuts": [
@@ -3061,6 +3391,9 @@
   },
   "/jieun/20260801/set05": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260801",
     "set": 5,
     "cuts": [
@@ -3093,6 +3426,9 @@
   },
   "/jieun/20260812/set01": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260812",
     "set": 1,
     "cuts": [
@@ -3125,6 +3461,9 @@
   },
   "/jieun/20260812/set02": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260812",
     "set": 2,
     "cuts": [
@@ -3157,6 +3496,9 @@
   },
   "/jieun/20260812/set03": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260812",
     "set": 3,
     "cuts": [
@@ -3189,6 +3531,9 @@
   },
   "/jieun/20260812/set04": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260812",
     "set": 4,
     "cuts": [
@@ -3221,6 +3566,9 @@
   },
   "/jieun/20260812/set05": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260812",
     "set": 5,
     "cuts": [
@@ -3253,6 +3601,9 @@
   },
   "/jieun/20260824/set01": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260824",
     "set": 1,
     "cuts": [
@@ -3285,6 +3636,9 @@
   },
   "/jieun/20260824/set02": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260824",
     "set": 2,
     "cuts": [
@@ -3317,6 +3671,9 @@
   },
   "/jieun/20260824/set03": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260824",
     "set": 3,
     "cuts": [
@@ -3349,6 +3706,9 @@
   },
   "/jieun/20260824/set04": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260824",
     "set": 4,
     "cuts": [
@@ -3381,6 +3741,9 @@
   },
   "/jieun/20260824/set05": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260824",
     "set": 5,
     "cuts": [
@@ -3413,6 +3776,9 @@
   },
   "/jieun/20260905/set01": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260905",
     "set": 1,
     "cuts": [
@@ -3445,6 +3811,9 @@
   },
   "/jieun/20260905/set02": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260905",
     "set": 2,
     "cuts": [
@@ -3477,6 +3846,9 @@
   },
   "/jieun/20260905/set03": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260905",
     "set": 3,
     "cuts": [
@@ -3509,6 +3881,9 @@
   },
   "/jieun/20260905/set04": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260905",
     "set": 4,
     "cuts": [
@@ -3541,6 +3916,9 @@
   },
   "/jieun/20260905/set05": {
     "model": "jieun",
+    "models": [
+      "jieun"
+    ],
     "date": "20260905",
     "set": 5,
     "cuts": [
@@ -3573,6 +3951,10 @@
   },
   "/kangtaeo--yulim/20260915/set01": {
     "model": "kangtaeo--yulim",
+    "models": [
+      "kangtaeo",
+      "yulim"
+    ],
     "date": "20260915",
     "set": 1,
     "cuts": [
@@ -3597,10 +3979,6 @@
         "prompt": "Editorial: Fantasy Bridal Editorial × Firefighter Groom & Mermaid Bride × Jeju Basalt Coast × Over-Under Romance × Sunset Reunion\n\nSET 01 — WHERE FIRE MEETS THE SEA\nCUT 04 — AT THE SAME EYE LEVEL\nPlanning date: 2026.09.15. This is an editorial planning date, not a literal shooting date.\n\nCreate one photorealistic vertical 3:4 intimate bridal editorial photograph of an adult firefighter groom and his adult mermaid bride meeting at the edge of a sheltered basalt cove.\n\nThe groom is on screen-left, kneeling low on the rock. The bride is on screen-right, buoyantly upright in the water with her face and shoulders above the surface. He has lowered himself until their eyes are almost level. Their hands remain gently connected as they look at one another.\n\nThe decisive visual requirement is their nearly horizontal mutual eyeline. The bride keeps her head comfortably balanced over her neck instead of lifting her chin to reach his gaze.\n\n0. DUAL PERSON-REFERENCE IMAGE MODE\n\nThe adult man in the designated male reference portrays Kang Tae-oh. The adult woman in the designated female reference portrays Yulim. Each person-reference image is the sole facial identity source for its respective person.\n\nPreserve each person's recognizable facial proportions, eye shape and spacing, eyebrows, nose, lips, cheeks, jaw structure, chin shape, skin tone, apparent adult age, natural asymmetry, and distinctive identity cues. Do not mix identities, substitute a celebrity associated with either name, or reconstruct either person from stored appearance descriptions.\n\nThe names define narrative roles and emotional language only. Do not import person-reference clothing, background, lighting, or pose. Preserve visible human body proportions except for the bride's explicitly requested mermaid lower body.\n\nIf a previous generated reunion image is also supplied, use it only for environmental and wardrobe continuity. It must not override the original person references or preserve an exaggerated chin, stretched neck, elevated head angle, or excessive difference in the couple's eye heights.\n\nREFERENCE-HAIR PRESERVE MODE applies to both people.\n\nPreserve the man's reference short black hair, natural crown volume, irregular parting, forehead-directed fringe, and original silhouette. Only a few existing strands gather lightly from sweat at the temples and front hairline.\n\nPreserve the woman's reference hair length, color, parting, fringe, texture, and tied or loose construction. Existing wet strands settle with gravity after she rises. A tied hairstyle stays tied, and short hair stays short. Do not add length, waves, a new parting, an updo, or separate hair ornaments.\n\n1. CAPTURE PIPELINE AND FILM CHARACTER\n\nCapture digitally on a full-frame camera, then color-grade to evoke Kodak Portra 400. Use gentle skin-tone transitions, moderate-to-low saturation, restrained amber warmth, fine organic grain, soft contrast, and smooth highlight roll-off. Retain substantial but readable shadows in the basalt and turnout fabric.\n\nKeep the sea a subdued blue-green and the bridal fabric pearl ivory. Both faces share the same above-water lighting while retaining their individual reference skin tones. This is digital photography with film-inspired grading, not a claim of physical film capture.\n\nAvoid strong orange-and-teal separation, excessive clarity, artificial HDR, or a separate bright beauty treatment on the bride.\n\n2. STORY, SETTING, AND TIME\n\nThe firefighter groom has returned from fighting a fire and found his mermaid bride waiting in the sea. She has risen through her own tail movement and buoyancy. He lowers his body to meet her. Select the quiet moment after her upward motion settles.\n\nSet the scene in late summer, just before sunset, with the sun still above the horizon. The location is an invented small cove inspired by western Jeju, with a low porous basalt ledge immediately beside clear water deep enough for her entire tail.\n\nOffshore rocks soften the incoming swell. Small ripples surround the bride, and the water remains calm enough for an unhurried reunion. Do not claim to reproduce a specific real beach, tide, or surveyed underwater terrain.\n\nTheir emotion is relief expressed through proximity, eye contact, and a small handhold. They pause with a modest gap between their faces, without kissing or touching foreheads.\n\n3. CAMERA, FRAMING, AND SHARED EYELINE\n\nUse a 50mm prime lens at approximately f/5.6, from about 1.6–2 meters away. Keep the camera entirely above the water and approximately at the couple's shared eye height. Avoid an upward camera angle that emphasizes the underside of the bride's chin.\n\nCompose a medium-close vertical two-shot, with the groom on screen-left and the bride on screen-right. Their eye centers occupy almost the same horizontal level in the upper half of the image. His eyes may be only a few centimeters higher than hers, never substantially above her forehead.\n\nMaintain approximately 25–35 centimeters between their faces. Keep the camera on the seaward side of the scene axis and choose an oblique angle that leaves recognizable facial information visible for both people. Avoid an exact side silhouette of the bride; show her nearer eye clearly, a readable portion of the farther eye, and the natural cheek-to-jaw transition.\n\nTheir complete joined hands appear at lower-center. His bracing left hand appears at lower-left on the rock. Use a deliberate torso crop without requiring full legs or the submerged tail to fit into the image.\n\nFocus and depth of field must keep both sets of eyes, noses, lips, and jaw transitions sufficiently readable. Background softness begins behind the heads and shoulders.\n\nPlace textured basalt and small ripples in the foreground, the couple in the middle ground, and softly resolved rocks, sea, and warm sky behind them. Do not let the horizon or a sharp rock edge intersect either face.\n\n4. GROOM POSTURE — HE CLOSES THE HEIGHT DIFFERENCE\n\nThe groom kneels low, with his left knee supported securely on the broad ledge and his right boot planted behind him. His hips remain over the rock.\n\nHe lowers his pelvis and folds forward from the hips while bending his supporting left elbow. His left palm rests firmly on the basalt with naturally separated fingers and believable contact pressure. This combination lowers his shoulders and face toward the bride's level.\n\nDo not leave his torso high and merely bend his neck downward. His body position must visibly account for the nearly equal eye heights.\n\nHis head remains comfortably aligned with his lowered torso. His right shoulder relaxes, and his right elbow stays bent as his bare right hand holds the bride's bare left hand near the water surface.\n\n5. BRIDE POSTURE — NATURAL HEAD, CHIN, AND NECK\n\nThe bride remains buoyantly upright with relaxed shoulders and an unforced upper spine. Her head is balanced over her neck, with her ears approximately over her shoulders rather than displaced far behind them.\n\nKeep her head pitch close to neutral. Her chin rests naturally, neither thrust forward nor lifted upward. She makes only a small turn toward screen-left to meet him. Any slight upward adjustment occurs mainly through her eyes, not by arching her neck.\n\nDo not create a forced chin tuck, compressed throat, or downward-looking pose. The objective is comfortable alignment at a nearly horizontal eyeline.\n\nPreserve the original reference chin projection, jaw width, jaw angle, and lower-face proportions. Allow the jaw contour to change naturally with perspective without sharpening, shortening, narrowing, or elongating it.\n\nRender a believable transition from lower lip to chin, beneath the chin, and into the upper neck. Preserve subtle soft-tissue curvature and gentle tonal variation under the jaw. Do not flatten the entire chin-to-ear boundary into one rigid line or stretch the throat into a long taut column.\n\nKeep the reference person's natural asymmetry. Do not solve the previous awkwardness by sculpting a new V-shaped jaw or reducing her chin.\n\nHer right upper arm stays close to her side, with the relaxed right hand underwater beside her torso. Her single tail remains submerged beneath her, supporting her position through gentle movement. She is not standing on human legs.\n\n6. HAND CONTACT AND EXPRESSIONS\n\nHis bare right hand gently holds her bare left hand at lower-center, just above the surface. Their palms meet in a relaxed clasp. His fingers curve loosely around the outer edge of her hand, and his thumb rests lightly on its back. Her fingers return the contact without forming a tightly interlocked knot.\n\nKeep both wrists naturally aligned, both elbows softly bent, and all visible fingers anatomically separate. Her thin silver-tone wedding band remains on her left ring finger and is visible where the angle allows.\n\nThe handhold expresses affection and carries no lifting strain. He does not pull her full weight from the sea.\n\nHe looks toward screen-right into her eyes. His brows have softened, his jaw is relaxed, and his lips carry a small relieved smile.\n\nShe looks toward screen-left into his eyes, with only a slight upward eye movement if needed. Her brow is calm, her eyelids gently open, and her lips softly closed with a restrained warm smile. The expression must not increase chin projection or tighten the neck.\n\nNeither person looks at the camera. Yulim's warmth comes through the small touch and relaxed presence rather than exaggerated facial performance.\n\n7. GROOM WARDROBE AND CONTINUITY\n\nHe wears generalized sand-beige firefighting turnout gear that does not reproduce a named department's issued uniform. The thick matte woven jacket has a high protective collar, covered front closure, dimensional pockets, and reinforced elbows. Matching trousers have reinforced knees, and he wears black protective boots.\n\nThe jacket remains on, with only the neck slightly loosened to reveal a small amount of charcoal inner fabric. Show realistic fabric thickness, seams, abrasion, and compressed folds from his low kneeling posture.\n\nKeep the established yellow-green reflective bands with narrow silver centers around the upper arms and lower sleeves, around the lower jacket torso, and around the trouser lower legs. Maintain their widths and positions; show only the portions that naturally enter the crop.\n\nPreserve irregular soot and dust on sleeves and knees. Keep a faint soot smear on his anatomical right temple and upper cheek, a smaller smudge near his left jaw, and restrained sweat at the hairline. These are surface marks, not burns or injuries.\n\nThe removed helmet and gloves remain farther back on the ledge, visible only if the framing permits. Do not add department names, ranks, unit patches, or readable branding.\n\n8. BRIDAL WARDROBE AND ACCESSORIES\n\nThe bride wears a pearl-ivory bodice with opaque lining and a gently curved off-shoulder neckline. Its construction securely covers and supports the bust and waist. Wet fabric retains its structure without becoming transparent or slipping.\n\nShort upper-arm drapes remain attached to the bodice. Show their stitched connections, soft folds, and wet material weight without turning them into detached sleeves.\n\nPearls of varied sizes and clear crystal beads are richly arranged around the neckline and upper bodice, with small irregular gaps and believable attachment points. Bead density decreases below the waist.\n\nThe bodice connects smoothly into one submerged pearl-ivory mermaid tail with low-contrast scales and a soft fan-shaped fin. The tail stays below the crop rather than being forced into the portrait. Only short translucent tulle panels attach behind the waist. Omit human feet, shoes, a long veil, and an oversized train.\n\nWear small pearl stud earrings and the thin silver-tone band on her left ring finger. Omit necklaces, bracelets, crowns, and separate hair ornaments.\n\n9. MAKEUP AND SKIN\n\nApply Classic Rose Romance makeup as surface color, texture, and reflection only. Preserve her actual facial structure, skin tone, adult age, and natural identity.\n\nUse a thin neutral satin base with visible pores and subtle tonal variation. Groom the existing eyebrows without relocating their arches. Apply sheer dusty-rose and rose-taupe eyelid color, a fine brown line along the actual lash line, and delicately separated dark-brown lashes.\n\nLimit champagne reflection to the eyelid centers. Keep the under-eye area natural. Diffuse dried-rose blush softly between the center and outer cheek. Apply muted-rose lips within the original lip outline, with softened edges and a small satin reflection at the center.\n\nDo not contour the jaw into a sharper shape or paint a dark stripe beneath it. Preserve natural lower-face shading.\n\nA few irregular water droplets cling to exposed skin and existing wet hair. Distinguish droplets from the quieter satin skin finish. The groom retains natural pores and localized sweat without cosmetic sculpting or uniform oily shine.\n\n10. LIGHT AND PHYSICAL INTEGRATION\n\nLow rear-left sunlight gives a restrained warm edge to hair, shoulders, and selected beads. Broad open sky provides soft facial fill, with subtle cooler reflection from the water.\n\nModel the bride's cheek, jaw, and upper neck through gentle changes in illumination. Keep enough soft shadow beneath the chin to explain its volume, without a hard dark outline or excessive fill that erases the transition into the neck.\n\nBoth faces belong to the same scene exposure. Preserve skin detail, pearl luster, ivory textile texture, coarse turnout fabric, and dark porous stone. Eye catchlights follow the actual sky direction and the opposing head angles.\n\nThe waterline sits below the bride's exposed shoulders, crossing the upper-bodice region naturally. Small ripples surround her, droplets fall downward, and wet hair follows gravity.\n\nFantasy is limited to the mermaid bride and the reunion. Do not add glowing skin, supernatural eyes, magical particles, luminous patterns, or self-illuminated beads.\n\n11. WATERMARK\n\nAdd a small subtle watermark reading exactly “ⓒyulim_mood” in the bottom-right corner. Use Helvetica Neue, thin or light weight, white and semi-transparent, softly integrated into the photograph.\n\n12. NEGATIVE CONSTRAINTS\n\nAvoid identity blending, celebrity substitution, facial redesign, altered age, changed chin projection, narrowed jaw, exaggerated V-line, perfect symmetry, enlarged eyes, reshaped lips, beauty-filter skin, waxy smoothing, CGI rendering, artificial HDR, clipped fabric highlights, and excessive sharpening.\n\nAvoid a groom towering over the bride, large vertical eye-height difference, bride looking steeply upward, backward head tilt, protruding chin, stretched throat, excessively elongated neck, rigid straight jaw contour, forced chin tuck, hard jaw-contour makeup, and a low camera angle emphasizing the chin underside.\n\nAvoid reversed screen positions, swapped hands, extra limbs, fused fingers, absent bracing support, wrist-grip rescue poses, weight-bearing pulling, human legs, exposed feet, additional tails, transparent bodice coverage, detached sleeves, altered reference hair, magical effects, direct camera gaze, kissing, forehead contact, and an unrequested embrace."
       }
     ],
-    "models": [
-      "kangtaeo",
-      "yulim"
-    ],
     "legacy_routes": [
       "/kangtaeo/20260915/set01",
       "/yulim/20260915/set01"
@@ -3608,6 +3986,9 @@
   },
   "/kangtaeo/20260911/set01": {
     "model": "kangtaeo",
+    "models": [
+      "kangtaeo"
+    ],
     "date": "20260911",
     "set": 1,
     "cuts": [
@@ -3640,6 +4021,9 @@
   },
   "/kangtaeo/20260911/set02": {
     "model": "kangtaeo",
+    "models": [
+      "kangtaeo"
+    ],
     "date": "20260911",
     "set": 2,
     "cuts": [
@@ -3675,6 +4059,9 @@
   },
   "/leedohyun/20260911/set01": {
     "model": "leedohyun",
+    "models": [
+      "leedohyun"
+    ],
     "date": "20260911",
     "set": 1,
     "cuts": [
@@ -3707,6 +4094,9 @@
   },
   "/leedohyun/20260911/set03": {
     "model": "leedohyun",
+    "models": [
+      "leedohyun"
+    ],
     "date": "20260911",
     "set": 3,
     "cuts": [
@@ -3739,6 +4129,9 @@
   },
   "/leedohyun/20260917/set01": {
     "model": "leedohyun",
+    "models": [
+      "leedohyun"
+    ],
     "date": "20260917",
     "set": 1,
     "cuts": [
@@ -3756,6 +4149,9 @@
   },
   "/narin/20260723/set01": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260723",
     "set": 1,
     "cuts": [
@@ -3778,6 +4174,9 @@
   },
   "/narin/20260723/set02": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260723",
     "set": 2,
     "cuts": [
@@ -3800,6 +4199,9 @@
   },
   "/narin/20260723/set03": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260723",
     "set": 3,
     "cuts": [
@@ -3822,6 +4224,9 @@
   },
   "/narin/20260723/set04": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260723",
     "set": 4,
     "cuts": [
@@ -3844,6 +4249,9 @@
   },
   "/narin/20260723/set05": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260723",
     "set": 5,
     "cuts": [
@@ -3866,6 +4274,9 @@
   },
   "/narin/20260724/set01": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260724",
     "set": 1,
     "cuts": [
@@ -3898,6 +4309,9 @@
   },
   "/narin/20260731/set01": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260731",
     "set": 1,
     "cuts": [
@@ -3930,6 +4344,9 @@
   },
   "/narin/20260731/set02": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260731",
     "set": 2,
     "cuts": [
@@ -3962,6 +4379,9 @@
   },
   "/narin/20260731/set03": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260731",
     "set": 3,
     "cuts": [
@@ -3994,6 +4414,9 @@
   },
   "/narin/20260731/set04": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260731",
     "set": 4,
     "cuts": [
@@ -4026,6 +4449,9 @@
   },
   "/narin/20260731/set05": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260731",
     "set": 5,
     "cuts": [
@@ -4058,6 +4484,9 @@
   },
   "/narin/20260813/set01": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260813",
     "set": 1,
     "cuts": [
@@ -4090,6 +4519,9 @@
   },
   "/narin/20260813/set02": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260813",
     "set": 2,
     "cuts": [
@@ -4122,6 +4554,9 @@
   },
   "/narin/20260813/set03": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260813",
     "set": 3,
     "cuts": [
@@ -4154,6 +4589,9 @@
   },
   "/narin/20260813/set04": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260813",
     "set": 4,
     "cuts": [
@@ -4186,6 +4624,9 @@
   },
   "/narin/20260823/set01": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260823",
     "set": 1,
     "cuts": [
@@ -4218,6 +4659,9 @@
   },
   "/narin/20260823/set02": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260823",
     "set": 2,
     "cuts": [
@@ -4250,6 +4694,9 @@
   },
   "/narin/20260823/set03": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260823",
     "set": 3,
     "cuts": [
@@ -4282,6 +4729,9 @@
   },
   "/narin/20260823/set04": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260823",
     "set": 4,
     "cuts": [
@@ -4314,6 +4764,9 @@
   },
   "/narin/20260823/set05": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260823",
     "set": 5,
     "cuts": [
@@ -4346,6 +4799,9 @@
   },
   "/narin/20260904/set01": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260904",
     "set": 1,
     "cuts": [
@@ -4378,6 +4834,9 @@
   },
   "/narin/20260904/set02": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260904",
     "set": 2,
     "cuts": [
@@ -4410,6 +4869,9 @@
   },
   "/narin/20260904/set03": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260904",
     "set": 3,
     "cuts": [
@@ -4442,6 +4904,9 @@
   },
   "/narin/20260904/set04": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260904",
     "set": 4,
     "cuts": [
@@ -4474,6 +4939,9 @@
   },
   "/narin/20260911/set01": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260911",
     "set": 1,
     "cuts": [
@@ -4506,6 +4974,9 @@
   },
   "/narin/20260913/set01": {
     "model": "narin",
+    "models": [
+      "narin"
+    ],
     "date": "20260913",
     "set": 1,
     "cuts": [
@@ -4538,6 +5009,9 @@
   },
   "/seorin/20260712/set01": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260712",
     "set": 1,
     "cuts": [
@@ -4560,6 +5034,9 @@
   },
   "/seorin/20260712/set02": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260712",
     "set": 2,
     "cuts": [
@@ -4582,6 +5059,9 @@
   },
   "/seorin/20260712/set03": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260712",
     "set": 3,
     "cuts": [
@@ -4604,6 +5084,9 @@
   },
   "/seorin/20260712/set04": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260712",
     "set": 4,
     "cuts": [
@@ -4626,6 +5109,9 @@
   },
   "/seorin/20260712/set05": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260712",
     "set": 5,
     "cuts": [
@@ -4648,6 +5134,9 @@
   },
   "/seorin/20260719/set01": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260719",
     "set": 1,
     "cuts": [
@@ -4670,6 +5159,9 @@
   },
   "/seorin/20260719/set02": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260719",
     "set": 2,
     "cuts": [
@@ -4692,6 +5184,9 @@
   },
   "/seorin/20260719/set03": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260719",
     "set": 3,
     "cuts": [
@@ -4714,6 +5209,9 @@
   },
   "/seorin/20260719/set04": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260719",
     "set": 4,
     "cuts": [
@@ -4736,6 +5234,9 @@
   },
   "/seorin/20260719/set05": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260719",
     "set": 5,
     "cuts": [
@@ -4758,6 +5259,9 @@
   },
   "/seorin/20260725/set01": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260725",
     "set": 1,
     "cuts": [
@@ -4780,6 +5284,9 @@
   },
   "/seorin/20260725/set02": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260725",
     "set": 2,
     "cuts": [
@@ -4802,6 +5309,9 @@
   },
   "/seorin/20260725/set03": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260725",
     "set": 3,
     "cuts": [
@@ -4824,6 +5334,9 @@
   },
   "/seorin/20260725/set04": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260725",
     "set": 4,
     "cuts": [
@@ -4846,6 +5359,9 @@
   },
   "/seorin/20260725/set05": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260725",
     "set": 5,
     "cuts": [
@@ -4868,6 +5384,9 @@
   },
   "/seorin/20260804/set01": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260804",
     "set": 1,
     "cuts": [
@@ -4900,6 +5419,9 @@
   },
   "/seorin/20260804/set02": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260804",
     "set": 2,
     "cuts": [
@@ -4932,6 +5454,9 @@
   },
   "/seorin/20260804/set03": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260804",
     "set": 3,
     "cuts": [
@@ -4964,6 +5489,9 @@
   },
   "/seorin/20260804/set04": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260804",
     "set": 4,
     "cuts": [
@@ -4996,6 +5524,9 @@
   },
   "/seorin/20260804/set05": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260804",
     "set": 5,
     "cuts": [
@@ -5028,6 +5559,9 @@
   },
   "/seorin/20260811/set01": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260811",
     "set": 1,
     "cuts": [
@@ -5060,6 +5594,9 @@
   },
   "/seorin/20260811/set02": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260811",
     "set": 2,
     "cuts": [
@@ -5092,6 +5629,9 @@
   },
   "/seorin/20260811/set03": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260811",
     "set": 3,
     "cuts": [
@@ -5124,6 +5664,9 @@
   },
   "/seorin/20260811/set04": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260811",
     "set": 4,
     "cuts": [
@@ -5156,6 +5699,9 @@
   },
   "/seorin/20260811/set05": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260811",
     "set": 5,
     "cuts": [
@@ -5188,6 +5734,9 @@
   },
   "/seorin/20260901/set01": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260901",
     "set": 1,
     "cuts": [
@@ -5220,6 +5769,9 @@
   },
   "/seorin/20260901/set02": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260901",
     "set": 2,
     "cuts": [
@@ -5252,6 +5804,9 @@
   },
   "/seorin/20260901/set03": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260901",
     "set": 3,
     "cuts": [
@@ -5284,6 +5839,9 @@
   },
   "/seorin/20260901/set04": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260901",
     "set": 4,
     "cuts": [
@@ -5316,6 +5874,9 @@
   },
   "/seorin/20260901/set05": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260901",
     "set": 5,
     "cuts": [
@@ -5348,6 +5909,9 @@
   },
   "/seorin/20260907/set01": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260907",
     "set": 1,
     "cuts": [
@@ -5380,6 +5944,9 @@
   },
   "/seorin/20260907/set02": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260907",
     "set": 2,
     "cuts": [
@@ -5412,6 +5979,9 @@
   },
   "/seorin/20260907/set03": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260907",
     "set": 3,
     "cuts": [
@@ -5444,6 +6014,9 @@
   },
   "/seorin/20260907/set04": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260907",
     "set": 4,
     "cuts": [
@@ -5476,6 +6049,9 @@
   },
   "/seorin/20260907/set05": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260907",
     "set": 5,
     "cuts": [
@@ -5508,6 +6084,9 @@
   },
   "/seorin/20260911/set01": {
     "model": "seorin",
+    "models": [
+      "seorin"
+    ],
     "date": "20260911",
     "set": 1,
     "cuts": [
@@ -5540,6 +6119,9 @@
   },
   "/suji/20260715/set01": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260715",
     "set": 1,
     "cuts": [
@@ -5562,6 +6144,9 @@
   },
   "/suji/20260715/set02": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260715",
     "set": 2,
     "cuts": [
@@ -5584,6 +6169,9 @@
   },
   "/suji/20260715/set03": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260715",
     "set": 3,
     "cuts": [
@@ -5606,6 +6194,9 @@
   },
   "/suji/20260715/set04": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260715",
     "set": 4,
     "cuts": [
@@ -5628,6 +6219,9 @@
   },
   "/suji/20260715/set05": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260715",
     "set": 5,
     "cuts": [
@@ -5650,6 +6244,9 @@
   },
   "/suji/20260722/set01": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260722",
     "set": 1,
     "cuts": [
@@ -5672,6 +6269,9 @@
   },
   "/suji/20260722/set02": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260722",
     "set": 2,
     "cuts": [
@@ -5694,6 +6294,9 @@
   },
   "/suji/20260722/set03": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260722",
     "set": 3,
     "cuts": [
@@ -5716,6 +6319,9 @@
   },
   "/suji/20260722/set04": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260722",
     "set": 4,
     "cuts": [
@@ -5738,6 +6344,9 @@
   },
   "/suji/20260722/set05": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260722",
     "set": 5,
     "cuts": [
@@ -5760,6 +6369,9 @@
   },
   "/suji/20260728/set01": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260728",
     "set": 1,
     "cuts": [
@@ -5792,6 +6404,9 @@
   },
   "/suji/20260728/set02": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260728",
     "set": 2,
     "cuts": [
@@ -5824,6 +6439,9 @@
   },
   "/suji/20260728/set03": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260728",
     "set": 3,
     "cuts": [
@@ -5856,6 +6474,9 @@
   },
   "/suji/20260728/set04": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260728",
     "set": 4,
     "cuts": [
@@ -5888,6 +6509,9 @@
   },
   "/suji/20260728/set05": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260728",
     "set": 5,
     "cuts": [
@@ -5920,6 +6544,9 @@
   },
   "/suji/20260806/set01": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260806",
     "set": 1,
     "cuts": [
@@ -5952,6 +6579,9 @@
   },
   "/suji/20260806/set02": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260806",
     "set": 2,
     "cuts": [
@@ -5984,6 +6614,9 @@
   },
   "/suji/20260806/set03": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260806",
     "set": 3,
     "cuts": [
@@ -6016,6 +6649,9 @@
   },
   "/suji/20260806/set04": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260806",
     "set": 4,
     "cuts": [
@@ -6048,6 +6684,9 @@
   },
   "/suji/20260806/set05": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260806",
     "set": 5,
     "cuts": [
@@ -6080,6 +6719,9 @@
   },
   "/suji/20260809/set01": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260809",
     "set": 1,
     "cuts": [
@@ -6112,6 +6754,9 @@
   },
   "/suji/20260809/set02": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260809",
     "set": 2,
     "cuts": [
@@ -6144,6 +6789,9 @@
   },
   "/suji/20260809/set03": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260809",
     "set": 3,
     "cuts": [
@@ -6176,6 +6824,9 @@
   },
   "/suji/20260809/set04": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260809",
     "set": 4,
     "cuts": [
@@ -6208,6 +6859,9 @@
   },
   "/suji/20260809/set05": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260809",
     "set": 5,
     "cuts": [
@@ -6240,6 +6894,9 @@
   },
   "/suji/20260816/set01": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260816",
     "set": 1,
     "cuts": [
@@ -6287,6 +6944,9 @@
   },
   "/suji/20260822/set01": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260822",
     "set": 1,
     "cuts": [
@@ -6319,6 +6979,9 @@
   },
   "/suji/20260822/set02": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260822",
     "set": 2,
     "cuts": [
@@ -6351,6 +7014,9 @@
   },
   "/suji/20260822/set03": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260822",
     "set": 3,
     "cuts": [
@@ -6383,6 +7049,9 @@
   },
   "/suji/20260822/set04": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260822",
     "set": 4,
     "cuts": [
@@ -6415,6 +7084,9 @@
   },
   "/suji/20260822/set05": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260822",
     "set": 5,
     "cuts": [
@@ -6447,6 +7119,9 @@
   },
   "/suji/20260903/set01": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260903",
     "set": 1,
     "cuts": [
@@ -6479,6 +7154,9 @@
   },
   "/suji/20260903/set02": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260903",
     "set": 2,
     "cuts": [
@@ -6511,6 +7189,9 @@
   },
   "/suji/20260903/set03": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260903",
     "set": 3,
     "cuts": [
@@ -6543,6 +7224,9 @@
   },
   "/suji/20260903/set04": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260903",
     "set": 4,
     "cuts": [
@@ -6575,6 +7259,9 @@
   },
   "/suji/20260903/set05": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260903",
     "set": 5,
     "cuts": [
@@ -6607,6 +7294,9 @@
   },
   "/suji/20260911/set01": {
     "model": "suji",
+    "models": [
+      "suji"
+    ],
     "date": "20260911",
     "set": 1,
     "cuts": [
@@ -6639,6 +7329,9 @@
   },
   "/taegeon/20260719/set01": {
     "model": "taegeon",
+    "models": [
+      "taegeon"
+    ],
     "date": "20260719",
     "set": 1,
     "cuts": [
@@ -6651,6 +7344,9 @@
   },
   "/yulim/20260710/set01": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260710",
     "set": 1,
     "cuts": [
@@ -6673,6 +7369,9 @@
   },
   "/yulim/20260710/set02": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260710",
     "set": 2,
     "cuts": [
@@ -6695,6 +7394,9 @@
   },
   "/yulim/20260710/set03": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260710",
     "set": 3,
     "cuts": [
@@ -6717,6 +7419,9 @@
   },
   "/yulim/20260710/set04": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260710",
     "set": 4,
     "cuts": [
@@ -6739,6 +7444,9 @@
   },
   "/yulim/20260710/set05": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260710",
     "set": 5,
     "cuts": [
@@ -6761,6 +7469,9 @@
   },
   "/yulim/20260716/set01": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260716",
     "set": 1,
     "cuts": [
@@ -6783,6 +7494,9 @@
   },
   "/yulim/20260716/set02": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260716",
     "set": 2,
     "cuts": [
@@ -6805,6 +7519,9 @@
   },
   "/yulim/20260716/set03": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260716",
     "set": 3,
     "cuts": [
@@ -6827,6 +7544,9 @@
   },
   "/yulim/20260716/set04": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260716",
     "set": 4,
     "cuts": [
@@ -6849,6 +7569,9 @@
   },
   "/yulim/20260716/set05": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260716",
     "set": 5,
     "cuts": [
@@ -6871,6 +7594,9 @@
   },
   "/yulim/20260717/set01": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260717",
     "set": 1,
     "cuts": [
@@ -6893,6 +7619,9 @@
   },
   "/yulim/20260723/set01": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260723",
     "set": 1,
     "cuts": [
@@ -6915,6 +7644,9 @@
   },
   "/yulim/20260723/set02": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260723",
     "set": 2,
     "cuts": [
@@ -6937,6 +7669,9 @@
   },
   "/yulim/20260723/set03": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260723",
     "set": 3,
     "cuts": [
@@ -6959,6 +7694,9 @@
   },
   "/yulim/20260723/set04": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260723",
     "set": 4,
     "cuts": [
@@ -6981,6 +7719,9 @@
   },
   "/yulim/20260723/set05": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260723",
     "set": 5,
     "cuts": [
@@ -7003,6 +7744,9 @@
   },
   "/yulim/20260728/set01": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260728",
     "set": 1,
     "cuts": [
@@ -7050,6 +7794,9 @@
   },
   "/yulim/20260729/set01": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260729",
     "set": 1,
     "cuts": [
@@ -7082,6 +7829,9 @@
   },
   "/yulim/20260729/set02": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260729",
     "set": 2,
     "cuts": [
@@ -7114,6 +7864,9 @@
   },
   "/yulim/20260729/set03": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260729",
     "set": 3,
     "cuts": [
@@ -7146,6 +7899,9 @@
   },
   "/yulim/20260729/set04": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260729",
     "set": 4,
     "cuts": [
@@ -7178,6 +7934,9 @@
   },
   "/yulim/20260729/set05": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260729",
     "set": 5,
     "cuts": [
@@ -7210,6 +7969,9 @@
   },
   "/yulim/20260803/set01": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260803",
     "set": 1,
     "cuts": [
@@ -7242,6 +8004,9 @@
   },
   "/yulim/20260803/set02": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260803",
     "set": 2,
     "cuts": [
@@ -7274,6 +8039,9 @@
   },
   "/yulim/20260803/set03": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260803",
     "set": 3,
     "cuts": [
@@ -7306,6 +8074,9 @@
   },
   "/yulim/20260803/set04": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260803",
     "set": 4,
     "cuts": [
@@ -7338,6 +8109,9 @@
   },
   "/yulim/20260803/set05": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260803",
     "set": 5,
     "cuts": [
@@ -7370,6 +8144,9 @@
   },
   "/yulim/20260807/set01": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260807",
     "set": 1,
     "cuts": [
@@ -7402,6 +8179,9 @@
   },
   "/yulim/20260807/set02": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260807",
     "set": 2,
     "cuts": [
@@ -7434,6 +8214,9 @@
   },
   "/yulim/20260807/set03": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260807",
     "set": 3,
     "cuts": [
@@ -7466,6 +8249,9 @@
   },
   "/yulim/20260807/set04": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260807",
     "set": 4,
     "cuts": [
@@ -7498,6 +8284,9 @@
   },
   "/yulim/20260807/set05": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260807",
     "set": 5,
     "cuts": [
@@ -7530,6 +8319,9 @@
   },
   "/yulim/20260815/set01": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260815",
     "set": 1,
     "cuts": [
@@ -7542,6 +8334,9 @@
   },
   "/yulim/20260823/set01": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260823",
     "set": 1,
     "cuts": [
@@ -7554,6 +8349,9 @@
   },
   "/yulim/20260829/set01": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260829",
     "set": 1,
     "cuts": [
@@ -7611,6 +8409,9 @@
   },
   "/yulim/20260829/set02": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260829",
     "set": 2,
     "cuts": [
@@ -7658,6 +8459,9 @@
   },
   "/yulim/20260829/set03": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260829",
     "set": 3,
     "cuts": [
@@ -7675,6 +8479,9 @@
   },
   "/yulim/20260830/set01": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260830",
     "set": 1,
     "cuts": [
@@ -7707,6 +8514,9 @@
   },
   "/yulim/20260830/set02": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260830",
     "set": 2,
     "cuts": [
@@ -7739,6 +8549,9 @@
   },
   "/yulim/20260830/set03": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260830",
     "set": 3,
     "cuts": [
@@ -7771,6 +8584,9 @@
   },
   "/yulim/20260830/set04": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260830",
     "set": 4,
     "cuts": [
@@ -7803,6 +8619,9 @@
   },
   "/yulim/20260830/set05": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260830",
     "set": 5,
     "cuts": [
@@ -7835,6 +8654,9 @@
   },
   "/yulim/20260908/set01": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260908",
     "set": 1,
     "cuts": [
@@ -7847,6 +8669,9 @@
   },
   "/yulim/20260909/set01": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260909",
     "set": 1,
     "cuts": [
@@ -7879,6 +8704,9 @@
   },
   "/yulim/20260909/set02": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260909",
     "set": 2,
     "cuts": [
@@ -7911,6 +8739,9 @@
   },
   "/yulim/20260909/set03": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260909",
     "set": 3,
     "cuts": [
@@ -7943,6 +8774,9 @@
   },
   "/yulim/20260909/set04": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260909",
     "set": 4,
     "cuts": [
@@ -7975,6 +8809,9 @@
   },
   "/yulim/20260909/set05": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260909",
     "set": 5,
     "cuts": [
@@ -8007,6 +8844,9 @@
   },
   "/yulim/20260911/set01": {
     "model": "yulim",
+    "models": [
+      "yulim"
+    ],
     "date": "20260911",
     "set": 1,
     "cuts": [
