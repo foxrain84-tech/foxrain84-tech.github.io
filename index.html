@@ -342,7 +342,7 @@ function countKey(page, cut){
   return [
     String(page.model).toLowerCase(),
     String(page.date),
-    'set' + String(page.set).padStart(2, '0'),
+    'set' + String(page.source_set || page.set).padStart(2, '0'),
     'cut' + String(cut.cut).padStart(2, '0')
   ].join('_');
 }
@@ -523,10 +523,10 @@ function renderHome(pages){
 
   Object.values(pages).filter(page => page && !page.redirect).forEach(page => {
     if(!page.model || !page.date) return;
-    const model = String(page.model).toLowerCase();
+    const model = page.source_page_id ? `plan-${page.source_page_id}` : String(page.model).toLowerCase();
     const date = String(page.date);
     const key = `${model}|${date}`;
-    if(!groups.has(key)) groups.set(key, {model, label:pageLabel(page), date, sets:0, cuts:0});
+    if(!groups.has(key)) groups.set(key, {model, label:page.source_models ? page.source_models.map(x => x.toUpperCase()).join(" & ") : pageLabel(page), date, sets:0, cuts:0});
     const group = groups.get(key);
     group.sets += 1;
     group.cuts += (page.cuts || []).length;
@@ -633,13 +633,15 @@ function renderArchive(
         }
 
         return (
-          (pageModels(item.page).includes(model) || item.page.model === model) &&
+          (model.startsWith("plan-")
+            ? item.page.source_page_id === model.slice(5)
+            : (pageModels(item.page).includes(model) || item.page.model === model)) &&
 
           String(item.page.date) === date
         );
       })
       .sort((a, b) => {
-        return a.page.set - b.page.set;
+        return (a.page.source_set || a.page.set) - (b.page.source_set || b.page.set);
       });
 
   if(sets.length === 0){
@@ -650,7 +652,9 @@ function renderArchive(
     return;
   }
 
-  const archiveLabel = model.includes('--') ? pageLabel(sets[0].page) : model.toUpperCase();
+  const archiveLabel = model.startsWith('plan-')
+    ? (sets[0].page.source_models || pageModels(sets[0].page)).map(x => x.toUpperCase()).join(' & ')
+    : model.includes('--') ? pageLabel(sets[0].page) : model.toUpperCase();
   document.title =
     `${archiveLabel} ${date} Prompt Sets`;
 
@@ -674,7 +678,7 @@ function renderArchive(
       item.route,
 
       `SET ${String(
-        item.page.set
+        item.page.source_set || item.page.set
       ).padStart(2, '0')}`,
 
       ` · ${pageLabel(item.page)} · ${(item.page.cuts || []).length}컷`,
@@ -701,23 +705,23 @@ function renderPrompt(page){
     document.getElementById('notice');
 
   document.title =
-    `${pageLabel(page)} ${page.date} SET ${String(page.set).padStart(2, '0')} Prompt Copy`;
+    `${pageLabel(page)} ${page.date} SET ${String(page.source_set || page.set).padStart(2, '0')} Prompt Copy`;
 
   title.textContent =
     pageLabel(page);
 
   meta.textContent =
-    `${formatDate(page.date)} · SET ${String(page.set).padStart(2, '0')}`;
+    `${formatDate(page.date)} · SET ${String(page.source_set || page.set).padStart(2, '0')}`;
 
   content.innerHTML = '';
 
   showBack(
-    `/archive/${String(page.model).toLowerCase()}/${page.date}`,
+    `/archive/${page.source_page_id ? "plan-" + page.source_page_id : String(page.model).toLowerCase()}/${page.date}`,
     '← 세트 목록'
   );
 
   if(pageModels(page).length > 1){
-    showBack('/', '← 전체 목록');
+    if(!page.source_page_id) showBack('/', '← 전체 목록');
     const links = document.createElement('div');
     links.className = 'model-links';
     pageModels(page).forEach(model => {
