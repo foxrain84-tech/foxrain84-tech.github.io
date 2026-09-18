@@ -523,14 +523,13 @@ function renderHome(pages){
 
   Object.values(pages).filter(page => page && !page.redirect).forEach(page => {
     if(!page.model || !page.date) return;
-    pageModels(page).forEach(model => {
-      const date = String(page.date);
-      const key = `${model}|${date}`;
-      if(!groups.has(key)) groups.set(key, {model, date, sets:0, cuts:0});
-      const group = groups.get(key);
-      group.sets += 1;
-      group.cuts += (page.cuts || []).length;
-    });
+    const model = String(page.model).toLowerCase();
+    const date = String(page.date);
+    const key = `${model}|${date}`;
+    if(!groups.has(key)) groups.set(key, {model, label:pageLabel(page), date, sets:0, cuts:0});
+    const group = groups.get(key);
+    group.sets += 1;
+    group.cuts += (page.cuts || []).length;
   });
 
   const items =
@@ -555,7 +554,7 @@ function renderHome(pages){
     '프롬프트 아카이브';
 
   meta.textContent =
-    `공개된 날짜 ${items.length}개`;
+    `공개된 목록 ${items.length}개`;
 
   content.innerHTML = '';
 
@@ -580,7 +579,7 @@ function renderHome(pages){
 
       formatDate(item.date),
 
-      ` · ${item.model.toUpperCase()} · ${item.sets}세트`,
+      ` · ${item.label} · ${item.sets}세트`,
 
       '목록 →'
     );
@@ -651,14 +650,15 @@ function renderArchive(
     return;
   }
 
+  const archiveLabel = model.includes('--') ? pageLabel(sets[0].page) : model.toUpperCase();
   document.title =
-    `${model.toUpperCase()} ${date} Prompt Sets`;
+    `${archiveLabel} ${date} Prompt Sets`;
 
   title.textContent =
     formatDate(date);
 
   meta.textContent =
-    `${model.toUpperCase()} · 공개 세트 ${sets.length}개`;
+    `${archiveLabel} · 공개 세트 ${sets.length}개`;
 
   content.innerHTML = '';
 
