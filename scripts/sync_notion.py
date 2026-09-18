@@ -30,6 +30,10 @@ MODEL_SLUGS = {
     "강태오": "kangtaeo",
     "차시혁": "chasihyuk",
     "이도현": "leedohyun",
+    "서일": "seoil",
+    "유건": "yugeon",
+    "은재": "eunjae",
+    "태주": "taeju",
 }
 
 # v6: 공개 필터에 사용하는 속성 이름
@@ -197,6 +201,7 @@ def heading_model_names(text, candidates=None):
         name for name in (candidates if candidates is not None else MODEL_SLUGS)
         if re.search(r"(?<![가-힣A-Za-z0-9_])" + re.escape(name) + r"(?![가-힣A-Za-z0-9_])", text)
         or re.search(r"(?<![a-z])" + re.escape(model_slug(name)) + r"(?![a-z])", text, re.IGNORECASE)
+        or (name == "서일" and re.search(r"(?<![a-z])seo[\s-]?il(?![a-z])", text, re.IGNORECASE))
         or (name == "하윤" and re.search(r"(?<![a-z])hayun(?![a-z])", text, re.IGNORECASE))
     ]
 
