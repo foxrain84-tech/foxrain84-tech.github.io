@@ -265,6 +265,19 @@ a.list-link:hover{
   font-weight:800;
   font-size:1.08rem;
 }
+[hidden]{display:none !important;}
+.stats-summary{margin-bottom:20px;}
+.stats-summary table{width:100%;border-collapse:collapse;font-size:.85rem;}
+.stats-summary caption{text-align:left;font-weight:750;margin-bottom:10px;}
+.stats-summary th,.stats-summary td{padding:10px 4px;border-bottom:1px solid var(--line);text-align:right;}
+.stats-summary th:first-child{text-align:left;}
+.stats-summary p{line-height:1.6;}
+.stats-control{border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text);padding:9px;margin:4px 8px 4px 0;cursor:pointer;}
+.stats-control:disabled{opacity:.5;cursor:default;}
+.stats-growth{display:block;font-size:.75rem;margin-top:6px;white-space:normal;}
+.rank-count{flex-shrink:0;text-align:right;max-width:110px;}
+.rank-info{overflow-wrap:anywhere;}
+@media(max-width:400px){a.list-link{padding:12px 10px;gap:8px;}.rank-left{gap:7px;}.rank{width:25px;height:25px;}.rank-count{max-width:82px;}.stats-summary table{font-size:.76rem;}}
 </style>
 </head>
 
@@ -307,6 +320,7 @@ a.list-link:hover{
 
 </main>
 
+<script src="/assets/stats.js"></script>
 <script>
 /* ────────────────────────────────────────────────
    복사 횟수(Copy count) 설정 — Firebase Realtime Database
@@ -887,72 +901,23 @@ async function renderStats(pages){
     return;
   }
 
-  const counts = await loadCounts();
+  let counts, history;
+  try{
+    [counts, history] = await Promise.all([
+      fetchStatsJSON(FIREBASE_DB + '/copyCounts.json'),
+      fetchStatsJSON('https://raw.githubusercontent.com/foxrain84-tech/foxrain84-tech.github.io/main/stats-history.json?v=' + Date.now()).catch(() => null)
+    ]);
+    counts = counts || {};
+    if(!validStatsCounts(counts)) throw new Error('Invalid counts');
+  }catch(error){
+    meta.textContent = '복사수를 불러오지 못했습니다. 잠시 후 새로고침해 주세요.';
+    return;
+  }
 
-  const rows = [];
-  const accountedKeys = new Set();
-
-  Object.entries(pages).forEach(([route, page]) => {
-    if(!page || page.redirect) return;
-    (page.cuts || []).forEach(cut => {
-      allCountKeys(page, cut).forEach(key => accountedKeys.add(key));
-      const count = allCountKeys(page, cut).reduce((sum, key) =>
-        sum + (typeof counts[key] === 'number' ? counts[key] : 0), 0);
-      if(count <= 0) return;
-      rows.push({count, model:pageLabel(page), date:String(page.date),
-        setNum:page.set, cutNum:cut.cut, route, title:cut.title});
-    });
-  });
-
-  Object.keys(counts).filter(key => !accountedKeys.has(key)).forEach(key => {
-    const value = counts[key];
-
-    if(typeof value !== 'number'){
-      return;
-    }
-
-    const parts = key.split('_');
-
-    if(parts.length < 4){
-      return;
-    }
-
-    const cutStr = parts[parts.length - 1];
-    const setStr = parts[parts.length - 2];
-    const date = parts[parts.length - 3];
-    const model = parts.slice(0, parts.length - 3).join('_');
-
-    const setNum = parseInt(setStr.replace('set', ''), 10);
-    const cutNum = parseInt(cutStr.replace('cut', ''), 10);
-
-    const route =
-      `/${model}/${date}/set${String(setNum).padStart(2, '0')}`;
-
-    let cutTitle = '(삭제되었거나 알 수 없는 컷)';
-
-    const page = pages[route];
-
-    if(page){
-      const cut =
-        (page.cuts || []).find(c => Number(c.cut) === cutNum);
-
-      if(cut){
-        cutTitle = cut.title;
-      }
-    }
-
-    rows.push({
-      count:value,
-      model:model,
-      date:date,
-      setNum:setNum,
-      cutNum:cutNum,
-      route:route,
-      title:cutTitle
-    });
-  });
-
-  rows.sort((a, b) => b.count - a.count);
+  const rows = statsRows(pages, counts);
+  const baseline = history ? statsBaseline(history) : null;
+  const before = baseline ? statsRows(pages, baseline.counts) : [];
+  const changedRows = baseline ? statsChanges(rows, before) : rows;
 
   if(rows.length === 0){
     meta.textContent =
@@ -966,7 +931,64 @@ async function renderStats(pages){
   meta.textContent =
     `총 ${rows.length}개 컷 · 누적 복사 ${total.toLocaleString()}회`;
 
-  rows.forEach((row, index) => {
+  const summary = document.createElement('div');
+  summary.className = 'stats-summary';
+  const previousTotal = before.reduce((sum, row) => sum + row.count, 0);
+  const signed = n => (n > 0 ? '+' : '') + n.toLocaleString();
+  const table = document.createElement('table');
+  table.innerHTML = '<caption>어제 대비 현재 변화</caption><thead><tr><th scope="col">항목</th><th scope="col">어제 저장값</th><th scope="col">현재</th><th scope="col">증감</th></tr></thead>';
+  const tbody = document.createElement('tbody');
+  [['복사된 컷', before.length, rows.length, '개'], ['누적 복사', previousTotal, total, '회']].forEach(([label, old, current, unit]) => {
+    const tr = document.createElement('tr');
+    [label, baseline ? old.toLocaleString() + unit : '—', current.toLocaleString() + unit, baseline ? signed(current - old) + unit : '—'].forEach((value, i) => {
+      const cell = document.createElement(i === 0 ? 'th' : 'td');
+      if(i === 0) cell.scope = 'row';
+      cell.textContent = value;
+      tr.appendChild(cell);
+    });
+    tbody.appendChild(tr);
+  });
+  table.appendChild(tbody);
+  summary.appendChild(table);
+  const timing = document.createElement('p');
+  timing.className = 'list-sub';
+  timing.textContent = baseline
+    ? '비교 기준: ' + new Date(baseline.at).toLocaleString('ko-KR', {timeZone:'Asia/Seoul'}) + ' KST (전날 마지막 저장값). 현재: ' + new Date().toLocaleString('ko-KR', {timeZone:'Asia/Seoul'}) + ' KST'
+    : '비교 데이터 없음 · 전날 저장 기록이 쌓이면 증감과 순위 변동이 표시됩니다.';
+  summary.appendChild(timing);
+  const refresh = document.createElement('button');
+  refresh.type = 'button';
+  refresh.textContent = '새로고침';
+  refresh.className = 'stats-control';
+  refresh.onclick = () => renderStats(pages);
+  summary.appendChild(refresh);
+  const filter = document.createElement('button');
+  filter.type = 'button';
+  filter.textContent = '순위 변동만 보기';
+  filter.className = 'stats-control';
+  filter.disabled = !baseline;
+  filter.setAttribute('aria-pressed', 'false');
+  summary.appendChild(filter);
+  content.appendChild(summary);
+  const rankList = document.createElement('div');
+  content.appendChild(rankList);
+  const empty = document.createElement('p');
+  empty.textContent = '순위가 변동된 컷이 없습니다.';
+  empty.hidden = true;
+  content.appendChild(empty);
+  filter.onclick = () => {
+    const enabled = filter.getAttribute('aria-pressed') !== 'true';
+    filter.setAttribute('aria-pressed', String(enabled));
+    filter.textContent = enabled ? '전체 랭킹 보기' : '순위 변동만 보기';
+    let shown = 0;
+    [...rankList.children].forEach((el, i) => {
+      el.hidden = enabled && changedRows[i].oldRank !== null && changedRows[i].movement === 0;
+      if(!el.hidden) shown++;
+    });
+    empty.hidden = shown > 0;
+  };
+
+  changedRows.forEach((row, index) => {
     const link = document.createElement('a');
 
     link.className = 'list-link';
@@ -976,8 +998,8 @@ async function renderStats(pages){
     left.className = 'rank-left';
 
     const badge = document.createElement('span');
-    badge.className = (index < 3) ? 'rank top' : 'rank';
-    badge.textContent = String(index + 1);
+    badge.className = (row.rank <= 3) ? 'rank top' : 'rank';
+    badge.textContent = String(row.rank);
 
     const info = document.createElement('span');
     info.className = 'rank-info';
@@ -992,18 +1014,26 @@ async function renderStats(pages){
       `${row.model.toUpperCase()} · ${formatDate(row.date)} · SET ${String(row.setNum).padStart(2, '0')} · CUT ${String(row.cutNum).padStart(2, '0')}`;
 
     info.append(name, sub);
+    const movement = document.createElement('span');
+    movement.className = 'list-sub stats-movement';
+    movement.textContent = baseline ? statsMovement(row) : '— 비교 데이터 없음';
+    info.appendChild(movement);
     left.append(badge, info);
 
     const cnt = document.createElement('span');
     cnt.className = 'rank-count';
     cnt.innerHTML = `<b>${row.count.toLocaleString()}</b>회`;
 
+    const growth = document.createElement('span');
+    growth.className = 'stats-growth';
+    growth.textContent = baseline ? '어제 대비 ' + signed(row.delta) + '회' : '어제 대비 —';
+    cnt.appendChild(growth);
     link.append(left, cnt);
-    content.appendChild(link);
+    rankList.appendChild(link);
   });
 
   notice.textContent =
-    '복사수가 높은 순으로 표시됩니다. 항목을 누르면 해당 프롬프트 페이지로 이동합니다.';
+    '동일 복사수는 공동 순위입니다. 한국 시간 기준 전날 마지막 저장값과 비교하며 자정 확정값은 아닙니다. 비교는 현재 컷·주소 통합 기준으로 계산합니다. 새로고침하면 최신 집계를 확인할 수 있습니다.';
 }
 
 (async function(){
