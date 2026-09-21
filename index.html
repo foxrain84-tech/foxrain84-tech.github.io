@@ -279,6 +279,7 @@ a.list-link:hover{
 .rank-info{overflow-wrap:anywhere;}
 @media(max-width:400px){a.list-link{padding:12px 10px;gap:8px;}.rank-left{gap:7px;}.rank{width:25px;height:25px;}.rank-count{max-width:82px;}.stats-summary table{font-size:.76rem;}}
 </style>
+<link rel="stylesheet" href="/assets/stats-dashboard.css?v=20260921">
 </head>
 
 <body>
@@ -320,7 +321,9 @@ a.list-link:hover{
 
 </main>
 
-<script src="/assets/stats.js"></script>
+<script src="/assets/stats.js?v=20260921"></script>
+<script src="/assets/copy-history.js?v=20260921"></script>
+<script src="/assets/stats-dashboard.js?v=20260921"></script>
 <script>
 /* ────────────────────────────────────────────────
    복사 횟수(Copy count) 설정 — Firebase Realtime Database
@@ -382,19 +385,9 @@ async function loadCounts(){
   }
 }
 
-function bumpCount(key){
-  if(!COUNTS_ENABLED){
-    return;
-  }
-
-  fetch(
-    FIREBASE_DB + '/copyCounts/' + key + '.json',
-    {
-      method:'PUT',
-      headers:{ 'Content-Type':'application/json' },
-      body:JSON.stringify({ '.sv':{ 'increment':1 } })
-    }
-  ).catch(function(){});
+async function bumpCount(key){
+  if(!COUNTS_ENABLED) return;
+  await CopyHistory.record(FIREBASE_DB, key);
 }
 
 function cleanPath(){
@@ -793,7 +786,7 @@ function renderPrompt(page){
     const countEl =
       section.querySelector('.count');
 
-    const state = { count:null };
+    const state = { count:null, recorded:false };
 
     function renderCount(){
       if(!COUNTS_ENABLED || state.count === null){
@@ -824,15 +817,15 @@ function renderPrompt(page){
           '✓ Prompt copied';
 
         if(COUNTS_ENABLED){
-          if(state.count === null){
-            state.count = 0;
+          try{
+            await bumpCount(countKey(page, cut));
+            state.recorded = true;
+            if(state.count !== null) state.count += 1;
+            renderCount();
+          }catch(recordError){
+            status.className = 'status warning';
+            status.textContent = '✓ 복사 완료 · 집계 저장 여부를 확인하지 못했습니다.';
           }
-
-          state.count += 1;
-
-          renderCount();
-
-          bumpCount(countKey(page, cut));
         }
 
       }catch(error){
@@ -856,6 +849,7 @@ function renderPrompt(page){
   if(COUNTS_ENABLED){
     loadCounts().then(counts => {
       cutRefs.forEach(ref => {
+        if(ref.state.recorded) return; // Do not overwrite a completed increment with an older read.
         ref.state.count = ref.keys.reduce((sum, key) =>
           sum + (typeof counts[key] === 'number' ? counts[key] : 0), 0);
 
@@ -869,171 +863,7 @@ function renderPrompt(page){
 }
 
 async function renderStats(pages){
-  const title =
-    document.getElementById('title');
-
-  const meta =
-    document.getElementById('meta');
-
-  const content =
-    document.getElementById('content');
-
-  const notice =
-    document.getElementById('notice');
-
-  document.title =
-    '@yulim_mood · 복사수 랭킹';
-
-  title.textContent =
-    '복사수 랭킹';
-
-  meta.textContent =
-    '불러오는 중...';
-
-  content.innerHTML = '';
-  notice.textContent = '';
-
-  showBack('/', '← 홈으로');
-
-  if(!COUNTS_ENABLED){
-    meta.textContent =
-      '복사수 집계가 아직 연결되지 않았습니다.';
-    return;
-  }
-
-  let counts, history;
-  try{
-    [counts, history] = await Promise.all([
-      fetchStatsJSON(FIREBASE_DB + '/copyCounts.json'),
-      fetchStatsJSON('https://raw.githubusercontent.com/foxrain84-tech/foxrain84-tech.github.io/main/stats-history.json?v=' + Date.now()).catch(() => null)
-    ]);
-    counts = counts || {};
-    if(!validStatsCounts(counts)) throw new Error('Invalid counts');
-  }catch(error){
-    meta.textContent = '복사수를 불러오지 못했습니다. 잠시 후 새로고침해 주세요.';
-    return;
-  }
-
-  const rows = statsRows(pages, counts);
-  const baseline = history ? statsBaseline(history) : null;
-  const before = baseline ? statsRows(pages, baseline.counts) : [];
-  const changedRows = baseline ? statsChanges(rows, before) : rows;
-
-  if(rows.length === 0){
-    meta.textContent =
-      '아직 복사된 프롬프트가 없습니다.';
-    return;
-  }
-
-  const total =
-    rows.reduce((sum, r) => sum + r.count, 0);
-
-  meta.textContent =
-    `총 ${rows.length}개 컷 · 누적 복사 ${total.toLocaleString()}회`;
-
-  const summary = document.createElement('div');
-  summary.className = 'stats-summary';
-  const previousTotal = before.reduce((sum, row) => sum + row.count, 0);
-  const signed = n => (n > 0 ? '+' : '') + n.toLocaleString();
-  const table = document.createElement('table');
-  table.innerHTML = '<caption>어제 대비 현재 변화</caption><thead><tr><th scope="col">항목</th><th scope="col">어제 저장값</th><th scope="col">현재</th><th scope="col">증감</th></tr></thead>';
-  const tbody = document.createElement('tbody');
-  [['복사된 컷', before.length, rows.length, '개'], ['누적 복사', previousTotal, total, '회']].forEach(([label, old, current, unit]) => {
-    const tr = document.createElement('tr');
-    [label, baseline ? old.toLocaleString() + unit : '—', current.toLocaleString() + unit, baseline ? signed(current - old) + unit : '—'].forEach((value, i) => {
-      const cell = document.createElement(i === 0 ? 'th' : 'td');
-      if(i === 0) cell.scope = 'row';
-      cell.textContent = value;
-      tr.appendChild(cell);
-    });
-    tbody.appendChild(tr);
-  });
-  table.appendChild(tbody);
-  summary.appendChild(table);
-  const timing = document.createElement('p');
-  timing.className = 'list-sub';
-  timing.textContent = baseline
-    ? '비교 기준: ' + new Date(baseline.at).toLocaleString('ko-KR', {timeZone:'Asia/Seoul'}) + ' KST (전날 마지막 저장값). 현재: ' + new Date().toLocaleString('ko-KR', {timeZone:'Asia/Seoul'}) + ' KST'
-    : '비교 데이터 없음 · 전날 저장 기록이 쌓이면 증감과 순위 변동이 표시됩니다.';
-  summary.appendChild(timing);
-  const refresh = document.createElement('button');
-  refresh.type = 'button';
-  refresh.textContent = '새로고침';
-  refresh.className = 'stats-control';
-  refresh.onclick = () => renderStats(pages);
-  summary.appendChild(refresh);
-  const filter = document.createElement('button');
-  filter.type = 'button';
-  filter.textContent = '순위 변동만 보기';
-  filter.className = 'stats-control';
-  filter.disabled = !baseline;
-  filter.setAttribute('aria-pressed', 'false');
-  summary.appendChild(filter);
-  content.appendChild(summary);
-  const rankList = document.createElement('div');
-  content.appendChild(rankList);
-  const empty = document.createElement('p');
-  empty.textContent = '순위가 변동된 컷이 없습니다.';
-  empty.hidden = true;
-  content.appendChild(empty);
-  filter.onclick = () => {
-    const enabled = filter.getAttribute('aria-pressed') !== 'true';
-    filter.setAttribute('aria-pressed', String(enabled));
-    filter.textContent = enabled ? '전체 랭킹 보기' : '순위 변동만 보기';
-    let shown = 0;
-    [...rankList.children].forEach((el, i) => {
-      el.hidden = enabled && changedRows[i].oldRank !== null && changedRows[i].movement === 0;
-      if(!el.hidden) shown++;
-    });
-    empty.hidden = shown > 0;
-  };
-
-  changedRows.forEach((row, index) => {
-    const link = document.createElement('a');
-
-    link.className = 'list-link';
-    link.href = row.route;
-
-    const left = document.createElement('span');
-    left.className = 'rank-left';
-
-    const badge = document.createElement('span');
-    badge.className = (row.rank <= 3) ? 'rank top' : 'rank';
-    badge.textContent = String(row.rank);
-
-    const info = document.createElement('span');
-    info.className = 'rank-info';
-
-    const name = document.createElement('span');
-    name.className = 'list-name';
-    name.textContent = row.title;
-
-    const sub = document.createElement('span');
-    sub.className = 'list-sub';
-    sub.textContent =
-      `${row.model.toUpperCase()} · ${formatDate(row.date)} · SET ${String(row.setNum).padStart(2, '0')} · CUT ${String(row.cutNum).padStart(2, '0')}`;
-
-    info.append(name, sub);
-    const movement = document.createElement('span');
-    movement.className = 'list-sub stats-movement';
-    movement.textContent = baseline ? statsMovement(row) : '— 비교 데이터 없음';
-    info.appendChild(movement);
-    left.append(badge, info);
-
-    const cnt = document.createElement('span');
-    cnt.className = 'rank-count';
-    cnt.innerHTML = `<b>${row.count.toLocaleString()}</b>회`;
-
-    const growth = document.createElement('span');
-    growth.className = 'stats-growth';
-    growth.textContent = baseline ? '어제 대비 ' + signed(row.delta) + '회' : '어제 대비 —';
-    cnt.appendChild(growth);
-    link.append(left, cnt);
-    rankList.appendChild(link);
-  });
-
-  notice.textContent =
-    '동일 복사수는 공동 순위입니다. 한국 시간 기준 전날 마지막 저장값과 비교하며 자정 확정값은 아닙니다. 비교는 현재 컷·주소 통합 기준으로 계산합니다. 새로고침하면 최신 집계를 확인할 수 있습니다.';
+  await renderCopyDashboard(pages);
 }
 
 (async function(){
@@ -1108,3 +938,4 @@ async function renderStats(pages){
 </script>
 </body>
 </html>
+
