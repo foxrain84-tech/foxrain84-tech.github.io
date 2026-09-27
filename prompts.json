@@ -1,4 +1,84 @@
 {
+  "/arin--hayoon--jieun--narin--seoil--seorin--suji--yulim/20260927/set01": {
+    "model": "arin--hayoon--jieun--narin--seoil--seorin--suji--yulim",
+    "models": [
+      "arin",
+      "hayoon",
+      "jieun",
+      "narin",
+      "seoil",
+      "seorin",
+      "suji",
+      "yulim"
+    ],
+    "source_page_id": "3e8284b3f9b581c0a984f5e37d468997",
+    "source_models": [
+      "arin",
+      "hayoon",
+      "jieun",
+      "narin",
+      "seoil",
+      "seorin",
+      "suji",
+      "yulim"
+    ],
+    "source_title": "체험 삶의 현장",
+    "source_set": 1,
+    "date": "20260927",
+    "set": 1,
+    "cuts": [
+      {
+        "cut": 1,
+        "title": "수지 — 광어 한 상자부터 시작합니다",
+        "prompt": "Editorial: 1990s Korean Workplace Television Documentary × Dawn Fish Market × Serious First Shift × Physical Situational Comedy.\n\nFilm / Broadcast Capture: Create the image as a still frame from a Korean terrestrial-TV workplace-experience program broadcast in the mid-to-late 1990s. This is not a film-stock photograph. Reproduce analog standard-definition broadcast-video character: visibly limited resolution, mild interlaced softness, restrained edge ringing, slight chroma bleed, modest color separation errors around strong reds and blues, compressed highlights, somewhat dense shadows, small luminance noise, practical ENG-camera white balance, subtle motion softness, and slightly imperfect field-camera exposure. Preserve the cold fluorescent green bias of the fish-market interior and the cool predawn exterior light. Do not use modern UHD clarity, cinematic film grain, film halation, vintage photographic fade, artificial HDR, glossy advertising color, or polished digital sharpness.\n\n1. Reference Identity.\n\nUse PERSON-REFERENCE IMAGE MODE. Use the designated adult-person reference image as the sole source of facial identity. Preserve the same clearly recognizable adult person, reference-visible skin tone, apparent age, natural asymmetry, and distinctive identity cues. Let the reference image define facial geometry directly. Do not redesign, idealize, standardize, or reinterpret the face from written appearance descriptions. Use restrained retouching, subtle tonal variation, delicate natural texture, realistic facial micro-detail appropriate to 1990s SD television resolution, and physically plausible skin reflectance. The face and body must share the same fish-market lighting and color cast.\n\n2. Target Hair — Mandatory Full Replacement.\n\nReplace the hairstyle shown in the reference image while preserving the reference-visible natural hair color. The final hairstyle is a practical low ponytail gathered securely at the nape. Keep moderate natural root volume rather than a polished salon finish. Move both side sections behind the ears so the working field remains clear. Any fringe or front section that would obstruct vision is redirected away from the eyes. The ponytail falls behind the upper back according to gravity, with only a few short irregular flyaways caused by humid air and physical work. Do not retain conflicting loose front hair, decorative curls, long face-framing strands, an untied silhouette, or any source hairstyle structure that interferes with fish-market work.\n\n3. Scene and Comic Story.\n\nThis is the opening moment of the first shift at a wholesale fish market. The worker has been told, very casually, to move “one box.” The box turns out to be a large commercial seafood container that is much heavier than expected. Capture the exact instant after the box has left the ground and the worker realizes its real weight through body mechanics rather than an exaggerated facial reaction.\n\nThe comedy comes from the situation. The oversized white foam seafood box tilts only a few degrees because its internal load is uneven. The lid is accidentally open by approximately two to three centimeters. One fish tail protrudes slightly from one side while a short octopus tentacle slips out from the opposite side and hangs naturally against the box. The worker remains completely serious.\n\nIn the background, one experienced market employee calmly walks past carrying two noticeably smaller seafood boxes at once, without looking at or laughing at the main subject. The contrast should create the humor.\n\n4. Location and Environment.\n\nTime: approximately 05:20 before sunrise. Location: a transport corridor beside the auction floor of a large Korean wholesale fish market. The corridor is semi-indoor and opens to the cold exterior at one end. Long industrial fluorescent tubes illuminate the interior. The concrete floor is wet from melted ice and wash water. Small irregular ice fragments and shallow puddles are scattered naturally. Long fluorescent reflections stretch across wet areas. Background elements include blue plastic fish crates, stacked white foam boxes, plastic wrapping material, hand trolleys, and workers already moving through their routines.\n\n5. Camera and Composition.\n\nVertical 3:4 frame. Use the perspective and practical depth of field of a 1990s shoulder-mounted ENG field camera, approximately equivalent to a 35–40 mm full-frame view. Use an environmental medium-full shot. Camera height is slightly below chest level and almost level, avoiding a cinematic heroic low angle.\n\nPlace the subject slightly right of center. Leave a visually clear safe zone in the upper-left and upper-center for mandatory broadcast graphics. Leave another clean area directly beneath the program title for the workplace-location subtitle. Reserve the lower-left corner for the main situational caption.\n\nFeet slightly wider than shoulder width. Anatomical right foot approximately ten centimeters forward. Both knees slightly bent. The pelvis and torso make a small realistic compensating adjustment to the heavy box. Both hands grasp the lower side handles. Four fingers support the underside or handle opening while each thumb stabilizes the upper surface. Elbows move outward according to the box width. Shoulders drop subtly under the actual load. The box remains close to the abdomen. The gaze is directed toward the wet floor approximately one meter ahead. No camera eye contact.\n\n6. Wardrobe, Makeup, and Expression.\n\nWardrobe: plain dark navy or deep-green short-sleeve cotton work T-shirt, dark teal PVC waterproof apron extending below the knees, straight black work trousers, mid-calf black rubber boots, and thick blue or black waterproof gloves. The box presses into the PVC apron, creating asymmetric compression, realistic wrinkles, and localized reflections.\n\nMakeup: minimal workplace no-makeup styling. Apply only extremely sheer skin correction where necessary, preserve natural eyebrows, use almost no visible eye color, and apply clear or muted rose lip balm. Do not reshape the face.\n\nExpression: upper eyelids slightly narrowed from concentration, mild tension between the brows, lips naturally closed, jaw carrying only functional effort. The expression communicates: “I did not expect this to be this heavy, but I am not putting it back down.” No exaggerated comedy face.\n\n7. Lighting.\n\nPrimary source: long fluorescent fixtures above and slightly camera-right. Retain a mild authentic fluorescent green bias. Cold predawn skylight enters from the distant corridor opening on camera-left. The wet floor, PVC apron, rubber boots, foam box, and shallow water reflect the same fluorescent source. No beauty fill. No cinematic rim light. No selective face-only brightening.\n\n8. Mandatory Broadcast Graphics — FOUR SEPARATE TEXT BLOCKS MUST ALL BE VISIBLE.\n\nThe final image MUST contain all four separate Korean broadcast text elements. Do not omit, merge, translate, or replace them with pseudo-Korean.\n\nTEXT BLOCK 1 — PROGRAM TITLE: exact text 「체험, 삶의 현장」. Place near the upper-left to upper-center. Use bold, compact, slightly condensed mid-1990s Korean terrestrial-TV display lettering with thick white or pale-warm strokes and strong dark broadcast outline or simple drop shadow.\n\nTEXT BLOCK 2 — EXPERIENCE LOCATION: exact text 「새벽 수산시장」. Place directly below the program title as a separate smaller line in white or pale-yellow Korean broadcast Gothic lettering with a dark outline.\n\nTEXT BLOCK 3 — MAIN SITUATIONAL CAPTION: exact text 「한 상자라면서요… 왜 이렇게 큽니까」. Place in the lower-left region, not centered across the bottom. Use large white Korean broadcast lettering with a strong black outline. Highlight only 「왜 이렇게 큽니까」 in warm yellow.\n\nTEXT BLOCK 4 — SUPPORTING CAPTION: exact text 「첫 업무부터 광어·문어 상자 운반」. Place immediately below or slightly offset from the main caption in smaller white Korean Gothic lettering with a dark outline.\n\nAll four blocks must be readable simultaneously and must not cover the face, hands, box handles, fish tail, or octopus tentacle.\n\n9. Watermark.\n\nAdd the exact watermark text “ⓒyulim_mood” at the bottom center as a fixed graphic overlay. Keep it approximately 23–25% of canvas width and 4–5% of canvas height, horizontally centered, with the lowest stroke approximately 2.5% above the bottom edge. Use refined white high-contrast calligraphic italic signature lettering with thin hairlines, thicker downstrokes, connected lowercase letters, and a rightward slant. No outline, shadow, glow, embossing, box, border, or plaque.\n\n10. Essential Physical Anchors.\n\nThe box weight must visibly propagate through fingers, wrists, elbows, shoulders, torso, knees, and boots. Maintain anatomically valid hand-object contact, realistic foam-box weight, believable PVC compression, wet-floor reflections, natural contact shadows, coherent perspective, progressive optical depth, and consistent lighting. Maintain the same recognizable facial identity from the designated reference throughout the image.\n\nAvoid: missing any required broadcast caption, pseudo-Korean text, illegible title text, modern TV graphics, modern UHD sharpness, cinematic film grain, artificial HDR, comedy mugging, cartoon seafood, giant octopus, flying seafood, malformed hands, fused fingers, impossible grip, weightless box, dry market floor, background workers laughing at the subject, conflicting source hairstyle retained, identity drift."
+      },
+      {
+        "cut": 2,
+        "title": "하윤 — 오늘의 목표, 배추 1,200포기",
+        "prompt": "Editorial: 1990s Korean Workplace Television Documentary × Kimchi Factory × One Person Against Twelve Hundred Cabbages × Deadpan Situational Comedy.\n\nFilm / Broadcast Capture: Create a still frame from a mid-to-late 1990s Korean terrestrial-TV workplace-experience program. Use analog standard-definition broadcast-video behavior rather than film photography: modest resolution, mild interlace softness, restrained edge ringing, slight chroma bleeding around red industrial tubs and yellow-green cabbage, compressed highlights, dense but readable shadows, imperfect industrial white balance, subtle analog luminance noise, and practical ENG-camera depth of field. Do not use film grain, halation, modern HDR, ultra-sharp digital textures, glossy food-commercial lighting, or contemporary documentary grading.\n\n1. Reference Identity.\n\nUse PERSON-REFERENCE IMAGE MODE. Use the designated adult-person reference image as the sole source of facial identity. Preserve reference-visible skin tone, apparent age, natural asymmetry, and distinctive identity cues. Let the reference define facial geometry directly. Do not redesign the face from written appearance descriptions. Keep natural skin texture and restrained retouching suitable for old SD television. The face and body must share the same factory lighting and color cast.\n\n2. Target Hair — Mandatory Full Replacement.\n\nPreserve the reference-visible natural hair color. Gather all hair into a low tied structure at the nape and completely contain it inside a plain white food-production sanitary cap. Place fringe, side sections, and all long hair inside the cap. Leave no intentional long strands beside the face. Do not retain exposed source length, curls, decorative fringe, shoulder-falling hair, or any conflicting source hairstyle outside the sanitary cap.\n\n3. Scene and Comic Story.\n\nThis is the first inspection task of the day in a large kimchi factory. The daily target is 1,200 salted napa cabbages. The worker has picked up the very first cabbage and examines it with extreme seriousness, carefully opening one outer leaf and checking the inside.\n\nThe worker is focused on doing the first cabbage correctly. Behind the worker, however, the amount of cabbage waiting is almost absurdly large. A long sequence of red tubs and stacked salted cabbages extends deeply through the workspace. One background worker passes behind carrying another cabbage, while a second worker is already moving several completed cabbages away. The main subject does not look overwhelmed and does not react to the background volume.\n\nThe humor is the contrast: one person, one carefully inspected cabbage, and an entire factory full of work still waiting.\n\n4. Location and Environment.\n\nLarge salted-cabbage sorting area inside a Korean kimchi-production factory. Morning, shortly after shift start. Cool, humid indoor environment. Bright washable white wall panels, stainless steel work tables, wet epoxy flooring, red industrial tubs, and overhead industrial lighting. Several small cabbage-leaf fragments and limited wash water remain on the floor.\n\n5. Camera and Composition.\n\nVertical 3:4. Use a 1990s ENG-camera medium-full shot with approximately 40 mm full-frame-equivalent perspective. Position the camera slightly below chest height with an almost level angle. Place the subject slightly left of center so the huge repeated cabbage workload remains clearly visible behind and to camera-right.\n\nReserve the upper-left area for the program title and location subtitle. For this cut, place the main situational caption in the lower-right area because the cabbage in the hands occupies the lower center and left.\n\nThe anatomical left hand supports the cabbage under the stem. The anatomical right thumb, index finger, and middle finger gently open one outer leaf. The remaining fingers stay naturally curved. The cabbage remains below the face. The gaze stays fixed on the cabbage. No camera eye contact.\n\n6. Wardrobe and Makeup.\n\nLight gray work T-shirt, deep burgundy PVC waterproof apron below the knees, light hygienic sleeve protectors, thick food-processing rubber gloves, practical waterproof footwear, and plain white sanitary cap. Create realistic compression where the cabbage approaches the abdomen and irregular wrinkles around the elbows and apron.\n\nMakeup: extremely minimal no-makeup workplace styling, sheer skin correction, natural brows, almost no visible eyeshadow, no contouring, transparent or low-saturation rose lip care.\n\n7. Expression and Lighting.\n\nEyes focused carefully between cabbage leaves. Slight inner-brow concentration. Lips comfortably closed. Jaw relaxed. The subject behaves as if one cabbage deserves a complete professional inspection. No exaggerated despair, surprise, laughter, or comic face.\n\nLarge neutral overhead factory panels provide broad top illumination. The forehead, upper nose, shoulder surfaces, and cabbage tops receive the brightest planes. Natural shadows remain beneath the chin and between cabbage leaves. Stainless steel and pale walls create weak neutral fill. No face-only beauty light or rim light.\n\n8. Mandatory Broadcast Graphics — FOUR SEPARATE TEXT BLOCKS MUST ALL BE VISIBLE.\n\nThe final image MUST contain all four separate Korean text elements below. Do not omit or merge them.\n\nTEXT BLOCK 1 — PROGRAM TITLE: exact text 「체험, 삶의 현장」. Place upper-left to upper-center using bold, thick, slightly condensed mid-1990s Korean terrestrial-TV title lettering with white or pale warm fill and dark broadcast outline.\n\nTEXT BLOCK 2 — EXPERIENCE LOCATION: exact text 「김치공장 절임배추 선별장」. Place directly below the title as a separate smaller line in white or pale-yellow Korean broadcast Gothic lettering with dark outline.\n\nTEXT BLOCK 3 — MAIN SITUATIONAL CAPTION: exact text 「한 포기부터 정확하게… 그런데 1,199포기 남았습니다」. Place in the lower-right region. Highlight only 「1,199포기」 in warm orange.\n\nTEXT BLOCK 4 — SUPPORTING CAPTION: exact text 「오늘의 목표 1,200포기」. Place immediately beneath the main caption in a smaller size.\n\nAll four blocks must be readable simultaneously and must not cover the face, hands, or cabbage.\n\n9. Watermark.\n\nPlace the exact “ⓒyulim_mood” at the bottom center, approximately 23–25% of canvas width and 4–5% of canvas height, 2.5% above the bottom edge, using refined white calligraphic italic signature lettering without shadow, outline, glow, box, or plaque.\n\n10. Essential Physical Anchors.\n\nMaintain realistic cabbage weight, correct hand support beneath the stem, anatomically valid finger-leaf contact, believable PVC compression, floor reflections, coherent industrial perspective, progressive optical depth, and consistent light direction. Maintain the same recognizable facial identity from the designated reference throughout the image.\n\nAvoid: missing captions, pseudo-Korean text, modern broadcast graphics, modern UHD detail, glossy food advertising, impossible cabbage mountain, floating cabbage, hand-leaf fusion, malformed fingers, exposed hair outside the sanitary cap, exaggerated despair, artificial HDR, film grain, identity drift."
+      },
+      {
+        "cut": 3,
+        "title": "나린 — 정확한 직선 하나에도 집중이 필요합니다",
+        "prompt": "Editorial: 1990s Korean Workplace Television Documentary × Road Marking Crew × Perfect Straight Line, Imperfect Footprints × Quiet Physical Comedy.\n\nFilm / Broadcast Capture: Create the look of a Korean terrestrial-TV field program from the mid-to-late 1990s. Use analog SD broadcast-video softness, moderate resolution, slight interlaced motion smear, restrained edge ringing, modest chroma bleed around orange traffic cones and fluorescent safety clothing, compressed bright whites, practical ENG-camera exposure, subtle luminance noise, and realistic daylight color. Do not use film emulation, cinematic grain, halation, modern HDR, hyper-sharp road texture, or polished commercial grading.\n\n1. Reference Identity.\n\nUse PERSON-REFERENCE IMAGE MODE. Use the designated adult-person reference image as the sole source of facial identity. Preserve the same recognizable adult identity, reference skin tone, apparent age, natural asymmetry, and distinctive identity cues. Let the reference directly define facial geometry. Do not redesign or idealize facial features from written descriptions.\n\n2. Target Hair — Mandatory Full Replacement.\n\nPreserve the natural hair color visible in the reference. Gather the complete hair length into a secure low ponytail below the nape. Keep the forehead and both sides of the face unobstructed. Place side hair behind the ears. Use practical controlled root volume and only several small wind-responsive flyaways. Do not retain loose front hair, decorative waves around the cheeks, exposed bangs that interfere with vision, or an untied source silhouette.\n\n3. Scene and Comic Story.\n\nThe worker has just started repainting a white road lane marking. The subject is extremely serious about making the line perfectly straight. Both hands control the roller carefully while the gaze tracks the wet white line immediately ahead. The newly painted section in front is impressively straight.\n\nHowever, behind the worker are three or four distinct white outsole prints. The worker accidentally stepped into the fresh paint earlier and has not noticed yet. To increase the situational comedy, a background road worker several meters behind has stopped for one second and looks down at the footprints rather than at the main subject. The background worker does not laugh or point. The main subject remains completely unaware and keeps concentrating on the perfect line.\n\n4. Location and Environment.\n\nAround 11:00 on a partially closed urban Korean roadway. One lane is isolated with orange cones and portable barriers. Dry gray asphalt. Part of a road-maintenance vehicle appears in the background. The sky is clear or lightly clouded.\n\n5. Camera and Composition.\n\nVertical 3:4. Use a 1990s field ENG-camera look with approximately 35 mm full-frame-equivalent perspective and practical deep focus. Use a near-knee environmental shot from slightly below waist height. The fresh white line enters from the bottom center and leads directly toward the subject, then continues into the road depth.\n\nPlace the subject slightly left of center. Reserve the upper-left safe area for the program title and location subtitle. For this cut, position the situational caption in the mid-right area where it does not block the roller, line, legs, or footprints.\n\nAnatomical left foot forward, right foot supporting behind. Both hands grasp the roller handle approximately 25–30 cm apart. Wrists align with forearms. Elbows naturally bent. Torso slightly inclined, not deeply bent. Gaze follows the roller path. No camera eye contact.\n\n6. Wardrobe, Makeup, and Expression.\n\nLight-gray long-sleeve work shirt, fluorescent lime or yellow safety vest, charcoal work trousers, black knee pads located correctly over the knees, gray-black gloves, sturdy safety shoes. The vest and shirt must wrinkle according to arm and torso movement.\n\nMakeup remains nearly invisible: thin skin correction, natural brows, muted lip care.\n\nExpression: firmly closed but relaxed lips, eyes narrowed slightly in precision, minimal brow tension. The subject behaves as if drawing the straightest line in the city. No comedy face.\n\n7. Lighting.\n\nSoft daylight from upper-left through thin cloud. Natural sky fill on the shadow side. Dry asphalt produces matte diffuse reflection. Wet lane paint produces slightly stronger localized reflection. No flash, no artificial rim light, no selective face illumination.\n\n8. Mandatory Broadcast Graphics — FOUR SEPARATE TEXT BLOCKS MUST ALL BE VISIBLE.\n\nTEXT BLOCK 1 — PROGRAM TITLE: exact text 「체험, 삶의 현장」. Place upper-left to upper-center using bold, thick, slightly condensed mid-1990s Korean terrestrial-TV title lettering with strong dark outline.\n\nTEXT BLOCK 2 — EXPERIENCE LOCATION: exact text 「도심 도로 차선 보수 현장」. Place directly below the title as a separate smaller line in white or pale-yellow Korean broadcast Gothic lettering with dark outline.\n\nTEXT BLOCK 3 — MAIN SITUATIONAL CAPTION: exact text 「직선은 완벽합니다. 문제는 뒤쪽입니다」. Place in the mid-right region, not at the bottom center. Highlight only 「문제는 뒤쪽입니다」 in yellow.\n\nTEXT BLOCK 4 — SUPPORTING CAPTION: exact text 「본인은 아직 발자국을 모르는 중」. Place directly beneath the main caption in smaller white Korean Gothic lettering with dark outline.\n\nAll four text blocks must remain clearly readable and the footprints must remain fully visible.\n\n9. Watermark.\n\nAdd “ⓒyulim_mood” exactly at bottom center, in refined white high-contrast calligraphic italic signature lettering, approximately 23–25% of canvas width and 4–5% of canvas height, with 2.5% bottom margin.\n\n10. Essential Physical Anchors.\n\nCorrect roller-ground contact. Paint transfer footprints appear only behind the subject. Footprint spacing follows realistic human stride. Hands correctly wrap the roller handle. Safety equipment remains anatomically aligned. Maintain coherent perspective, natural contact shadows, progressive optical depth, consistent lighting, and the same recognizable reference identity.\n\nAvoid: missing any required caption, pseudo-Korean text, oversized cartoon footprints, footprints ahead of the subject, floating roller, roller not touching road, crooked impossible handle, malformed hands, modern UHD sharpness, film grain, cinematic lighting, exaggerated comedy face, conflicting hairstyle, identity drift."
+      },
+      {
+        "cut": 4,
+        "title": "유림 — 포근해 보이지만, 접는 건 또 다른 일입니다",
+        "prompt": "Editorial: 1990s Korean Workplace Television Documentary × Industrial Laundry × Oversized Hotel Duvet × Serious Worker Swallowed by Bedding.\n\nFilm / Broadcast Capture: Present the image as a mid-to-late 1990s Korean terrestrial-TV workplace-program frame. Use analog SD video softness, modest detail, mild interlace character, slight edge ringing around white bedding, limited highlight latitude, compressed shadow information, slight chroma instability, practical ENG-camera white balance, subtle video noise, and broad broadcast depth of field. Preserve white textile detail without modern HDR recovery. Do not use film grain, halation, cinematic blur, modern high-end fashion lighting, or crisp contemporary digital capture.\n\n1. Reference Identity.\n\nUse PERSON-REFERENCE IMAGE MODE. Use the designated adult-person reference image as the sole source of facial identity. Preserve reference-visible identity, skin tone, apparent age, natural asymmetry, and distinctive cues. Let the reference image define facial geometry directly. Do not redesign facial structure from written appearance descriptions.\n\n2. Target Hair — Mandatory Full Replacement.\n\nPreserve reference-visible natural hair color. Gather the full hair length into a comfortable low ponytail below the nape. Keep moderate natural root volume. Move side hair away from the eyes and control front sections so they remain practical during textile handling. Allow several small irregular flyaways. Do not retain loose source hair falling across the front shoulders or any style that becomes trapped unrealistically inside the duvet.\n\n3. Scene and Comic Story.\n\nThis is the first attempt to fold an oversized hotel duvet. The worker spreads both arms wide, seriously trying to match opposite corners. The duvet is clearly wider than the worker’s full arm span. One side has already slipped over the shoulder and partially wrapped around the torso. A second large fold has risen in front of one upper arm. The face remains clearly visible between two folds.\n\nOne duvet corner hangs much lower than the other, so the worker is staring at the mismatched corners with intense concentration. For added situational humor, behind the subject an experienced laundry worker casually folds a much smaller sheet in one clean motion without paying attention to the struggle. The main subject does not smile. The comedy comes from the oversized bedding slowly winning the physical battle.\n\n4. Location and Environment.\n\nMorning inside a large industrial laundry handling hotel bedding. Bright dry interior. High ceilings, industrial lighting, commercial washing and drying equipment, rolling linen carts, conveyor sections, and stacks of clean bedding.\n\n5. Camera and Composition.\n\nVertical 3:4. Use a 1990s ENG-camera medium-full shot from approximately chest height. Keep enough distance to show both the worker and the full width of the oversized duvet. Place the subject near center but slightly lower in the frame so enough upper space remains for title graphics.\n\nReserve upper-left for program title and location. For this cut, place the main situational caption in the upper-right to mid-right open area because the lower area is visually busy with the duvet.\n\nBoth hands physically grip opposite duvet edges. Fingers pinch or wrap the cloth edge without penetrating fabric. Arms extend widely. One arm is slightly lower under unequal textile weight. Torso shifts subtly backward to balance the bulky duvet. Gaze stays fixed on the mismatched corners. No camera eye contact.\n\n6. Wardrobe, Makeup, and Expression.\n\nSoft-blue or warm off-white cotton work T-shirt, lightweight gray utility vest, beige or light-gray straight work trousers, non-slip indoor shoes, thin gray cotton gloves. Create fabric compression where the duvet contacts the torso and arms.\n\nMakeup: very sheer workplace no-makeup styling, natural brows, minimal eye color, faint rose lip balm.\n\nExpression: eyes slightly widened in practical concentration, lips closed, jaw relaxed. The expression communicates: “These two corners must eventually meet.” No theatrical surprise, panic, laughter, or embarrassment.\n\n7. Lighting.\n\nBroad industrial LED or fluorescent source above and slightly camera-left. The white duvet acts as a weak natural reflector toward the lower face. Interior duvet folds retain soft gray shadow and textile depth. Metal carts produce small linear reflections. No face-only beauty light.\n\n8. Mandatory Broadcast Graphics — FOUR SEPARATE TEXT BLOCKS MUST ALL BE VISIBLE.\n\nTEXT BLOCK 1 — PROGRAM TITLE: exact text 「체험, 삶의 현장」. Place upper-left to upper-center using bold, slightly condensed, thick-stroke mid-1990s Korean television title lettering with strong dark outline.\n\nTEXT BLOCK 2 — EXPERIENCE LOCATION: exact text 「호텔 산업세탁공장」. Place directly below the title as a separate smaller line.\n\nTEXT BLOCK 3 — MAIN SITUATIONAL CAPTION: exact text 「포근한 건 손님 몫이고, 접는 건 제 몫입니다」. Place in the upper-right to mid-right open area. Highlight only 「접는 건 제 몫입니다」 in yellow.\n\nTEXT BLOCK 4 — SUPPORTING CAPTION: exact text 「초대형 호텔 이불 첫 도전」. Place beneath the main caption in smaller white Korean Gothic lettering with dark outline.\n\nKeep all four blocks clear of the face and gripping hands.\n\n9. Watermark.\n\nAdd the exact watermark “ⓒyulim_mood” at bottom center, 23–25% of canvas width and 4–5% of canvas height, approximately 2.5% above the bottom edge, using refined white calligraphic italic signature lettering.\n\n10. Essential Physical Anchors.\n\nThe duvet must sag under gravity, fold irregularly, compress against the body, and behave like thick real hotel bedding. Maintain valid hand-fabric contact, realistic textile weight, contact shadows, coherent perspective, progressive depth, consistent lighting, and the same recognizable facial identity.\n\nAvoid: missing any required caption, rigid floating duvet, featureless blown whites, duvet fully covering face, fused fingers, impossible fabric grip, modern fashion-editorial styling, modern TV graphics, film grain, artificial HDR, exaggerated comedy expression, conflicting hairstyle, identity drift."
+      },
+      {
+        "cut": 5,
+        "title": "서린 — 밖은 더워도, 이곳은 영하입니다",
+        "prompt": "Editorial: 1990s Korean Workplace Television Documentary × Frozen Warehouse × The Needed Box Is Always at the Bottom × Deadpan Workplace Comedy.\n\nFilm / Broadcast Capture: Reproduce a mid-to-late 1990s Korean terrestrial-TV field-program frame. Use analog SD softness, restrained interlace character, mild edge ringing, modest chroma bleed around colorful packaging, limited shadow latitude, practical fluorescent white balance, subtle analog luminance noise, and realistic ENG-camera exposure. Keep the warehouse cool-neutral but do not apply a modern blue cinematic grade. No film grain, halation, HDR, fantasy frost, ultra-clean UHD sharpness, or glossy commercial lighting.\n\n1. Reference Identity.\n\nUse PERSON-REFERENCE IMAGE MODE. Use the designated adult-person reference as the sole source of facial identity. Preserve reference-visible skin tone, apparent age, natural asymmetry, and distinctive identity cues. Let the reference define facial features directly. Use restrained retouching, subtle tonal variation, delicate natural texture, and realistic skin response to the cold warehouse lighting.\n\n2. Target Hair — Mandatory Full Replacement.\n\nPreserve the natural hair color visible in the reference. Gather all available hair into a compact low bun at the nape and fully contain the bun, side sections, fringe, and back length inside a thin gray thermal liner or practical cold-storage cap. No long loose strands remain outside the head covering. Do not retain conflicting source hair, exposed ponytail length, decorative fringe, curls, or loose front sections.\n\n3. Scene and Comic Story.\n\nThe worker checks the first picking order. The required ice-cream carton is located at the very bottom of a heavily stacked shelving bay. The worker stands with a clipboard and looks down at the target carton. Above it are four or five cartons that obviously need to be moved first.\n\nThe worker remains calm and serious, silently calculating the sequence. For added situational humor, a small empty rolling cart stands nearby, clearly ready to receive boxes, but it is positioned just slightly too far away to be immediately useful. A background worker rolls smoothly past with a completed order while the main subject is still studying the bottom shelf. No one laughs.\n\nThe comedy is the universal workplace problem: of course the needed item is underneath everything else.\n\n4. Location and Environment.\n\nLarge frozen-logistics distribution center. Morning shift. Sub-zero interior. Tall metal racks form a narrow long aisle. Thin frost appears only along selected metal edges and carton corners. Subtle breath condensation appears near the mouth when caught by the light. No heavy fog or fantasy cold effects.\n\n5. Camera and Composition.\n\nVertical 3:4. Use a 1990s ENG-camera knee-length environmental shot from approximately eye level. View from slightly off frontal, around 20 degrees to one side. Place the subject slightly right of center. Use the deep rack aisle as a strong linear perspective.\n\nReserve upper-left for title and location. For this cut, place the main situational caption around the lower-left to middle-left region, away from the target box.\n\nAnatomical left hand supports a clipboard. Anatomical right index finger points toward the lowest target carton or lightly touches the rack upright. Other fingers curl naturally. Feet remain planted. Gaze stays on the lowest carton. No camera eye contact.\n\n6. Wardrobe, Makeup, and Expression.\n\nDark navy insulated jacket, insulated work trousers, gray thermal cap, thick cold-weather gloves, anti-slip insulated boots. Padded clothing compresses realistically at elbows, shoulders, and waist.\n\nMakeup: minimal no-makeup workplace styling with sheer correction, natural brows, minimal eye color, and restrained moisturizing rose lip balm. Allow only a very subtle natural cool-environment flush around cheeks and nose.\n\nExpression: eyes focused downward, small concentration in the lower eyelids and inner brows, lips gently closed. The expression communicates: “I know exactly what has to happen. I simply wish the box were not there.” No exaggerated despair.\n\n7. Lighting.\n\nLong white fluorescent or LED warehouse fixtures above. Upper shelves and shoulders are brighter than lower shelving. The lowest target shelf remains noticeably darker because of occlusion. The face receives only natural environmental fill. No beauty light or artificial rim.\n\n8. Mandatory Broadcast Graphics — FOUR SEPARATE TEXT BLOCKS MUST ALL BE VISIBLE.\n\nTEXT BLOCK 1 — PROGRAM TITLE: exact text 「체험, 삶의 현장」. Place upper-left to upper-center using thick, compact, slightly condensed mid-1990s Korean terrestrial-TV title lettering with strong dark outline.\n\nTEXT BLOCK 2 — EXPERIENCE LOCATION: exact text 「냉동창고 물류 피킹 현장」. Place directly below the title as a separate smaller line.\n\nTEXT BLOCK 3 — MAIN SITUATIONAL CAPTION: exact text 「왜 찾는 물건은 늘 맨 아래에 있을까요」. Place in the lower-left to mid-left region. Highlight only 「맨 아래」 in warm orange.\n\nTEXT BLOCK 4 — SUPPORTING CAPTION: exact text 「첫 주문부터 박스 재배치 확정」. Place beneath the main caption in smaller white Korean Gothic lettering with dark outline.\n\nDo not cover the target carton or pointing hand. All four text blocks must be readable simultaneously.\n\n9. Watermark.\n\nAdd “ⓒyulim_mood” exactly at bottom center in white calligraphic italic signature lettering, approximately 23–25% canvas width and 4–5% canvas height, with 2.5% bottom margin.\n\n10. Essential Physical Anchors.\n\nMaintain realistic carton stacking weight, coherent shelf depth, correct glove-clipboard contact, valid finger structure, subtle breath condensation, padded-fabric compression, shoe-floor contact, progressive optical depth, and consistent light direction. Maintain the same recognizable facial identity from the designated reference throughout the image.\n\nAvoid: missing captions, pseudo-Korean text, fantasy frost aura, blue skin, heavy fog, indoor snow, floating boxes, impossible stacks, clipboard fused into glove, modern broadcast graphics, film grain, artificial HDR, exaggerated frustration, exposed conflicting hairstyle, identity drift."
+      },
+      {
+        "cut": 6,
+        "title": "지은 — 오늘의 첫 작업은 인형 머리 건조입니다",
+        "prompt": "Editorial: 1990s Korean Workplace Television Documentary × Theme-Park Backstage Laundry × Detached Mascot Heads × Completely Normal Employee.\n\nFilm / Broadcast Capture: Create a still frame from a mid-to-late 1990s Korean terrestrial-TV workplace-experience program. Use analog SD television softness, modest resolution, mild interlace character, slight edge ringing around bright mascot materials, restrained chroma bleed, compressed highlights, practical indoor ENG-camera white balance, subtle analog noise, and broad broadcast depth of field. Keep the room neutral and ordinary. Do not create horror grading, cinematic darkness, film grain, halation, modern digital sharpness, artificial HDR, or stylized green tint.\n\n1. Reference Identity.\n\nUse PERSON-REFERENCE IMAGE MODE. Use the designated adult-person reference image as the sole source of facial identity. Preserve the same recognizable adult identity, reference-visible skin tone, apparent age, natural asymmetry, and distinctive identity cues. Let the reference image define facial structure directly. Do not move, duplicate, remove, or invent identifying marks.\n\n2. Target Hair — Mandatory Full Replacement.\n\nPreserve reference-visible natural hair color. Gather all hair into a practical low ponytail at or just below the nape. Keep modest natural crown volume. Redirect any fringe or front sections away from the eyes. Control side hair close to or behind the ears. Let the ponytail fall behind the upper back. Do not retain loose front-shoulder hair, decorative curls, eye-covering fringe, or conflicting source hair structure.\n\n3. Scene and Comic Story.\n\nIt is before the theme park opens. The worker is checking whether a large rabbit mascot head has dried completely after cleaning. The rabbit head is large enough to require both hands. The worker tilts the neck opening toward the face and calmly inspects the inside.\n\nBehind the worker, a mesh rack contains several detached mascot heads: bear, dinosaur, fox, duck, and others. The heads are positioned at different angles. One duck mascot head has accidentally rotated so it appears to be looking directly toward the worker. Another bear head faces the wall. A dinosaur head is upside down on a drying support. The worker treats all of this as completely normal. That calm professionalism is the joke. Do not turn the scene into horror.\n\n4. Location and Environment.\n\nTheme-park costume laundry and maintenance room during morning opening preparation. Include commercial washers, dryers, ventilation ducts, stainless work tables, mesh racks, hangers, microfiber towels, and portions of mascot body costumes. The room is warm and dry.\n\n5. Camera and Composition.\n\nVertical 3:4. Use a 1990s ENG-camera medium-full shot to approximately mid-thigh from eye height. Place the subject slightly left of center. Use the right and rear background for the mascot-head rack.\n\nReserve upper-left for title and workplace subtitle. For this cut, place the main situational caption across the lower-right area, because the rabbit head occupies lower-left and center.\n\nAnatomical left hand supports the rabbit head near the lower jaw or neck opening. Anatomical right hand holds the rear outer shell. Do not compress the mascot face. The neck opening angles toward the worker. Gaze looks inside the mascot head. No camera eye contact.\n\n6. Wardrobe, Makeup, and Expression.\n\nCharcoal or stone-gray work shirt, dark comfortable trousers, short gray utility apron, light gray practical gloves, non-slip work shoes. Create realistic tension folds at shoulders and elbows from the mascot-head weight.\n\nMakeup: understated no-makeup workplace styling, sheer skin correction, natural brows, almost no visible eye makeup, muted rose lip balm.\n\nExpression: eyes calmly inspecting the interior, brows almost relaxed, lips neutrally closed. No fear. No smile. No exaggerated confusion. The worker behaves as though checking giant character heads is a perfectly ordinary morning task.\n\n7. Lighting.\n\nNeutral ceiling work lights. One light panel closer to camera-left makes the left side of the face and the upper rabbit-head surface slightly brighter. The white mascot material returns weak natural bounce to the hands and lower face. The mascot interior remains physically dark. Do not add unnatural catchlights to background mascot eyes.\n\n8. Mandatory Broadcast Graphics — FOUR SEPARATE TEXT BLOCKS MUST ALL BE VISIBLE.\n\nTEXT BLOCK 1 — PROGRAM TITLE: exact text 「체험, 삶의 현장」. Place upper-left to upper-center using bold, thick, slightly condensed mid-1990s Korean terrestrial-TV display lettering with dark outline.\n\nTEXT BLOCK 2 — EXPERIENCE LOCATION: exact text 「테마파크 캐릭터 의상 관리실」. Place directly below the title as a separate smaller line.\n\nTEXT BLOCK 3 — MAIN SITUATIONAL CAPTION: exact text 「사람보다 먼저 출근한 얼굴들이 있습니다」. Place in the lower-right region. Highlight only 「먼저 출근한 얼굴들」 in yellow.\n\nTEXT BLOCK 4 — SUPPORTING CAPTION: exact text 「오늘 첫 업무는 토끼 머리 건조 확인」. Place directly beneath the main caption in smaller white Korean Gothic lettering with dark outline.\n\nKeep captions away from the rabbit neck opening and hands. All four blocks must be visible simultaneously.\n\n9. Watermark.\n\nAdd the exact watermark “ⓒyulim_mood” at bottom center, approximately 23–25% canvas width and 4–5% canvas height, 2.5% above bottom edge, using refined white calligraphic italic signature lettering.\n\n10. Essential Physical Anchors.\n\nThe mascot head must behave like a real foam-and-fabric shell with measurable weight. Maintain anatomically valid hand-object contact, fabric compression, rack depth, natural contact shadows, coherent perspective, and consistent overhead light. Maintain the same recognizable facial identity from the designated reference throughout the image.\n\nAvoid: missing captions, pseudo-Korean text, horror lighting, glowing mascot eyes, blood, damaged mascots, every mascot staring at camera, floating mascot heads, fused fingers, crushed mascot face, modern cinematic color, modern TV graphics, film grain, exaggerated comedy expression, conflicting hairstyle, identity drift."
+      },
+      {
+        "cut": 7,
+        "title": "아린 — 끝없이 들어오는 마늘과의 하루",
+        "prompt": "Editorial: 1990s Korean Workplace Television Documentary × Garlic Sorting Factory × One Clove at a Time × Conveyor That Never Waits.\n\nFilm / Broadcast Capture: Create the image as a frame from a mid-to-late 1990s Korean terrestrial-TV workplace-experience program. Use analog SD broadcast-video behavior: modest resolution, mild interlaced softness, restrained edge ringing, slight chroma bleed around conveyor color and plastic boxes, compressed highlights, practical industrial white balance, subtle analog luminance noise, broad ENG-camera depth of field, and a slightly raw television-news texture. Do not use film grain, halation, contemporary HDR, advertising saturation, glossy food styling, or ultra-clean modern digital capture.\n\n1. Reference Identity.\n\nUse PERSON-REFERENCE IMAGE MODE. Use the designated adult-person reference image as the sole source of facial identity. Preserve reference-visible skin tone, apparent age, natural asymmetry, and distinctive identity cues. Let the reference image define facial features directly.\n\n2. Target Hair — Mandatory Full Replacement.\n\nPreserve the natural hair color visible in the reference. Gather all hair into a low tied structure behind the nape and fully contain the complete hairstyle inside a plain white food-production sanitary cap. All fringe, side hair, and back length must remain inside the cap. Do not retain exposed loose strands, source curls, visible ponytail length, decorative fringe, or any conflicting source hairstyle.\n\n3. Scene and Comic Story.\n\nThis is the first morning on a continuous garlic-sorting line. The worker has picked up one garlic piece with the anatomical right thumb and index finger and examines it very carefully at chest height. The worker’s attention is completely fixed on this single garlic piece.\n\nMeanwhile the conveyor does not stop. More garlic continues arriving. A small accumulation has begun forming immediately beside the worker’s anatomical left hand because the inspection is taking slightly too long. Several more garlic pieces are approaching from the background belt. A nearby experienced worker farther down the line sorts pieces rapidly with both hands while remaining focused on their own station. The main subject has not yet noticed the small queue forming.\n\nThe situational joke is simple: one garlic gets a full inspection while twenty more arrive.\n\n4. Location and Environment.\n\nFood-sorting factory during morning shift. A long conveyor links several workstations. The room is dry. Only a small amount of garlic-skin dust and several papery peel fragments appear around the workstation. Include practical garlic sacks, sorting crates, metal supports, and other workers in the distance.\n\n5. Camera and Composition.\n\nVertical 3:4. Use a 1990s ENG-camera medium shot with approximately 50 mm full-frame-equivalent perspective. Camera height matches seated eye level. The conveyor enters from lower-left and moves diagonally toward the central background.\n\nPlace the worker slightly right of center. Reserve upper-left for title and location. For this cut, put the main situational caption in the upper-right to mid-right negative space, leaving the conveyor and growing garlic queue unobstructed.\n\nThe anatomical right hand holds one garlic piece below face level at chest height. Thumb and index finger contact the lower sides of the garlic. Middle, ring, and little fingers remain naturally curled. The anatomical left hand stays near the conveyor edge, ready for the next piece. Do not place full body weight on the left arm. The gaze remains on the single garlic piece. No camera eye contact.\n\n6. Wardrobe, Makeup, and Expression.\n\nMuted-blue short-sleeve work T-shirt or restrained navy-and-white small-check work shirt, short navy utility apron, comfortable black work trousers, thin food-handling gloves, plain white sanitary cap. Create natural seated compression folds around waist and thighs.\n\nMakeup: minimal no-makeup workplace styling, very thin base, natural eyebrow texture, almost no visible eye makeup, clear low-sheen lip care.\n\nExpression: eyes concentrated intensely on the garlic, very small inward brow tension, lips gently closed, jaw relaxed. The expression should say: “I should check this one properly.” No fatigue caricature, no bored face, no smile.\n\n7. Lighting.\n\nLong neutral-white industrial ceiling fixtures. Broad overhead diffusion creates brighter planes on forehead, upper nose, garlic tops, and the conveyor surface. Garlic remains matte and organic. Bright factory walls provide weak neutral environmental fill. The area beneath the conveyor stays naturally darker. No face-only brightening.\n\n8. Mandatory Broadcast Graphics — FOUR SEPARATE TEXT BLOCKS MUST ALL BE VISIBLE.\n\nTEXT BLOCK 1 — PROGRAM TITLE: exact text 「체험, 삶의 현장」. Place upper-left to upper-center using bold, thick, slightly condensed mid-1990s Korean terrestrial-TV title lettering with strong dark outline.\n\nTEXT BLOCK 2 — EXPERIENCE LOCATION: exact text 「마늘 선별 가공 공장」. Place directly below the title as a separate smaller line.\n\nTEXT BLOCK 3 — MAIN SITUATIONAL CAPTION: exact text 「한 알 보는 사이에 스무 알이 더 왔습니다」. Place in the upper-right to mid-right region. Highlight only 「스무 알이 더 왔습니다」 in yellow.\n\nTEXT BLOCK 4 — SUPPORTING CAPTION: exact text 「컨베이어는 기다려주지 않습니다」. Place directly beneath it in smaller white Korean Gothic lettering with dark outline.\n\nKeep the growing garlic queue fully visible. All four text blocks must be readable simultaneously.\n\n9. Watermark.\n\nAdd “ⓒyulim_mood” exactly at bottom center using refined white high-contrast calligraphic italic signature lettering. Keep it approximately 23–25% of canvas width and 4–5% of canvas height, with its lowest stroke approximately 2.5% above the bottom edge.\n\n10. Essential Physical Anchors.\n\nThe garlic queue must form according to the conveyor direction. The selected garlic piece must sit naturally between the correct fingers. Maintain realistic conveyor perspective, natural garlic irregularity, anatomically valid hand-object contact, believable seated body weight, pose-dependent garment folds, contact shadows, progressive optical depth, and consistent overhead lighting. Maintain the same recognizable facial identity from the designated reference throughout the image.\n\nAvoid: missing captions, pseudo-Korean text, oversized garlic, identical repeated garlic shapes, garlic floating above belt, impossible conveyor direction, hand-garlic fusion, malformed fingers, dusty fog throughout the factory, exaggerated frustration, modern commercial food styling, modern TV graphics, film grain, artificial HDR, exposed source hairstyle, identity drift."
+      },
+      {
+        "cut": 8,
+        "title": "서일 — 오늘 밤, 대하는 바다에서 올라옵니다",
+        "prompt": "Editorial: 1990s Korean Workplace Television Documentary × Night Shrimp Harvest × Serious Hands at Sea × Quiet Situational Comedy.\n\nBroadcast Capture: Create one vertical 3:4 still frame that looks like a direct capture from a Korean terrestrial-TV workplace-experience program broadcast in the mid-to-late 1990s. This is not a modern cinematic night photograph and not a film-stock image. Reproduce analog standard-definition ENG broadcast-video character: limited SD resolution, mild interlaced softness, restrained edge ringing, slight chroma bleed, compressed highlights around strong vessel work lights, dense but readable shadows, subtle luminance noise, practical field-camera exposure, and slightly imperfect white balance.\n\nPreserve visible color separation between the deep navy night sea, wet blue-gray deck, orange waterproof workwear, cool-white deck lights, dark rubber boots, blue seafood baskets, and translucent gray-brown to pale-pink shrimp shells. Do not use cinematic teal-blue grading, film grain, film halation, vintage photographic fade, artificial HDR, modern UHD sharpness, glossy seafood advertising color, or fashion-editorial lighting.\n\n1. Reference Identity.\n\nUse PERSON-REFERENCE IMAGE MODE. Use the designated adult-male reference image as the sole source of facial identity. Preserve the same clearly recognizable adult person, reference-visible facial identity, skin tone, apparent age, natural asymmetry, and distinctive identity cues. Let the reference image directly define facial geometry. Do not redesign, idealize, standardize, or reinterpret facial features from written descriptions. Preserve the natural adult age impression shown in the reference. Do not add deep wrinkles, gray hair, heavy skin aging, or an unrequested beard. Use restrained retouching, subtle tonal variation, delicate natural skin texture, realistic facial micro-detail appropriate to SD television resolution, natural under-eye variation, and physically plausible skin reflectance under the vessel work lights.\n\n2. Target Hair — Partial Practical Override.\n\nPreserve the reference-visible natural hair color, overall short-to-medium length, natural texture, and general recognizable silhouette. Change only the practical arrangement required for night marine work. Move the front strands slightly backward and sideways so they do not obstruct the eyes. Place a practical dark-navy waterproof work cap or fisherman-style cap over the crown. Allow only a few short front and side strands to remain visible beneath the cap and react subtly to the sea breeze. Do not replace the hairstyle with a completely different haircut, long hairstyle, severe military crop, slick fashion styling, or decorative salon arrangement.\n\n3. Scene and Comic Story.\n\nThis is the moment when the night shrimp harvest becomes physically real. A large scoop net or harvest net has just been lifted beside the boat and is packed with dozens of freshly harvested large shrimp. The worker grips the thick handle with both hands and begins tipping the heavy load toward one large blue or blue-gray seafood basket positioned directly in front.\n\nAt this exact moment, the shrimp mass shifts heavily toward one side of the net. The worker subtly changes body balance to keep control. The worker remains completely serious. No smile. No panic. No exaggerated strain. No comic facial performance.\n\nThe humor comes entirely from the situation. The amount of shrimp is unexpectedly large. Two or three shrimp have already escaped onto the wet deck near the basket. One escaped shrimp lies almost directly in the worker’s next stepping path, creating an additional small practical problem.\n\nIn the background, another crew member is already preparing the next empty basket while a second crew member organizes rope or harvesting equipment. The current load is not even finished, but the next task is already waiting. Neither crew member laughs, watches, or reacts theatrically.\n\n4. Location, Time, and Environment.\n\nTime: approximately 22:30. Location: the exposed deck of a coastal shrimp-harvesting vessel. The surrounding sea is fully dark, nearly black to deep navy. Use mild wave action and subtle vessel movement. The deck is wet from seawater and working water. The air is cold, humid, and slightly windy. A large cool-white LED work light mounted above the deck illuminates the working area. Only a few tiny distant navigation lights may appear far on the horizon. Do not brighten the sea as though moonlight were acting as a studio fill source.\n\n5. Props and Spatial Layers.\n\nForeground: wet blue-gray deck, small puddles, broken reflections from deck work lights, two or three live shrimp near the basket, a few small ice fragments, and limited wet rope.\n\nMidground: the worker, one large scoop or harvest net, one large blue or blue-gray seafood basket. The net contains dozens of shrimp with realistic density and believable mass. The lower edge of the net has begun to tilt over the basket opening. Shrimp inside the net accumulate toward the lowest gravitational point rather than distributing evenly.\n\nBackground: boat railing, work ropes, simple hauling or winch equipment, additional seafood baskets, one or two crew members preparing the next stage, and dark open sea.\n\n6. Camera and Composition.\n\nVertical 3:4. Use the visual logic of a 1990s shoulder-mounted ENG broadcast camera with approximately a 35 mm full-frame-equivalent field of view and practical documentary depth of field around f/4. Environmental medium-full shot. Camera height is slightly above the worker’s waist. View from approximately 20–30 degrees off frontal.\n\nPlace the worker slightly right of center. Keep the upper-left area visually simple for the program title. Keep a separate clear area directly below the title for the location caption. Keep the lower-left region open for the large situational caption. Keep a separate smaller strip immediately below or slightly right of the large situational caption for the supporting caption. Do not place important shrimp, hands, net handle, basket opening, or face inside these text-safe zones.\n\nFeet wider than shoulder width. Anatomical left foot half a step forward. Both knees slightly flexed. The front hand controls the net direction. The rear hand bears more weight. Hands remain approximately 25–30 cm apart on the thick handle. All fingers wrap naturally around the handle. Wrists remain close to neutral. Elbows bend naturally under load. The upper body shifts slightly away from the heavy side of the net to maintain balance. The gaze is fixed on the boundary between the net and basket. No camera eye contact.\n\n7. Wardrobe, Grooming, Expression, and Lighting.\n\nWear an orange or deep-orange waterproof fishing jacket with practical seam structure and realistic wet reflections. Under the jacket, wear a dark navy functional work shirt. Use waterproof bib overalls or thick waterproof work trousers, black or dark-green rubber boots below the knees, and thick waterproof work gloves. Add only limited realistic seawater droplets and work marks. Create pose-dependent compression and folds at the elbows, shoulders, waist, knees, and glove cuffs.\n\nGrooming: very sheer neutral skin correction only where necessary, natural brows, no eyeliner, no strong contour, no visible blush, clear low-sheen lip care.\n\nExpression: slightly narrowed upper eyelids, small brow tension, comfortably closed lips, realistic neck and jaw tension caused by the net weight. No open-mouth strain, smile, or theatrical surprise.\n\nPrimary light: one large cool-white vessel work light above and camera-left at approximately a 45-degree downward direction. Direct light reaches the upper forehead plane, cheek, shoulder, upper arm, glove surfaces, upper net, and exposed shrimp shells. The opposite side of the face remains clearly darker. The wet deck and bright seafood basket create only weak neutral bounce from below. The night sea contributes almost no fill. Fresh wet shrimp shells create small irregular highlights. Wet waterproof clothing creates stronger reflections than skin. No frontal flash, beauty dish, reflector, artificial rim light, or cinematic moonlight.\n\n8. MANDATORY 1990s BROADCAST GRAPHICS — FOUR SEPARATE TEXT BLOCKS MUST ALL BE VISIBLE.\n\nThe final image MUST contain FOUR separate Korean broadcast text elements. ALL FOUR are mandatory. Do not omit any of them. Do not merge them into one caption. Do not replace Korean characters with pseudo-Korean, random symbols, English, or unreadable decorative text.\n\nTEXT BLOCK 1 — PROGRAM TITLE.\nExact text: 「체험, 삶의 현장」\nPlace in the upper-left to upper-center region. Use bold, compact, slightly condensed Korean display lettering reminiscent of a mid-1990s Korean terrestrial-TV workplace-documentary title graphic, with thick white or pale-warm strokes and a strong dark broadcast outline or simple drop shadow.\n\nTEXT BLOCK 2 — EXPERIENCE LOCATION.\nExact text: 「야간 대하 수확 작업선」\nPlace directly BELOW the program title. This is a separate second line, not part of the title. Use smaller white or pale-yellow Korean Gothic-style broadcast lettering with a strong dark outline. Maintain visible vertical spacing between the program title and location caption.\n\nTEXT BLOCK 3 — MAIN SITUATIONAL CAPTION.\nExact text: 「한 망 가득 올라왔는데… 벌써 다음 바구니가 기다립니다」\nPlace in the lower-left to mid-left region. Do NOT center it at the very bottom. Make it clearly larger than the supporting caption. Use large white Korean broadcast Gothic lettering with a thick black outline. Highlight only 「벌써 다음 바구니가 기다립니다」 in warm yellow-orange.\n\nTEXT BLOCK 4 — SUPPORTING CAPTION.\nExact text: 「밤 10시 30분, 대하 수확은 이제 시작」\nPlace directly BELOW the main situational caption or slightly offset to its lower-right. Use smaller white Korean Gothic-style lettering with a dark outline. This line must remain clearly separate from the main situational caption.\n\nThe final frame must visibly contain all four exact text blocks at the same time. Do not cover the face, both hands, net handle, basket opening, dense shrimp mass, or escaped shrimp.\n\n9. Watermark.\n\nAdd the exact watermark text “ⓒyulim_mood” at the bottom center as a separate fixed graphic overlay. Keep the complete watermark approximately 23–25% of the canvas width and 4–5% of the canvas height. Place its lowest stroke approximately 2.5% of the canvas height above the bottom edge. Do not overlap any of the four broadcast text blocks. Use refined high-contrast calligraphic italic signature lettering in clean white with moderate opacity. No outline, shadow, glow, embossing, box, border, or plaque.\n\n10. Essential Physical Anchors.\n\nThe loaded net must read as genuinely heavy. The shifted shrimp mass must pull the lowest side of the net downward. The load must physically propagate through the fingers, gloves, wrists, forearms, elbows, shoulders, back, waist, knees, and planted boots. The seafood basket and tilted net must physically overlap in a believable transfer position. Shrimp inside the net collect according to gravity. The two or three shrimp on deck remain small practical comedy details rather than an exaggerated scattered pile. Boot soles maintain real contact with the wet deck.\n\nMaintain believable net weight, realistic shrimp mass, gravity-driven shrimp distribution, anatomically valid hand-handle contact, wet waterproof-fabric reflections, pose-dependent compression and folds, boot-deck contact, wet contact shadows, coherent night-boat perspective, progressive optical depth, and consistent light direction. Maintain the same recognizable facial identity from the designated reference throughout the image.\n\nAvoid: missing any of the four required broadcast text blocks, program title without location subtitle, program title without lower situational captions, location subtitle omitted, main situational caption omitted, supporting caption omitted, merged broadcast captions, pseudo-Korean text, random Korean-like symbols, illegible Korean text, modern lower-third graphics, modern streaming graphics, modern UHD sharpness, cinematic blue night grading, film grain, halation, artificial HDR, advertising-style seafood photography, beauty lighting, dramatic moonlight, full-body rim light, exaggerated comedy facial expression, open-mouth strain, cartoon shrimp, giant shrimp, hundreds of shrimp scattered across the deck, floating shrimp, weightless harvest net, malformed hands, fused or extra fingers, impossible wrist angles, floating boots, dry deck, crew members laughing at the worker, crew members staring at the worker, modern fashion cap styling, plastic skin, identity blending, alternate person, face redesign."
+      }
+    ],
+    "legacy_routes": [
+      "/suji/20260927/set01",
+      "/hayoon/20260927/set01",
+      "/narin/20260927/set01",
+      "/yulim/20260927/set01",
+      "/seorin/20260927/set01",
+      "/jieun/20260927/set01",
+      "/arin/20260927/set01",
+      "/seoil/20260927/set01"
+    ]
+  },
   "/arin--taeju/20260920/set01": {
     "model": "arin--taeju",
     "models": [
@@ -10,6 +90,7 @@
       "arin",
       "taeju"
     ],
+    "source_title": "태주 & 아린 — 같이 나가고 싶은 하루",
     "source_set": 1,
     "date": "20260920",
     "set": 1,
@@ -56,6 +137,7 @@
       "arin",
       "taeju"
     ],
+    "source_title": "태주 & 아린 — 같이 나가고 싶은 하루",
     "source_set": 2,
     "date": "20260920",
     "set": 2,
@@ -102,6 +184,7 @@
       "arin",
       "taeju"
     ],
+    "source_title": "태주 & 아린 — 같이 나가고 싶은 하루",
     "source_set": 3,
     "date": "20260920",
     "set": 3,
@@ -148,6 +231,7 @@
       "arin",
       "taeju"
     ],
+    "source_title": "태주 & 아린 — 같이 나가고 싶은 하루",
     "source_set": 4,
     "date": "20260920",
     "set": 4,
@@ -194,6 +278,7 @@
       "arin",
       "taeju"
     ],
+    "source_title": "태주 & 아린 — 같이 나가고 싶은 하루",
     "source_set": 5,
     "date": "20260920",
     "set": 5,
@@ -238,6 +323,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "어떨까, 넌 모티브 앨범 커버",
     "source_set": 1,
     "date": "20260711",
     "set": 1,
@@ -263,6 +349,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · 치즈 〈어떨까, 넌〉 출근길 로맨스 화보",
     "source_set": 1,
     "date": "20260713",
     "set": 1,
@@ -293,6 +380,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · 치즈 〈어떨까, 넌〉 출근길 로맨스 화보",
     "source_set": 2,
     "date": "20260713",
     "set": 2,
@@ -323,6 +411,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · 치즈 〈어떨까, 넌〉 출근길 로맨스 화보",
     "source_set": 3,
     "date": "20260713",
     "set": 3,
@@ -353,6 +442,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · 치즈 〈어떨까, 넌〉 출근길 로맨스 화보",
     "source_set": 4,
     "date": "20260713",
     "set": 4,
@@ -383,6 +473,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · 치즈 〈어떨까, 넌〉 출근길 로맨스 화보",
     "source_set": 5,
     "date": "20260713",
     "set": 5,
@@ -413,6 +504,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · COLOR ESCAPE — 코스푸데너 호수 리조트 라이프스타일 에디토리얼",
     "source_set": 1,
     "date": "20260720",
     "set": 1,
@@ -443,6 +535,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · COLOR ESCAPE — 코스푸데너 호수 리조트 라이프스타일 에디토리얼",
     "source_set": 2,
     "date": "20260720",
     "set": 2,
@@ -473,6 +566,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · COLOR ESCAPE — 코스푸데너 호수 리조트 라이프스타일 에디토리얼",
     "source_set": 3,
     "date": "20260720",
     "set": 3,
@@ -503,6 +597,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · COLOR ESCAPE — 코스푸데너 호수 리조트 라이프스타일 에디토리얼",
     "source_set": 4,
     "date": "20260720",
     "set": 4,
@@ -533,6 +628,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · COLOR ESCAPE — 코스푸데너 호수 리조트 라이프스타일 에디토리얼",
     "source_set": 5,
     "date": "20260720",
     "set": 5,
@@ -563,6 +659,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · Five Colors, One Summer Day — 서울 감성 공간 패션 에디토리얼",
     "source_set": 1,
     "date": "20260725",
     "set": 1,
@@ -593,6 +690,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · Five Colors, One Summer Day — 서울 감성 공간 패션 에디토리얼",
     "source_set": 2,
     "date": "20260725",
     "set": 2,
@@ -623,6 +721,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · Five Colors, One Summer Day — 서울 감성 공간 패션 에디토리얼",
     "source_set": 3,
     "date": "20260725",
     "set": 3,
@@ -653,6 +752,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · Five Colors, One Summer Day — 서울 감성 공간 패션 에디토리얼",
     "source_set": 4,
     "date": "20260725",
     "set": 4,
@@ -683,6 +783,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · Five Colors, One Summer Day — 서울 감성 공간 패션 에디토리얼",
     "source_set": 5,
     "date": "20260725",
     "set": 5,
@@ -713,6 +814,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · Color Above Tegernsee — 테게른제 럭셔리 리조트 컬러 에디토리얼",
     "source_set": 1,
     "date": "20260726",
     "set": 1,
@@ -753,6 +855,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · Color Above Tegernsee — 테게른제 럭셔리 리조트 컬러 에디토리얼",
     "source_set": 2,
     "date": "20260726",
     "set": 2,
@@ -793,6 +896,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · Color Above Tegernsee — 테게른제 럭셔리 리조트 컬러 에디토리얼",
     "source_set": 3,
     "date": "20260726",
     "set": 3,
@@ -833,6 +937,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · Color Above Tegernsee — 테게른제 럭셔리 리조트 컬러 에디토리얼",
     "source_set": 4,
     "date": "20260726",
     "set": 4,
@@ -873,6 +978,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · Color Above Tegernsee — 테게른제 럭셔리 리조트 컬러 에디토리얼",
     "source_set": 5,
     "date": "20260726",
     "set": 5,
@@ -913,6 +1019,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · CHROMA BLOOM — 드림코어 플로럴 컬러 에디토리얼",
     "source_set": 1,
     "date": "20260802",
     "set": 1,
@@ -953,6 +1060,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · CHROMA BLOOM — 드림코어 플로럴 컬러 에디토리얼",
     "source_set": 2,
     "date": "20260802",
     "set": 2,
@@ -993,6 +1101,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · CHROMA BLOOM — 드림코어 플로럴 컬러 에디토리얼",
     "source_set": 3,
     "date": "20260802",
     "set": 3,
@@ -1033,6 +1142,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · CHROMA BLOOM — 드림코어 플로럴 컬러 에디토리얼",
     "source_set": 4,
     "date": "20260802",
     "set": 4,
@@ -1073,6 +1183,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · CHROMA BLOOM — 드림코어 플로럴 컬러 에디토리얼",
     "source_set": 5,
     "date": "20260802",
     "set": 5,
@@ -1113,6 +1224,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · 무지개 날개옷은 누구의 허락도 기다리지 않는다 — 퓨전 사극 판타지 로맨스",
     "source_set": 1,
     "date": "20260808",
     "set": 1,
@@ -1153,6 +1265,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · 무지개 날개옷은 누구의 허락도 기다리지 않는다 — 퓨전 사극 판타지 로맨스",
     "source_set": 2,
     "date": "20260808",
     "set": 2,
@@ -1193,6 +1306,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · 무지개 날개옷은 누구의 허락도 기다리지 않는다 — 퓨전 사극 판타지 로맨스",
     "source_set": 3,
     "date": "20260808",
     "set": 3,
@@ -1233,6 +1347,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · 무지개 날개옷은 누구의 허락도 기다리지 않는다 — 퓨전 사극 판타지 로맨스",
     "source_set": 4,
     "date": "20260808",
     "set": 4,
@@ -1273,6 +1388,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · 무지개 날개옷은 누구의 허락도 기다리지 않는다 — 퓨전 사극 판타지 로맨스",
     "source_set": 5,
     "date": "20260808",
     "set": 5,
@@ -1313,6 +1429,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · PEACHY SUMMER ON THE DAECHUNG FLOOR — 복숭아 향이 머무는 대청마루",
     "source_set": 1,
     "date": "20260831",
     "set": 1,
@@ -1353,6 +1470,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · FIVE WOMEN, FIVE COLORS OF COURAGE — 한국사 여성 위인 에디토리얼",
     "source_set": 1,
     "date": "20260902",
     "set": 1,
@@ -1393,6 +1511,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · FIVE WOMEN, FIVE COLORS OF COURAGE — 한국사 여성 위인 에디토리얼",
     "source_set": 2,
     "date": "20260902",
     "set": 2,
@@ -1433,6 +1552,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · FIVE WOMEN, FIVE COLORS OF COURAGE — 한국사 여성 위인 에디토리얼",
     "source_set": 3,
     "date": "20260902",
     "set": 3,
@@ -1473,6 +1593,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · FIVE WOMEN, FIVE COLORS OF COURAGE — 한국사 여성 위인 에디토리얼",
     "source_set": 4,
     "date": "20260902",
     "set": 4,
@@ -1513,6 +1634,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · FIVE WOMEN, FIVE COLORS OF COURAGE — 한국사 여성 위인 에디토리얼",
     "source_set": 5,
     "date": "20260902",
     "set": 5,
@@ -1553,6 +1675,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · FIVE DARK FAIRYTALES — 고딕 스릴러 동화 25컷",
     "source_set": 1,
     "date": "20260908",
     "set": 1,
@@ -1593,6 +1716,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · FIVE DARK FAIRYTALES — 고딕 스릴러 동화 25컷",
     "source_set": 2,
     "date": "20260908",
     "set": 2,
@@ -1633,6 +1757,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · FIVE DARK FAIRYTALES — 고딕 스릴러 동화 25컷",
     "source_set": 3,
     "date": "20260908",
     "set": 3,
@@ -1673,6 +1798,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · FIVE DARK FAIRYTALES — 고딕 스릴러 동화 25컷",
     "source_set": 4,
     "date": "20260908",
     "set": 4,
@@ -1713,6 +1839,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · FIVE DARK FAIRYTALES — 고딕 스릴러 동화 25컷",
     "source_set": 5,
     "date": "20260908",
     "set": 5,
@@ -1754,6 +1881,7 @@
       "arin",
       "hayoon"
     ],
+    "source_title": "아린&하윤 · GURREN LAGANN — 요코&니아 실사 시네마틱 10컷",
     "source_set": 1,
     "date": "20260910",
     "set": 1,
@@ -1794,6 +1922,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 · 우산을 기울인 쪽으로 — 박혜경 고백 청춘 멜로 5컷",
     "source_set": 1,
     "date": "20260915",
     "set": 1,
@@ -1849,6 +1978,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "✏️ 아린 · 조선의 판을 뒤집는 별, 바우덕이 — 남사당놀이 6컷",
     "source_set": 1,
     "date": "20260921",
     "set": 1,
@@ -1901,6 +2031,7 @@
       "suji",
       "yulim"
     ],
+    "source_title": "✏️ 여성 감성 로맨틱 7세트 — 다정함이 머무는 일곱 장면",
     "source_set": 4,
     "date": "20260921",
     "set": 4,
@@ -1921,6 +2052,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "✏️ 아린 · 나의 작은 별, 나의 유일한 꽃 — 어린왕자 2컷",
     "source_set": 1,
     "date": "20260922",
     "set": 1,
@@ -1946,6 +2078,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "✏️ 아린 · 황금빛 사이로 날아든 작은 요정 — 크리스탈 팅커벨 1컷",
     "source_set": 1,
     "date": "20260924",
     "set": 1,
@@ -1966,6 +2099,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "✏️ 아린 · 불 때문만은 아니야 — 삼겹살집 여우짓 3컷",
     "source_set": 1,
     "date": "20260925",
     "set": 1,
@@ -1996,6 +2130,7 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "아린 — 잿빛을 깨우는 붉은 숨결",
     "source_set": 1,
     "date": "20260926",
     "set": 1,
@@ -2023,6 +2158,9 @@
     ]
   },
   "/arin/20260927/set01": {
+    "redirect": "/arin--hayoon--jieun--narin--seoil--seorin--suji--yulim/20260927/set01"
+  },
+  "/arin/20260927/set02": {
     "model": "arin",
     "models": [
       "arin"
@@ -2031,9 +2169,10 @@
     "source_models": [
       "arin"
     ],
+    "source_title": "02 아린 (Arin) 오빠는 이러려고 나 만나는 거야?",
     "source_set": 1,
     "date": "20260927",
-    "set": 1,
+    "set": 2,
     "cuts": [
       {
         "cut": 1,
@@ -2063,6 +2202,7 @@
       "chasihyuk",
       "hayoon"
     ],
+    "source_title": "차시혁&하윤 · 헤픈 남자 — 와인바 관계극 & 앨범 커버 4컷",
     "source_set": 1,
     "date": "20260916",
     "set": 1,
@@ -2097,6 +2237,7 @@
     "source_models": [
       "chasihyuk"
     ],
+    "source_title": "차시혁 · SLAYERS — 제로스 5컷",
     "source_set": 1,
     "date": "20260911",
     "set": 1,
@@ -2139,6 +2280,7 @@
       "kangtaeo",
       "leedohyun"
     ],
+    "source_title": "강태오&차시혁&이도현 · GURREN LAGANN — 카미나&비랄&시몬 15컷",
     "source_set": 2,
     "date": "20260911",
     "set": 2,
@@ -2183,6 +2325,7 @@
       "chasihyuk",
       "hayoon"
     ],
+    "source_title": "차시혁&하윤 · 헤픈 남자 — 와인바 관계극 & 앨범 커버 4컷",
     "source_set": 2,
     "date": "20260916",
     "set": 2,
@@ -2205,6 +2348,7 @@
       "eunjae",
       "yulim"
     ],
+    "source_title": "은재&유림 · 작약이 피어나는 왈츠 — 궁전 한복 무도회 4컷",
     "source_set": 1,
     "date": "20260920",
     "set": 1,
@@ -2246,6 +2390,7 @@
       "eunjae",
       "yulim"
     ],
+    "source_title": "은재&유림 · 같은 달, 다른 시간 — 추석 시차 딥틱 3컷",
     "source_set": 1,
     "date": "20260922",
     "set": 1,
@@ -2291,6 +2436,7 @@
       "taeju",
       "yugeon"
     ],
+    "source_title": "태주·은재·유건·서일 · 추석 코디 룩 — 돌아가는 길, 만나는 날, 떠나는 연휴",
     "source_set": 2,
     "date": "20260921",
     "set": 2,
@@ -2319,6 +2465,7 @@
       "taeju",
       "yugeon"
     ],
+    "source_title": "태주·은재·유건·서일 · 추석 코디 룩 — 돌아가는 길, 만나는 날, 떠나는 연휴",
     "source_set": 6,
     "date": "20260921",
     "set": 6,
@@ -2347,6 +2494,7 @@
     "source_models": [
       "eunjae"
     ],
+    "source_title": "은재 — 하늘의 지혜가 문장이 될 때 (Set1 통합)",
     "source_set": 1,
     "date": "20260926",
     "set": 1,
@@ -2390,6 +2538,7 @@
       "suji",
       "yulim"
     ],
+    "source_title": "✏️ 여성 감성 로맨틱 7세트 — 다정함이 머무는 일곱 장면",
     "source_set": 2,
     "date": "20260921",
     "set": 2,
@@ -2414,6 +2563,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · CHEEZE 〈좋아해〉 향기로만 남은 고백",
     "source_set": 1,
     "date": "20260714",
     "set": 1,
@@ -2444,6 +2594,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · CHEEZE 〈좋아해〉 향기로만 남은 고백",
     "source_set": 2,
     "date": "20260714",
     "set": 2,
@@ -2474,6 +2625,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · CHEEZE 〈좋아해〉 향기로만 남은 고백",
     "source_set": 3,
     "date": "20260714",
     "set": 3,
@@ -2504,6 +2656,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · CHEEZE 〈좋아해〉 향기로만 남은 고백",
     "source_set": 4,
     "date": "20260714",
     "set": 4,
@@ -2534,6 +2687,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · CHEEZE 〈좋아해〉 향기로만 남은 고백",
     "source_set": 5,
     "date": "20260714",
     "set": 5,
@@ -2564,6 +2718,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · 콘스탄츠의 향기 — 보덴제 리조트 라이프스타일 에디토리얼",
     "source_set": 1,
     "date": "20260721",
     "set": 1,
@@ -2594,6 +2749,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · 콘스탄츠의 향기 — 보덴제 리조트 라이프스타일 에디토리얼",
     "source_set": 2,
     "date": "20260721",
     "set": 2,
@@ -2624,6 +2780,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · 콘스탄츠의 향기 — 보덴제 리조트 라이프스타일 에디토리얼",
     "source_set": 3,
     "date": "20260721",
     "set": 3,
@@ -2654,6 +2811,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · 콘스탄츠의 향기 — 보덴제 리조트 라이프스타일 에디토리얼",
     "source_set": 4,
     "date": "20260721",
     "set": 4,
@@ -2684,6 +2842,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · 콘스탄츠의 향기 — 보덴제 리조트 라이프스타일 에디토리얼",
     "source_set": 5,
     "date": "20260721",
     "set": 5,
@@ -2714,6 +2873,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · The Quiet Frill — 미니멀 인도어 패션 에디토리얼",
     "source_set": 1,
     "date": "20260722",
     "set": 1,
@@ -2744,6 +2904,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · Scented Waters of Baden-Baden — 향기가 머물렀던 다섯 개의 장소",
     "source_set": 1,
     "date": "20260727",
     "set": 1,
@@ -2784,6 +2945,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · Scented Waters of Baden-Baden — 향기가 머물렀던 다섯 개의 장소",
     "source_set": 2,
     "date": "20260727",
     "set": 2,
@@ -2824,6 +2986,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · Scented Waters of Baden-Baden — 향기가 머물렀던 다섯 개의 장소",
     "source_set": 3,
     "date": "20260727",
     "set": 3,
@@ -2864,6 +3027,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · Scented Waters of Baden-Baden — 향기가 머물렀던 다섯 개의 장소",
     "source_set": 4,
     "date": "20260727",
     "set": 4,
@@ -2904,6 +3068,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · Scented Waters of Baden-Baden — 향기가 머물렀던 다섯 개의 장소",
     "source_set": 5,
     "date": "20260727",
     "set": 5,
@@ -2944,6 +3109,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · SCENTED DREAMSCAPES — 드림코어 텐더 에디토리얼",
     "source_set": 1,
     "date": "20260805",
     "set": 1,
@@ -2984,6 +3150,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · SCENTED DREAMSCAPES — 드림코어 텐더 에디토리얼",
     "source_set": 2,
     "date": "20260805",
     "set": 2,
@@ -3024,6 +3191,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · SCENTED DREAMSCAPES — 드림코어 텐더 에디토리얼",
     "source_set": 3,
     "date": "20260805",
     "set": 3,
@@ -3064,6 +3232,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · SCENTED DREAMSCAPES — 드림코어 텐더 에디토리얼",
     "source_set": 4,
     "date": "20260805",
     "set": 4,
@@ -3104,6 +3273,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · SCENTED DREAMSCAPES — 드림코어 텐더 에디토리얼",
     "source_set": 5,
     "date": "20260805",
     "set": 5,
@@ -3144,6 +3314,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · THE SPRING THAT REMEMBERED HER — K-퓨전 사극 로맨스 춘향전",
     "source_set": 1,
     "date": "20260810",
     "set": 1,
@@ -3184,6 +3355,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · THE SPRING THAT REMEMBERED HER — K-퓨전 사극 로맨스 춘향전",
     "source_set": 2,
     "date": "20260810",
     "set": 2,
@@ -3224,6 +3396,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · THE SPRING THAT REMEMBERED HER — K-퓨전 사극 로맨스 춘향전",
     "source_set": 3,
     "date": "20260810",
     "set": 3,
@@ -3264,6 +3437,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · THE SPRING THAT REMEMBERED HER — K-퓨전 사극 로맨스 춘향전",
     "source_set": 4,
     "date": "20260810",
     "set": 4,
@@ -3304,6 +3478,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · THE SPRING THAT REMEMBERED HER — K-퓨전 사극 로맨스 춘향전",
     "source_set": 5,
     "date": "20260810",
     "set": 5,
@@ -3344,6 +3519,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · BLUE HOUR PRIVATE PORTRAIT — 블루아워, 가까워지는 거리",
     "source_set": 1,
     "date": "20260818",
     "set": 1,
@@ -3369,6 +3545,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · FIVE WOMEN, FIVE WAYS OF DEVOTION — 한국사 여성 위인 에디토리얼",
     "source_set": 1,
     "date": "20260831",
     "set": 1,
@@ -3409,6 +3586,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · FIVE WOMEN, FIVE WAYS OF DEVOTION — 한국사 여성 위인 에디토리얼",
     "source_set": 2,
     "date": "20260831",
     "set": 2,
@@ -3449,6 +3627,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · FIVE WOMEN, FIVE WAYS OF DEVOTION — 한국사 여성 위인 에디토리얼",
     "source_set": 3,
     "date": "20260831",
     "set": 3,
@@ -3489,6 +3668,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · FIVE WOMEN, FIVE WAYS OF DEVOTION — 한국사 여성 위인 에디토리얼",
     "source_set": 4,
     "date": "20260831",
     "set": 4,
@@ -3529,6 +3709,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · FIVE WOMEN, FIVE WAYS OF DEVOTION — 한국사 여성 위인 에디토리얼",
     "source_set": 5,
     "date": "20260831",
     "set": 5,
@@ -3569,6 +3750,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · FIVE CRUEL FAIRYTALES — 성인 다크 동화",
     "source_set": 1,
     "date": "20260906",
     "set": 1,
@@ -3609,6 +3791,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · FIVE CRUEL FAIRYTALES — 성인 다크 동화",
     "source_set": 2,
     "date": "20260906",
     "set": 2,
@@ -3649,6 +3832,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · FIVE CRUEL FAIRYTALES — 성인 다크 동화",
     "source_set": 3,
     "date": "20260906",
     "set": 3,
@@ -3689,6 +3873,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · FIVE CRUEL FAIRYTALES — 성인 다크 동화",
     "source_set": 4,
     "date": "20260906",
     "set": 4,
@@ -3729,6 +3914,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · FIVE CRUEL FAIRYTALES — 성인 다크 동화",
     "source_set": 5,
     "date": "20260906",
     "set": 5,
@@ -3770,6 +3956,7 @@
       "arin",
       "hayoon"
     ],
+    "source_title": "아린&하윤 · GURREN LAGANN — 요코&니아 실사 시네마틱 10컷",
     "source_set": 2,
     "date": "20260910",
     "set": 2,
@@ -3810,6 +3997,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 · BEAUTY AND THE BEAST SET1 EX — 붉은 가시와 포식자",
     "source_set": 1,
     "date": "20260914",
     "set": 1,
@@ -3853,6 +4041,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 — 네가 찍어 준 수원의 다섯 순간",
     "source_set": 1,
     "date": "20260920",
     "set": 1,
@@ -3878,6 +4067,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 — 네가 찍어 준 수원의 다섯 순간",
     "source_set": 2,
     "date": "20260920",
     "set": 2,
@@ -3903,6 +4093,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 — 네가 찍어 준 수원의 다섯 순간",
     "source_set": 3,
     "date": "20260920",
     "set": 3,
@@ -3928,6 +4119,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 — 네가 찍어 준 수원의 다섯 순간",
     "source_set": 4,
     "date": "20260920",
     "set": 4,
@@ -3953,6 +4145,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 — 네가 찍어 준 수원의 다섯 순간",
     "source_set": 5,
     "date": "20260920",
     "set": 5,
@@ -3981,6 +4174,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "✏️ 하윤 · 하나부터 여섯까지, 너에게만 귀요미 — 귀요미송 6분할 1컷",
     "source_set": 1,
     "date": "20260924",
     "set": 1,
@@ -4001,6 +4195,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "✏️ 하윤 · 향을 핑계로, 조금 더 가까이 — 와인 바 로맨스 3컷",
     "source_set": 1,
     "date": "20260925",
     "set": 1,
@@ -4031,6 +4226,7 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "하윤 — 한반도 신수&신, 현대적 재해석",
     "source_set": 1,
     "date": "20260926",
     "set": 1,
@@ -4058,6 +4254,9 @@
     ]
   },
   "/hayoon/20260927/set01": {
+    "redirect": "/arin--hayoon--jieun--narin--seoil--seorin--suji--yulim/20260927/set01"
+  },
+  "/hayoon/20260927/set02": {
     "model": "hayoon",
     "models": [
       "hayoon"
@@ -4066,9 +4265,10 @@
     "source_models": [
       "hayoon"
     ],
+    "source_title": "03 하윤 (Hayoon) 오빠는 이러려고 나 만나는 거야?",
     "source_set": 1,
     "date": "20260927",
-    "set": 1,
+    "set": 2,
     "cuts": [
       {
         "cut": 1,
@@ -4098,6 +4298,7 @@
       "jieun",
       "yugeon"
     ],
+    "source_title": "✏️ 지은·유건 · 달이 차오르기 전에, 너에게 — 추석 귀국 비행 2컷",
     "source_set": 1,
     "date": "20260923",
     "set": 1,
@@ -4127,6 +4328,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 홋카이도 여름의 여백 감성 여행 SNS 화보",
     "source_set": 1,
     "date": "20260711",
     "set": 1,
@@ -4157,6 +4359,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 홋카이도 여름의 여백 감성 여행 SNS 화보",
     "source_set": 2,
     "date": "20260711",
     "set": 2,
@@ -4187,6 +4390,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 홋카이도 여름의 여백 감성 여행 SNS 화보",
     "source_set": 3,
     "date": "20260711",
     "set": 3,
@@ -4217,6 +4421,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 홋카이도 여름의 여백 감성 여행 SNS 화보",
     "source_set": 4,
     "date": "20260711",
     "set": 4,
@@ -4247,6 +4452,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 홋카이도 여름의 여백 감성 여행 SNS 화보",
     "source_set": 5,
     "date": "20260711",
     "set": 5,
@@ -4277,6 +4483,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 비 내리는 저택의 여백과 침묵",
     "source_set": 1,
     "date": "20260717",
     "set": 1,
@@ -4307,6 +4514,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 비 내리는 저택의 여백과 침묵",
     "source_set": 2,
     "date": "20260717",
     "set": 2,
@@ -4337,6 +4545,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 비 내리는 저택의 여백과 침묵",
     "source_set": 3,
     "date": "20260717",
     "set": 3,
@@ -4367,6 +4576,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 비 내리는 저택의 여백과 침묵",
     "source_set": 4,
     "date": "20260717",
     "set": 4,
@@ -4397,6 +4607,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 비 내리는 저택의 여백과 침묵",
     "source_set": 5,
     "date": "20260717",
     "set": 5,
@@ -4427,6 +4638,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 당신이 겨울이 된 자리에서",
     "source_set": 1,
     "date": "20260719",
     "set": 1,
@@ -4447,6 +4659,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 반제의 여백 — 고요한 여름 바캉스 캔디드 스냅샷",
     "source_set": 1,
     "date": "20260724",
     "set": 1,
@@ -4477,6 +4690,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 반제의 여백 — 고요한 여름 바캉스 캔디드 스냅샷",
     "source_set": 2,
     "date": "20260724",
     "set": 2,
@@ -4507,6 +4721,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 반제의 여백 — 고요한 여름 바캉스 캔디드 스냅샷",
     "source_set": 3,
     "date": "20260724",
     "set": 3,
@@ -4537,6 +4752,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 반제의 여백 — 고요한 여름 바캉스 캔디드 스냅샷",
     "source_set": 4,
     "date": "20260724",
     "set": 4,
@@ -4567,6 +4783,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 반제의 여백 — 고요한 여름 바캉스 캔디드 스냅샷",
     "source_set": 5,
     "date": "20260724",
     "set": 5,
@@ -4597,6 +4814,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · Silent Luxury & Sweet Date — 질트 하이엔드 리조트 에디토리얼",
     "source_set": 1,
     "date": "20260730",
     "set": 1,
@@ -4637,6 +4855,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · Silent Luxury & Sweet Date — 질트 하이엔드 리조트 에디토리얼",
     "source_set": 2,
     "date": "20260730",
     "set": 2,
@@ -4677,6 +4896,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · Silent Luxury & Sweet Date — 질트 하이엔드 리조트 에디토리얼",
     "source_set": 3,
     "date": "20260730",
     "set": 3,
@@ -4717,6 +4937,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · Silent Luxury & Sweet Date — 질트 하이엔드 리조트 에디토리얼",
     "source_set": 4,
     "date": "20260730",
     "set": 4,
@@ -4757,6 +4978,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · Silent Luxury & Sweet Date — 질트 하이엔드 리조트 에디토리얼",
     "source_set": 5,
     "date": "20260730",
     "set": 5,
@@ -4797,6 +5019,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · The Silence Left Inside a Dream — 드림코어 Soft Romantic Editorial",
     "source_set": 1,
     "date": "20260801",
     "set": 1,
@@ -4837,6 +5060,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · The Silence Left Inside a Dream — 드림코어 Soft Romantic Editorial",
     "source_set": 2,
     "date": "20260801",
     "set": 2,
@@ -4877,6 +5101,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · The Silence Left Inside a Dream — 드림코어 Soft Romantic Editorial",
     "source_set": 3,
     "date": "20260801",
     "set": 3,
@@ -4917,6 +5142,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · The Silence Left Inside a Dream — 드림코어 Soft Romantic Editorial",
     "source_set": 4,
     "date": "20260801",
     "set": 4,
@@ -4957,6 +5183,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · The Silence Left Inside a Dream — 드림코어 Soft Romantic Editorial",
     "source_set": 5,
     "date": "20260801",
     "set": 5,
@@ -4997,6 +5224,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · THE STILL WATER REMEMBERED HER — K-퓨전 사극 판타지 로맨스 심청전",
     "source_set": 1,
     "date": "20260812",
     "set": 1,
@@ -5037,6 +5265,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · THE STILL WATER REMEMBERED HER — K-퓨전 사극 판타지 로맨스 심청전",
     "source_set": 2,
     "date": "20260812",
     "set": 2,
@@ -5077,6 +5306,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · THE STILL WATER REMEMBERED HER — K-퓨전 사극 판타지 로맨스 심청전",
     "source_set": 3,
     "date": "20260812",
     "set": 3,
@@ -5117,6 +5347,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · THE STILL WATER REMEMBERED HER — K-퓨전 사극 판타지 로맨스 심청전",
     "source_set": 4,
     "date": "20260812",
     "set": 4,
@@ -5157,6 +5388,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · THE STILL WATER REMEMBERED HER — K-퓨전 사극 판타지 로맨스 심청전",
     "source_set": 5,
     "date": "20260812",
     "set": 5,
@@ -5197,6 +5429,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · FIVE WOMEN, FIVE AFTERIMAGES — 한국사 여성 위인 에디토리얼",
     "source_set": 1,
     "date": "20260824",
     "set": 1,
@@ -5237,6 +5470,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · FIVE WOMEN, FIVE AFTERIMAGES — 한국사 여성 위인 에디토리얼",
     "source_set": 2,
     "date": "20260824",
     "set": 2,
@@ -5277,6 +5511,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · FIVE WOMEN, FIVE AFTERIMAGES — 한국사 여성 위인 에디토리얼",
     "source_set": 3,
     "date": "20260824",
     "set": 3,
@@ -5317,6 +5552,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · FIVE WOMEN, FIVE AFTERIMAGES — 한국사 여성 위인 에디토리얼",
     "source_set": 4,
     "date": "20260824",
     "set": 4,
@@ -5357,6 +5593,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · FIVE WOMEN, FIVE AFTERIMAGES — 한국사 여성 위인 에디토리얼",
     "source_set": 5,
     "date": "20260824",
     "set": 5,
@@ -5397,6 +5634,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · FIVE TALES IN THE SILENCE — 성인 다크 동화",
     "source_set": 1,
     "date": "20260905",
     "set": 1,
@@ -5437,6 +5675,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · FIVE TALES IN THE SILENCE — 성인 다크 동화",
     "source_set": 2,
     "date": "20260905",
     "set": 2,
@@ -5477,6 +5716,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · FIVE TALES IN THE SILENCE — 성인 다크 동화",
     "source_set": 3,
     "date": "20260905",
     "set": 3,
@@ -5517,6 +5757,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · FIVE TALES IN THE SILENCE — 성인 다크 동화",
     "source_set": 4,
     "date": "20260905",
     "set": 4,
@@ -5557,6 +5798,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · FIVE TALES IN THE SILENCE — 성인 다크 동화",
     "source_set": 5,
     "date": "20260905",
     "set": 5,
@@ -5597,6 +5839,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 끝내 말하지 못한 말 — 베일 속 신부의 슬픔 1컷",
     "source_set": 1,
     "date": "20260918",
     "set": 1,
@@ -5624,6 +5867,7 @@
       "suji",
       "yulim"
     ],
+    "source_title": "✏️ 여성 감성 로맨틱 7세트 — 다정함이 머무는 일곱 장면",
     "source_set": 6,
     "date": "20260921",
     "set": 6,
@@ -5647,6 +5891,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "✏️ 지은 · 순백의 얼굴, 검은 속삭임 — 화이트 & 블랙 서큐버스 2컷",
     "source_set": 1,
     "date": "20260923",
     "set": 2,
@@ -5672,6 +5917,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 · 은방울꽃이 깨우는 아침 — 판타지 패션 에디토리얼 1컷",
     "source_set": 1,
     "date": "20260924",
     "set": 1,
@@ -5692,6 +5938,7 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "지은 — 한반도 신수&신, 현대적 재해석",
     "source_set": 1,
     "date": "20260926",
     "set": 1,
@@ -5719,6 +5966,9 @@
     ]
   },
   "/jieun/20260927/set01": {
+    "redirect": "/arin--hayoon--jieun--narin--seoil--seorin--suji--yulim/20260927/set01"
+  },
+  "/jieun/20260927/set02": {
     "model": "jieun",
     "models": [
       "jieun"
@@ -5727,9 +5977,10 @@
     "source_models": [
       "jieun"
     ],
+    "source_title": "07 지은 (Jieun) 오빠는 이러려고 나 만나는 거야?",
     "source_set": 1,
     "date": "20260927",
-    "set": 1,
+    "set": 2,
     "cuts": [
       {
         "cut": 1,
@@ -5759,6 +6010,7 @@
       "kangtaeo",
       "yulim"
     ],
+    "source_title": "강태오&유림 · WHERE FIRE MEETS THE SEA — 판타지 웨딩 4컷",
     "source_set": 1,
     "date": "20260915",
     "set": 1,
@@ -5798,6 +6050,7 @@
     "source_models": [
       "kangtaeo"
     ],
+    "source_title": "강태오 · SLAYERS — 가우리 가브리에프 5컷",
     "source_set": 1,
     "date": "20260911",
     "set": 1,
@@ -5840,6 +6093,7 @@
       "kangtaeo",
       "leedohyun"
     ],
+    "source_title": "강태오&차시혁&이도현 · GURREN LAGANN — 카미나&비랄&시몬 15컷",
     "source_set": 1,
     "date": "20260911",
     "set": 2,
@@ -5883,6 +6137,7 @@
     "source_models": [
       "leedohyun"
     ],
+    "source_title": "이도현 · SLAYERS — 제르가디스 그레이워즈 5컷",
     "source_set": 1,
     "date": "20260911",
     "set": 1,
@@ -5925,6 +6180,7 @@
       "kangtaeo",
       "leedohyun"
     ],
+    "source_title": "강태오&차시혁&이도현 · GURREN LAGANN — 카미나&비랄&시몬 15컷",
     "source_set": 3,
     "date": "20260911",
     "set": 3,
@@ -5965,6 +6221,7 @@
     "source_models": [
       "leedohyun"
     ],
+    "source_title": "이도현 · 금빛 밤에 조금 더 머물다 — 부다페스트 한복 야경 2컷",
     "source_set": 1,
     "date": "20260917",
     "set": 1,
@@ -5990,6 +6247,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · Lines of Retreat — 독일 휴양지의 선과 Luxury Beauty Editorial",
     "source_set": 1,
     "date": "20260723",
     "set": 1,
@@ -6020,6 +6278,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · Lines of Retreat — 독일 휴양지의 선과 Luxury Beauty Editorial",
     "source_set": 2,
     "date": "20260723",
     "set": 2,
@@ -6050,6 +6309,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · Lines of Retreat — 독일 휴양지의 선과 Luxury Beauty Editorial",
     "source_set": 3,
     "date": "20260723",
     "set": 3,
@@ -6080,6 +6340,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · Lines of Retreat — 독일 휴양지의 선과 Luxury Beauty Editorial",
     "source_set": 4,
     "date": "20260723",
     "set": 4,
@@ -6110,6 +6371,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · Lines of Retreat — 독일 휴양지의 선과 Luxury Beauty Editorial",
     "source_set": 5,
     "date": "20260723",
     "set": 5,
@@ -6140,6 +6402,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · Neon, Leather & Local Noise — 베를린 크로이츠베르크 나이트 에디토리얼",
     "source_set": 1,
     "date": "20260724",
     "set": 1,
@@ -6180,6 +6443,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · While Lines Control the Dream — 드림코어 Surreal Editorial",
     "source_set": 1,
     "date": "20260731",
     "set": 1,
@@ -6220,6 +6484,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · While Lines Control the Dream — 드림코어 Surreal Editorial",
     "source_set": 2,
     "date": "20260731",
     "set": 2,
@@ -6260,6 +6525,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · While Lines Control the Dream — 드림코어 Surreal Editorial",
     "source_set": 3,
     "date": "20260731",
     "set": 3,
@@ -6300,6 +6566,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · While Lines Control the Dream — 드림코어 Surreal Editorial",
     "source_set": 4,
     "date": "20260731",
     "set": 4,
@@ -6340,6 +6607,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · While Lines Control the Dream — 드림코어 Surreal Editorial",
     "source_set": 5,
     "date": "20260731",
     "set": 5,
@@ -6380,6 +6648,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · THE WOMAN SONGDO COULD NOT POSSESS — K-퓨전 사극 하이패션 황진이",
     "source_set": 1,
     "date": "20260813",
     "set": 1,
@@ -6420,6 +6689,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · THE WOMAN SONGDO COULD NOT POSSESS — K-퓨전 사극 하이패션 황진이",
     "source_set": 2,
     "date": "20260813",
     "set": 2,
@@ -6460,6 +6730,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · THE WOMAN SONGDO COULD NOT POSSESS — K-퓨전 사극 하이패션 황진이",
     "source_set": 3,
     "date": "20260813",
     "set": 3,
@@ -6500,6 +6771,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · THE WOMAN SONGDO COULD NOT POSSESS — K-퓨전 사극 하이패션 황진이",
     "source_set": 4,
     "date": "20260813",
     "set": 4,
@@ -6540,6 +6812,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · FIVE WOMEN, FIVE RESOLVES — 한국사 여성 위인 에디토리얼",
     "source_set": 1,
     "date": "20260823",
     "set": 1,
@@ -6580,6 +6853,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · FIVE WOMEN, FIVE RESOLVES — 한국사 여성 위인 에디토리얼",
     "source_set": 2,
     "date": "20260823",
     "set": 2,
@@ -6620,6 +6894,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · FIVE WOMEN, FIVE RESOLVES — 한국사 여성 위인 에디토리얼",
     "source_set": 3,
     "date": "20260823",
     "set": 3,
@@ -6660,6 +6935,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · FIVE WOMEN, FIVE RESOLVES — 한국사 여성 위인 에디토리얼",
     "source_set": 4,
     "date": "20260823",
     "set": 4,
@@ -6700,6 +6976,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · FIVE WOMEN, FIVE RESOLVES — 한국사 여성 위인 에디토리얼",
     "source_set": 5,
     "date": "20260823",
     "set": 5,
@@ -6740,6 +7017,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · THE FIVE EXIT STRATEGIES — 성인 다크 동화",
     "source_set": 1,
     "date": "20260904",
     "set": 1,
@@ -6780,6 +7058,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · THE FIVE EXIT STRATEGIES — 성인 다크 동화",
     "source_set": 2,
     "date": "20260904",
     "set": 2,
@@ -6820,6 +7099,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · THE FIVE EXIT STRATEGIES — 성인 다크 동화",
     "source_set": 3,
     "date": "20260904",
     "set": 3,
@@ -6860,6 +7140,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · THE FIVE EXIT STRATEGIES — 성인 다크 동화",
     "source_set": 4,
     "date": "20260904",
     "set": 4,
@@ -6900,6 +7181,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · SLAYERS — 나가 5컷",
     "source_set": 1,
     "date": "20260911",
     "set": 1,
@@ -6940,6 +7222,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · BRAUNSCHWEIG WEINSOMMER — 늦여름 와인 축제 5컷",
     "source_set": 1,
     "date": "20260913",
     "set": 1,
@@ -6987,6 +7270,7 @@
       "suji",
       "yulim"
     ],
+    "source_title": "✏️ 여성 감성 로맨틱 7세트 — 다정함이 머무는 일곱 장면",
     "source_set": 7,
     "date": "20260921",
     "set": 7,
@@ -7007,6 +7291,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · 회의가 끝난 뒤의 시선",
     "source_set": 1,
     "date": "20260924",
     "set": 1,
@@ -7027,6 +7312,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · 시선은 똑바로, 거리는 더 가까이",
     "source_set": 1,
     "date": "20260925",
     "set": 1,
@@ -7057,6 +7343,7 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "나린 · 고요하게, 전장을 지배하다",
     "source_set": 1,
     "date": "20260926",
     "set": 1,
@@ -7084,6 +7371,9 @@
     ]
   },
   "/narin/20260927/set01": {
+    "redirect": "/arin--hayoon--jieun--narin--seoil--seorin--suji--yulim/20260927/set01"
+  },
+  "/narin/20260927/set02": {
     "model": "narin",
     "models": [
       "narin"
@@ -7092,9 +7382,10 @@
     "source_models": [
       "narin"
     ],
+    "source_title": "01 나린 (Narin) 오빠는 이러려고 나 만나는 거야?",
     "source_set": 1,
     "date": "20260927",
-    "set": 1,
+    "set": 2,
     "cuts": [
       {
         "cut": 1,
@@ -7124,6 +7415,7 @@
       "seoil",
       "seorin"
     ],
+    "source_title": "서린&서일 · 아침은 왔는데, 나는 아직 어제 — 호텔 아침 4컷",
     "source_set": 1,
     "date": "20260918",
     "set": 1,
@@ -7165,6 +7457,7 @@
       "seoil",
       "seorin"
     ],
+    "source_title": "서린&서일 · 함께 고른 다섯 장면 — 시밀러룩 커플 화보 10컷",
     "source_set": 1,
     "date": "20260919",
     "set": 1,
@@ -7196,6 +7489,7 @@
       "seoil",
       "seorin"
     ],
+    "source_title": "서린&서일 · 함께 고른 다섯 장면 — 시밀러룩 커플 화보 10컷",
     "source_set": 2,
     "date": "20260919",
     "set": 2,
@@ -7227,6 +7521,7 @@
       "seoil",
       "seorin"
     ],
+    "source_title": "서린&서일 · 함께 고른 다섯 장면 — 시밀러룩 커플 화보 10컷",
     "source_set": 3,
     "date": "20260919",
     "set": 3,
@@ -7258,6 +7553,7 @@
       "seoil",
       "seorin"
     ],
+    "source_title": "서린&서일 · 함께 고른 다섯 장면 — 시밀러룩 커플 화보 10컷",
     "source_set": 4,
     "date": "20260919",
     "set": 4,
@@ -7289,6 +7585,7 @@
       "seoil",
       "seorin"
     ],
+    "source_title": "서린&서일 · 함께 고른 다섯 장면 — 시밀러룩 커플 화보 10컷",
     "source_set": 5,
     "date": "20260919",
     "set": 5,
@@ -7320,6 +7617,7 @@
       "seoil",
       "seorin"
     ],
+    "source_title": "서린&서일 · 같은 아침을 준비하는 사이 — 호텔 욕실 3컷",
     "source_set": 1,
     "date": "20260921",
     "set": 1,
@@ -7357,6 +7655,7 @@
     "source_models": [
       "seoil"
     ],
+    "source_title": "서일 · 흰 여백에 남은 오후 & 오래된 가죽 곁에 머무는 오후 — 2세트 2컷",
     "source_set": 1,
     "date": "20260918",
     "set": 2,
@@ -7377,6 +7676,7 @@
     "source_models": [
       "seoil"
     ],
+    "source_title": "서일 · 흰 여백에 남은 오후 & 오래된 가죽 곁에 머무는 오후 — 2세트 2컷",
     "source_set": 2,
     "date": "20260918",
     "set": 3,
@@ -7421,6 +7721,7 @@
       "taeju",
       "yugeon"
     ],
+    "source_title": "태주·은재·유건·서일 · 추석 코디 룩 — 돌아가는 길, 만나는 날, 떠나는 연휴",
     "source_set": 4,
     "date": "20260921",
     "set": 4,
@@ -7446,6 +7747,7 @@
     "source_models": [
       "seoil"
     ],
+    "source_title": "서일 · 돌아와서야, 이 맛 — 국밥집 2컷",
     "source_set": 1,
     "date": "20260925",
     "set": 1,
@@ -7462,6 +7764,9 @@
       }
     ]
   },
+  "/seoil/20260927/set01": {
+    "redirect": "/arin--hayoon--jieun--narin--seoil--seorin--suji--yulim/20260927/set01"
+  },
   "/seorin/20260712/set01": {
     "model": "seorin",
     "models": [
@@ -7471,6 +7776,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · 소리로 기억되는 느린 여름 일요일 SNS 화보",
     "source_set": 1,
     "date": "20260712",
     "set": 1,
@@ -7501,6 +7807,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · 소리로 기억되는 느린 여름 일요일 SNS 화보",
     "source_set": 2,
     "date": "20260712",
     "set": 2,
@@ -7531,6 +7838,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · 소리로 기억되는 느린 여름 일요일 SNS 화보",
     "source_set": 3,
     "date": "20260712",
     "set": 3,
@@ -7561,6 +7869,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · 소리로 기억되는 느린 여름 일요일 SNS 화보",
     "source_set": 4,
     "date": "20260712",
     "set": 4,
@@ -7591,6 +7900,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · 소리로 기억되는 느린 여름 일요일 SNS 화보",
     "source_set": 5,
     "date": "20260712",
     "set": 5,
@@ -7621,6 +7931,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · 바다가 들려준 하루 — 바르네뮌데 리조트 라이프스타일 에디토리얼",
     "source_set": 1,
     "date": "20260719",
     "set": 1,
@@ -7651,6 +7962,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · 바다가 들려준 하루 — 바르네뮌데 리조트 라이프스타일 에디토리얼",
     "source_set": 2,
     "date": "20260719",
     "set": 2,
@@ -7681,6 +7993,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · 바다가 들려준 하루 — 바르네뮌데 리조트 라이프스타일 에디토리얼",
     "source_set": 3,
     "date": "20260719",
     "set": 3,
@@ -7711,6 +8024,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · 바다가 들려준 하루 — 바르네뮌데 리조트 라이프스타일 에디토리얼",
     "source_set": 4,
     "date": "20260719",
     "set": 4,
@@ -7741,6 +8055,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · 바다가 들려준 하루 — 바르네뮌데 리조트 라이프스타일 에디토리얼",
     "source_set": 5,
     "date": "20260719",
     "set": 5,
@@ -7771,6 +8086,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · A Resort Heard in Silence — 슐로스 엘마우의 청각적 럭셔리 힐링",
     "source_set": 1,
     "date": "20260725",
     "set": 1,
@@ -7801,6 +8117,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · A Resort Heard in Silence — 슐로스 엘마우의 청각적 럭셔리 힐링",
     "source_set": 2,
     "date": "20260725",
     "set": 2,
@@ -7831,6 +8148,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · A Resort Heard in Silence — 슐로스 엘마우의 청각적 럭셔리 힐링",
     "source_set": 3,
     "date": "20260725",
     "set": 3,
@@ -7861,6 +8179,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · A Resort Heard in Silence — 슐로스 엘마우의 청각적 럭셔리 힐링",
     "source_set": 4,
     "date": "20260725",
     "set": 4,
@@ -7891,6 +8210,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · A Resort Heard in Silence — 슐로스 엘마우의 청각적 럭셔리 힐링",
     "source_set": 5,
     "date": "20260725",
     "set": 5,
@@ -7921,6 +8241,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · THE SOUND THAT BLOOMS INTO LIGHT — 드림코어 페미닌 공감각 에디토리얼",
     "source_set": 1,
     "date": "20260804",
     "set": 1,
@@ -7961,6 +8282,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · THE SOUND THAT BLOOMS INTO LIGHT — 드림코어 페미닌 공감각 에디토리얼",
     "source_set": 2,
     "date": "20260804",
     "set": 2,
@@ -8001,6 +8323,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · THE SOUND THAT BLOOMS INTO LIGHT — 드림코어 페미닌 공감각 에디토리얼",
     "source_set": 3,
     "date": "20260804",
     "set": 3,
@@ -8041,6 +8364,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · THE SOUND THAT BLOOMS INTO LIGHT — 드림코어 페미닌 공감각 에디토리얼",
     "source_set": 4,
     "date": "20260804",
     "set": 4,
@@ -8081,6 +8405,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · THE SOUND THAT BLOOMS INTO LIGHT — 드림코어 페미닌 공감각 에디토리얼",
     "source_set": 5,
     "date": "20260804",
     "set": 5,
@@ -8121,6 +8446,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · THE ONE NIGHT THE STARS REMEMBER — K-퓨전 사극 판타지 로맨스 견우와 직녀",
     "source_set": 1,
     "date": "20260811",
     "set": 1,
@@ -8161,6 +8487,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · THE ONE NIGHT THE STARS REMEMBER — K-퓨전 사극 판타지 로맨스 견우와 직녀",
     "source_set": 2,
     "date": "20260811",
     "set": 2,
@@ -8201,6 +8528,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · THE ONE NIGHT THE STARS REMEMBER — K-퓨전 사극 판타지 로맨스 견우와 직녀",
     "source_set": 3,
     "date": "20260811",
     "set": 3,
@@ -8241,6 +8569,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · THE ONE NIGHT THE STARS REMEMBER — K-퓨전 사극 판타지 로맨스 견우와 직녀",
     "source_set": 4,
     "date": "20260811",
     "set": 4,
@@ -8281,6 +8610,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · THE ONE NIGHT THE STARS REMEMBER — K-퓨전 사극 판타지 로맨스 견우와 직녀",
     "source_set": 5,
     "date": "20260811",
     "set": 5,
@@ -8321,6 +8651,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · FIVE WOMEN, FIVE RESONANCES — 한국사 여성 위인 에디토리얼",
     "source_set": 1,
     "date": "20260901",
     "set": 1,
@@ -8361,6 +8692,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · FIVE WOMEN, FIVE RESONANCES — 한국사 여성 위인 에디토리얼",
     "source_set": 2,
     "date": "20260901",
     "set": 2,
@@ -8401,6 +8733,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · FIVE WOMEN, FIVE RESONANCES — 한국사 여성 위인 에디토리얼",
     "source_set": 3,
     "date": "20260901",
     "set": 3,
@@ -8441,6 +8774,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · FIVE WOMEN, FIVE RESONANCES — 한국사 여성 위인 에디토리얼",
     "source_set": 4,
     "date": "20260901",
     "set": 4,
@@ -8481,6 +8815,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · FIVE WOMEN, FIVE RESONANCES — 한국사 여성 위인 에디토리얼",
     "source_set": 5,
     "date": "20260901",
     "set": 5,
@@ -8521,6 +8856,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · FIVE FORBIDDEN MARKS — 성인 다크 고딕 동화",
     "source_set": 1,
     "date": "20260907",
     "set": 1,
@@ -8561,6 +8897,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · FIVE FORBIDDEN MARKS — 성인 다크 고딕 동화",
     "source_set": 2,
     "date": "20260907",
     "set": 2,
@@ -8601,6 +8938,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · FIVE FORBIDDEN MARKS — 성인 다크 고딕 동화",
     "source_set": 3,
     "date": "20260907",
     "set": 3,
@@ -8641,6 +8979,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · FIVE FORBIDDEN MARKS — 성인 다크 고딕 동화",
     "source_set": 4,
     "date": "20260907",
     "set": 4,
@@ -8681,6 +9020,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · FIVE FORBIDDEN MARKS — 성인 다크 고딕 동화",
     "source_set": 5,
     "date": "20260907",
     "set": 5,
@@ -8721,6 +9061,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · SLAYERS — 아멜리아 5컷",
     "source_set": 1,
     "date": "20260911",
     "set": 1,
@@ -8761,6 +9102,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · 베를린 마우어파크 벼룩시장 — 책장을 넘기자, 오후가 꿈이 됐다",
     "source_set": 1,
     "date": "20260917",
     "set": 1,
@@ -8784,6 +9126,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · 작은 불빛에 마음을 맡기다 — 부다페스트 성당 1컷",
     "source_set": 1,
     "date": "20260918",
     "set": 2,
@@ -8829,6 +9172,7 @@
       "suji",
       "yulim"
     ],
+    "source_title": "✏️ 여성 감성 로맨틱 7세트 — 다정함이 머무는 일곱 장면",
     "source_set": 3,
     "date": "20260921",
     "set": 3,
@@ -8849,6 +9193,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · 한쪽은 너에게 — 이어폰을 건네는 순간 1컷",
     "source_set": 1,
     "date": "20260924",
     "set": 1,
@@ -8869,6 +9214,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "✏️ 서린 · 네 목소리가 가장 가까운 밤 — 음악 펍 로맨스 3컷",
     "source_set": 1,
     "date": "20260925",
     "set": 1,
@@ -8899,6 +9245,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 · 네가 웃던 높이 — 가을 시소의 기억 1컷",
     "source_set": 1,
     "date": "20260925",
     "set": 2,
@@ -8919,6 +9266,7 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "서린 — 파도가 잠드는 숨 (Set1 통합)",
     "source_set": 1,
     "date": "20260926",
     "set": 1,
@@ -8946,6 +9294,9 @@
     ]
   },
   "/seorin/20260927/set01": {
+    "redirect": "/arin--hayoon--jieun--narin--seoil--seorin--suji--yulim/20260927/set01"
+  },
+  "/seorin/20260927/set02": {
     "model": "seorin",
     "models": [
       "seorin"
@@ -8954,9 +9305,10 @@
     "source_models": [
       "seorin"
     ],
+    "source_title": "06 서린 (Seorin) 오빠는 이러려고 나 만나는 거야?",
     "source_set": 1,
     "date": "20260927",
-    "set": 1,
+    "set": 2,
     "cuts": [
       {
         "cut": 1,
@@ -8984,6 +9336,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 소란 〈너를 보네〉 빛과 반사의 로맨틱 미장센",
     "source_set": 1,
     "date": "20260715",
     "set": 1,
@@ -9014,6 +9367,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 소란 〈너를 보네〉 빛과 반사의 로맨틱 미장센",
     "source_set": 2,
     "date": "20260715",
     "set": 2,
@@ -9044,6 +9398,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 소란 〈너를 보네〉 빛과 반사의 로맨틱 미장센",
     "source_set": 3,
     "date": "20260715",
     "set": 3,
@@ -9074,6 +9429,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 소란 〈너를 보네〉 빛과 반사의 로맨틱 미장센",
     "source_set": 4,
     "date": "20260715",
     "set": 4,
@@ -9104,6 +9460,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 소란 〈너를 보네〉 빛과 반사의 로맨틱 미장센",
     "source_set": 5,
     "date": "20260715",
     "set": 5,
@@ -9134,6 +9491,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 질트섬의 빛과 반사 — 리조트 라이프스타일 에디토리얼",
     "source_set": 1,
     "date": "20260722",
     "set": 1,
@@ -9164,6 +9522,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 질트섬의 빛과 반사 — 리조트 라이프스타일 에디토리얼",
     "source_set": 2,
     "date": "20260722",
     "set": 2,
@@ -9194,6 +9553,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 질트섬의 빛과 반사 — 리조트 라이프스타일 에디토리얼",
     "source_set": 3,
     "date": "20260722",
     "set": 3,
@@ -9224,6 +9584,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 질트섬의 빛과 반사 — 리조트 라이프스타일 에디토리얼",
     "source_set": 4,
     "date": "20260722",
     "set": 4,
@@ -9254,6 +9615,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 질트섬의 빛과 반사 — 리조트 라이프스타일 에디토리얼",
     "source_set": 5,
     "date": "20260722",
     "set": 5,
@@ -9284,6 +9646,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · Light & Reflection — 질트 캄펜 럭셔리 에디토리얼",
     "source_set": 1,
     "date": "20260728",
     "set": 1,
@@ -9324,6 +9687,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · Light & Reflection — 질트 캄펜 럭셔리 에디토리얼",
     "source_set": 2,
     "date": "20260728",
     "set": 2,
@@ -9364,6 +9728,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · Light & Reflection — 질트 캄펜 럭셔리 에디토리얼",
     "source_set": 3,
     "date": "20260728",
     "set": 3,
@@ -9404,6 +9769,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · Light & Reflection — 질트 캄펜 럭셔리 에디토리얼",
     "source_set": 4,
     "date": "20260728",
     "set": 4,
@@ -9444,6 +9810,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · Light & Reflection — 질트 캄펜 럭셔리 에디토리얼",
     "source_set": 5,
     "date": "20260728",
     "set": 5,
@@ -9484,6 +9851,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · THE NIGHT BENDS TOWARD HER — 드림코어 로맨틱 에디토리얼",
     "source_set": 1,
     "date": "20260806",
     "set": 1,
@@ -9524,6 +9892,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · THE NIGHT BENDS TOWARD HER — 드림코어 로맨틱 에디토리얼",
     "source_set": 2,
     "date": "20260806",
     "set": 2,
@@ -9564,6 +9933,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · THE NIGHT BENDS TOWARD HER — 드림코어 로맨틱 에디토리얼",
     "source_set": 3,
     "date": "20260806",
     "set": 3,
@@ -9604,6 +9974,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · THE NIGHT BENDS TOWARD HER — 드림코어 로맨틱 에디토리얼",
     "source_set": 4,
     "date": "20260806",
     "set": 4,
@@ -9644,6 +10015,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · THE NIGHT BENDS TOWARD HER — 드림코어 로맨틱 에디토리얼",
     "source_set": 5,
     "date": "20260806",
     "set": 5,
@@ -9684,6 +10056,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 어둠을 건너 스스로 빛이 된 공주 — 퓨전 사극 판타지 신화 시네마틱",
     "source_set": 1,
     "date": "20260809",
     "set": 1,
@@ -9724,6 +10097,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 어둠을 건너 스스로 빛이 된 공주 — 퓨전 사극 판타지 신화 시네마틱",
     "source_set": 2,
     "date": "20260809",
     "set": 2,
@@ -9764,6 +10138,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 어둠을 건너 스스로 빛이 된 공주 — 퓨전 사극 판타지 신화 시네마틱",
     "source_set": 3,
     "date": "20260809",
     "set": 3,
@@ -9804,6 +10179,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 어둠을 건너 스스로 빛이 된 공주 — 퓨전 사극 판타지 신화 시네마틱",
     "source_set": 4,
     "date": "20260809",
     "set": 4,
@@ -9844,6 +10220,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 어둠을 건너 스스로 빛이 된 공주 — 퓨전 사극 판타지 신화 시네마틱",
     "source_set": 5,
     "date": "20260809",
     "set": 5,
@@ -9884,6 +10261,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · INDIGO TIDE — 다낭 Luxury Resort Fashion Editorial",
     "source_set": 1,
     "date": "20260816",
     "set": 1,
@@ -9939,6 +10317,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · FIVE WOMEN, FIVE ACTS — 한국사 여성 위인 에디토리얼",
     "source_set": 1,
     "date": "20260822",
     "set": 1,
@@ -9979,6 +10358,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · FIVE WOMEN, FIVE ACTS — 한국사 여성 위인 에디토리얼",
     "source_set": 2,
     "date": "20260822",
     "set": 2,
@@ -10019,6 +10399,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · FIVE WOMEN, FIVE ACTS — 한국사 여성 위인 에디토리얼",
     "source_set": 3,
     "date": "20260822",
     "set": 3,
@@ -10059,6 +10440,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · FIVE WOMEN, FIVE ACTS — 한국사 여성 위인 에디토리얼",
     "source_set": 4,
     "date": "20260822",
     "set": 4,
@@ -10099,6 +10481,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · FIVE WOMEN, FIVE ACTS — 한국사 여성 위인 에디토리얼",
     "source_set": 5,
     "date": "20260822",
     "set": 5,
@@ -10139,6 +10522,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · FIVE TALES AFTER MIDNIGHT — 성인 다크 동화 에디토리얼",
     "source_set": 1,
     "date": "20260903",
     "set": 1,
@@ -10179,6 +10563,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · FIVE TALES AFTER MIDNIGHT — 성인 다크 동화 에디토리얼",
     "source_set": 2,
     "date": "20260903",
     "set": 2,
@@ -10219,6 +10604,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · FIVE TALES AFTER MIDNIGHT — 성인 다크 동화 에디토리얼",
     "source_set": 3,
     "date": "20260903",
     "set": 3,
@@ -10259,6 +10645,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · FIVE TALES AFTER MIDNIGHT — 성인 다크 동화 에디토리얼",
     "source_set": 4,
     "date": "20260903",
     "set": 4,
@@ -10299,6 +10686,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · FIVE TALES AFTER MIDNIGHT — 성인 다크 동화 에디토리얼",
     "source_set": 5,
     "date": "20260903",
     "set": 5,
@@ -10339,6 +10727,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · SLAYERS — 리나 인버스 5컷",
     "source_set": 1,
     "date": "20260911",
     "set": 1,
@@ -10379,6 +10768,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 하늘이 내려앉은 독서 시간 — 네모필라 드림코어 1컷",
     "source_set": 1,
     "date": "20260917",
     "set": 1,
@@ -10406,6 +10796,7 @@
       "suji",
       "yulim"
     ],
+    "source_title": "✏️ 여성 감성 로맨틱 7세트 — 다정함이 머무는 일곱 장면",
     "source_set": 1,
     "date": "20260921",
     "set": 1,
@@ -10426,6 +10817,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "✏️ 수지 · 너와 머문 유럽의 다섯 장면 — 시네마틱 여행 화보 15컷",
     "source_set": 1,
     "date": "20260923",
     "set": 1,
@@ -10456,6 +10848,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "✏️ 수지 · 너와 머문 유럽의 다섯 장면 — 시네마틱 여행 화보 15컷",
     "source_set": 2,
     "date": "20260923",
     "set": 2,
@@ -10486,6 +10879,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "✏️ 수지 · 너와 머문 유럽의 다섯 장면 — 시네마틱 여행 화보 15컷",
     "source_set": 3,
     "date": "20260923",
     "set": 3,
@@ -10516,6 +10910,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "✏️ 수지 · 너와 머문 유럽의 다섯 장면 — 시네마틱 여행 화보 15컷",
     "source_set": 4,
     "date": "20260923",
     "set": 4,
@@ -10546,6 +10941,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "✏️ 수지 · 너와 머문 유럽의 다섯 장면 — 시네마틱 여행 화보 15컷",
     "source_set": 5,
     "date": "20260923",
     "set": 5,
@@ -10576,6 +10972,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 · 너를 발견한 오후의 빛 — 탕비실의 눈맞춤 1컷",
     "source_set": 1,
     "date": "20260924",
     "set": 1,
@@ -10596,6 +10993,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "빛을 핑계로, 너에게 — 수지 · 1세트 3컷",
     "source_set": 1,
     "date": "20260925",
     "set": 1,
@@ -10626,6 +11024,7 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "수지 — 황금빛이 머무는 자리 (Set1 통합)",
     "source_set": 1,
     "date": "20260926",
     "set": 1,
@@ -10653,6 +11052,9 @@
     ]
   },
   "/suji/20260927/set01": {
+    "redirect": "/arin--hayoon--jieun--narin--seoil--seorin--suji--yulim/20260927/set01"
+  },
+  "/suji/20260927/set02": {
     "model": "suji",
     "models": [
       "suji"
@@ -10661,9 +11063,10 @@
     "source_models": [
       "suji"
     ],
+    "source_title": "04 수지 (Suji) 오빠는 이러려고 나 만나는 거야?",
     "source_set": 1,
     "date": "20260927",
-    "set": 1,
+    "set": 2,
     "cuts": [
       {
         "cut": 1,
@@ -10691,6 +11094,7 @@
     "source_models": [
       "taegeon"
     ],
+    "source_title": "태건 · 등 뒤에 남은 마지막 사람",
     "source_set": 1,
     "date": "20260719",
     "set": 1,
@@ -10729,6 +11133,7 @@
       "taeju",
       "yugeon"
     ],
+    "source_title": "태주·은재·유건·서일 · 추석 코디 룩 — 돌아가는 길, 만나는 날, 떠나는 연휴",
     "source_set": 1,
     "date": "20260921",
     "set": 1,
@@ -10757,6 +11162,7 @@
       "taeju",
       "yugeon"
     ],
+    "source_title": "태주·은재·유건·서일 · 추석 코디 룩 — 돌아가는 길, 만나는 날, 떠나는 연휴",
     "source_set": 5,
     "date": "20260921",
     "set": 5,
@@ -10782,6 +11188,7 @@
     "source_models": [
       "taeju"
     ],
+    "source_title": "08 태주 (Taeju) 오빠는 이러려고 나 만나는 거야?",
     "source_set": 1,
     "date": "20260927",
     "set": 1,
@@ -10815,6 +11222,7 @@
       "taeju",
       "yugeon"
     ],
+    "source_title": "태주·은재·유건·서일 · 추석 코디 룩 — 돌아가는 길, 만나는 날, 떠나는 연휴",
     "source_set": 3,
     "date": "20260921",
     "set": 3,
@@ -10843,6 +11251,7 @@
       "taeju",
       "yugeon"
     ],
+    "source_title": "태주·은재·유건·서일 · 추석 코디 룩 — 돌아가는 길, 만나는 날, 떠나는 연휴",
     "source_set": 7,
     "date": "20260921",
     "set": 7,
@@ -10871,6 +11280,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 한여름 텍스처 감성 SNS 화보",
     "source_set": 1,
     "date": "20260710",
     "set": 1,
@@ -10901,6 +11311,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 한여름 텍스처 감성 SNS 화보",
     "source_set": 2,
     "date": "20260710",
     "set": 2,
@@ -10931,6 +11342,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 한여름 텍스처 감성 SNS 화보",
     "source_set": 3,
     "date": "20260710",
     "set": 3,
@@ -10961,6 +11373,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 한여름 텍스처 감성 SNS 화보",
     "source_set": 4,
     "date": "20260710",
     "set": 4,
@@ -10991,6 +11404,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 한여름 텍스처 감성 SNS 화보",
     "source_set": 5,
     "date": "20260710",
     "set": 5,
@@ -11021,6 +11435,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 포츠담 오랑제리 궁전 필름 데이트 스냅",
     "source_set": 1,
     "date": "20260716",
     "set": 1,
@@ -11051,6 +11466,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 포츠담 오랑제리 궁전 필름 데이트 스냅",
     "source_set": 2,
     "date": "20260716",
     "set": 2,
@@ -11081,6 +11497,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 포츠담 오랑제리 궁전 필름 데이트 스냅",
     "source_set": 3,
     "date": "20260716",
     "set": 3,
@@ -11111,6 +11528,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 포츠담 오랑제리 궁전 필름 데이트 스냅",
     "source_set": 4,
     "date": "20260716",
     "set": 4,
@@ -11141,6 +11559,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 포츠담 오랑제리 궁전 필름 데이트 스냅",
     "source_set": 5,
     "date": "20260716",
     "set": 5,
@@ -11171,6 +11590,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 푸른 들판 위, 바스락거리는 여름의 질감",
     "source_set": 1,
     "date": "20260717",
     "set": 1,
@@ -11201,6 +11621,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 자연의 질감과 북해의 바캉스 캔디드 스냅샷",
     "source_set": 1,
     "date": "20260723",
     "set": 1,
@@ -11231,6 +11652,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 자연의 질감과 북해의 바캉스 캔디드 스냅샷",
     "source_set": 2,
     "date": "20260723",
     "set": 2,
@@ -11261,6 +11683,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 자연의 질감과 북해의 바캉스 캔디드 스냅샷",
     "source_set": 3,
     "date": "20260723",
     "set": 3,
@@ -11291,6 +11714,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 자연의 질감과 북해의 바캉스 캔디드 스냅샷",
     "source_set": 4,
     "date": "20260723",
     "set": 4,
@@ -11321,6 +11745,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 자연의 질감과 북해의 바캉스 캔디드 스냅샷",
     "source_set": 5,
     "date": "20260723",
     "set": 5,
@@ -11351,6 +11776,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · A Midsummer Night’s Sweetness — 한여름밤의 꿀 로맨틱 루프탑 에디토리얼",
     "source_set": 1,
     "date": "20260728",
     "set": 1,
@@ -11406,6 +11832,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · Texture & Temperature — 뤼겐 감성 라이프스타일 에디토리얼",
     "source_set": 1,
     "date": "20260729",
     "set": 1,
@@ -11446,6 +11873,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · Texture & Temperature — 뤼겐 감성 라이프스타일 에디토리얼",
     "source_set": 2,
     "date": "20260729",
     "set": 2,
@@ -11486,6 +11914,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · Texture & Temperature — 뤼겐 감성 라이프스타일 에디토리얼",
     "source_set": 3,
     "date": "20260729",
     "set": 3,
@@ -11526,6 +11955,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · Texture & Temperature — 뤼겐 감성 라이프스타일 에디토리얼",
     "source_set": 4,
     "date": "20260729",
     "set": 4,
@@ -11566,6 +11996,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · Texture & Temperature — 뤼겐 감성 라이프스타일 에디토리얼",
     "source_set": 5,
     "date": "20260729",
     "set": 5,
@@ -11606,6 +12037,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · TACTILE DREAM — 드림코어 Soft Romantic 질감 에디토리얼",
     "source_set": 1,
     "date": "20260803",
     "set": 1,
@@ -11646,6 +12078,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · TACTILE DREAM — 드림코어 Soft Romantic 질감 에디토리얼",
     "source_set": 2,
     "date": "20260803",
     "set": 2,
@@ -11686,6 +12119,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · TACTILE DREAM — 드림코어 Soft Romantic 질감 에디토리얼",
     "source_set": 3,
     "date": "20260803",
     "set": 3,
@@ -11726,6 +12160,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · TACTILE DREAM — 드림코어 Soft Romantic 질감 에디토리얼",
     "source_set": 4,
     "date": "20260803",
     "set": 4,
@@ -11766,6 +12201,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · TACTILE DREAM — 드림코어 Soft Romantic 질감 에디토리얼",
     "source_set": 5,
     "date": "20260803",
     "set": 5,
@@ -11806,6 +12242,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 꽃신이 인연을 기억하는 방식 — 퓨전 사극 로맨스 에디토리얼",
     "source_set": 1,
     "date": "20260807",
     "set": 1,
@@ -11846,6 +12283,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 꽃신이 인연을 기억하는 방식 — 퓨전 사극 로맨스 에디토리얼",
     "source_set": 2,
     "date": "20260807",
     "set": 2,
@@ -11886,6 +12324,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 꽃신이 인연을 기억하는 방식 — 퓨전 사극 로맨스 에디토리얼",
     "source_set": 3,
     "date": "20260807",
     "set": 3,
@@ -11926,6 +12365,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 꽃신이 인연을 기억하는 방식 — 퓨전 사극 로맨스 에디토리얼",
     "source_set": 4,
     "date": "20260807",
     "set": 4,
@@ -11966,6 +12406,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 꽃신이 인연을 기억하는 방식 — 퓨전 사극 로맨스 에디토리얼",
     "source_set": 5,
     "date": "20260807",
     "set": 5,
@@ -12006,6 +12447,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 그들이 남긴 오늘 — 광복 81주년 Remembrance Editorial",
     "source_set": 1,
     "date": "20260815",
     "set": 1,
@@ -12026,6 +12468,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · STARS BETWEEN US — 은하수 아래 멈춘 밤",
     "source_set": 1,
     "date": "20260823",
     "set": 1,
@@ -12046,6 +12489,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · RICHMOND BRIDAL ARCHIVE — 현대 웨딩·조지안 브라이덜·유화 초상",
     "source_set": 1,
     "date": "20260829",
     "set": 1,
@@ -12111,6 +12555,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · RICHMOND BRIDAL ARCHIVE — 현대 웨딩·조지안 브라이덜·유화 초상",
     "source_set": 2,
     "date": "20260829",
     "set": 2,
@@ -12166,6 +12611,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · RICHMOND BRIDAL ARCHIVE — 현대 웨딩·조지안 브라이덜·유화 초상",
     "source_set": 3,
     "date": "20260829",
     "set": 3,
@@ -12191,6 +12637,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · FIVE WOMEN, FIVE WAYS OF KNOWING — 한국사 여성 위인 에디토리얼",
     "source_set": 1,
     "date": "20260830",
     "set": 1,
@@ -12231,6 +12678,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · FIVE WOMEN, FIVE WAYS OF KNOWING — 한국사 여성 위인 에디토리얼",
     "source_set": 2,
     "date": "20260830",
     "set": 2,
@@ -12271,6 +12719,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · FIVE WOMEN, FIVE WAYS OF KNOWING — 한국사 여성 위인 에디토리얼",
     "source_set": 3,
     "date": "20260830",
     "set": 3,
@@ -12311,6 +12760,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · FIVE WOMEN, FIVE WAYS OF KNOWING — 한국사 여성 위인 에디토리얼",
     "source_set": 4,
     "date": "20260830",
     "set": 4,
@@ -12351,6 +12801,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · FIVE WOMEN, FIVE WAYS OF KNOWING — 한국사 여성 위인 에디토리얼",
     "source_set": 5,
     "date": "20260830",
     "set": 5,
@@ -12391,6 +12842,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 베를린에서 발견한 느린 오후 — Mauerpark Flohmarkt 단일컷",
     "source_set": 1,
     "date": "20260908",
     "set": 1,
@@ -12411,6 +12863,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · FIVE DARK FAIRYTALES — 성인 고딕 스릴러 25컷",
     "source_set": 1,
     "date": "20260909",
     "set": 1,
@@ -12451,6 +12904,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · FIVE DARK FAIRYTALES — 성인 고딕 스릴러 25컷",
     "source_set": 2,
     "date": "20260909",
     "set": 2,
@@ -12491,6 +12945,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · FIVE DARK FAIRYTALES — 성인 고딕 스릴러 25컷",
     "source_set": 3,
     "date": "20260909",
     "set": 3,
@@ -12531,6 +12986,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · FIVE DARK FAIRYTALES — 성인 고딕 스릴러 25컷",
     "source_set": 4,
     "date": "20260909",
     "set": 4,
@@ -12571,6 +13027,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · FIVE DARK FAIRYTALES — 성인 고딕 스릴러 25컷",
     "source_set": 5,
     "date": "20260909",
     "set": 5,
@@ -12611,6 +13068,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · SLAYERS — 피리아 울 콥트 5컷",
     "source_set": 1,
     "date": "20260911",
     "set": 1,
@@ -12654,6 +13112,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 · 노을이 머무는 동안 — 옥탑방 커튼 로맨스 3컷",
     "source_set": 1,
     "date": "20260918",
     "set": 1,
@@ -12694,6 +13153,7 @@
       "suji",
       "yulim"
     ],
+    "source_title": "✏️ 여성 감성 로맨틱 7세트 — 다정함이 머무는 일곱 장면",
     "source_set": 5,
     "date": "20260921",
     "set": 5,
@@ -12717,6 +13177,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "✏️ 유림 · 너를 듣던 순간 — 라붐 아날로그 필름 오마주 3컷",
     "source_set": 1,
     "date": "20260923",
     "set": 1,
@@ -12747,6 +13208,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "✏️ 유림 · 꽃 사이로 마주친 너 — 코스모스 로우 앵글 1컷",
     "source_set": 1,
     "date": "20260924",
     "set": 1,
@@ -12767,6 +13229,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "✏️ 유림 · 온기를 건네는 세 가지 방법 — 촉각의 온기 3컷",
     "source_set": 1,
     "date": "20260925",
     "set": 1,
@@ -12797,6 +13260,7 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "유림 — 한반도 신수&신, 현대적 재해석",
     "source_set": 1,
     "date": "20260926",
     "set": 1,
@@ -12824,6 +13288,9 @@
     ]
   },
   "/yulim/20260927/set01": {
+    "redirect": "/arin--hayoon--jieun--narin--seoil--seorin--suji--yulim/20260927/set01"
+  },
+  "/yulim/20260927/set02": {
     "model": "yulim",
     "models": [
       "yulim"
@@ -12832,9 +13299,10 @@
     "source_models": [
       "yulim"
     ],
+    "source_title": "05 유림 (Yulim) 오빠는 이러려고 나 만나는 거야?",
     "source_set": 1,
     "date": "20260927",
-    "set": 1,
+    "set": 2,
     "cuts": [
       {
         "cut": 1,
