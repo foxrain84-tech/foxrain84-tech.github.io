@@ -517,6 +517,7 @@ def build_site_pages(token, rows):
                 "models": models,
                 "source_page_id": str(page_id).replace("-", ""),
                 "source_models": sorted(model_slug(name) for name in model_names),
+                "source_title": property_text(props.get("기획서", {})),
                 "source_set": original_set,
                 "date": date,
                 "set": set_number,
@@ -577,3 +578,4 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
