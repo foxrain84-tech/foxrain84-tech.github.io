@@ -283,6 +283,12 @@ a.list-link:hover{
 .plan-link .list-sub{display:block;color:var(--text);font-size:.95rem;line-height:1.5;white-space:normal;overflow-wrap:anywhere;}
 .plan-link .list-go{flex-shrink:0;}
 @media(max-width:400px){a.plan-link{flex-wrap:wrap;}a.plan-link > span:first-child{flex-basis:100%;}a.plan-link .list-go{margin-left:auto;}}
+
+.meta{overflow-wrap:anywhere;line-height:1.55;}
+.copy-notice{width:min(90vw,420px);border:1px solid var(--line);border-radius:20px;padding:26px;background:var(--card);color:var(--text);box-shadow:0 16px 50px #0003;}
+.copy-notice::backdrop{background:rgba(30,24,18,.45);}
+.copy-notice h2{font-size:1.2rem;margin:0 0 16px;}
+.copy-notice p{line-height:1.7;margin:0 0 22px;word-break:keep-all;}
 </style>
 <link rel="stylesheet" href="/assets/stats-dashboard.css?v=20260921">
 </head>
@@ -325,6 +331,12 @@ a.list-link:hover{
   ></div>
 
 </main>
+
+<dialog class="copy-notice" id="copy-notice" aria-labelledby="copy-notice-title">
+  <h2 id="copy-notice-title">프롬프트가 복사되었어요! ✨</h2>
+  <p>좋아요와 리포스트도 눌러주셨나요?<br>만드신 이미지를 댓글로 공유해 주시면 감사하겠습니다 🤍</p>
+  <form method="dialog"><button class="copy" autofocus>확인</button></form>
+</dialog>
 
 <script src="/assets/stats.js?v=20260921"></script>
 <script src="/assets/copy-history.js?v=20260921"></script>
@@ -443,6 +455,25 @@ async function copyText(text){
   }else{
     fallbackCopy(text);
   }
+}
+
+let copyNoticeShown = false;
+function showCopyNoticeOnce(){
+  const key = 'yulim-copy-notice-v1';
+  if(copyNoticeShown) return;
+  try{
+    if(sessionStorage.getItem(key) === 'shown') return;
+  }catch(error){ /* Storage may be unavailable; retain an in-page flag. */ }
+  const dialog = document.getElementById('copy-notice');
+  try{
+    if(dialog && typeof dialog.showModal === 'function'){
+      dialog.showModal();
+    }else{
+      window.alert('프롬프트가 복사되었어요! ✨\\n좋아요와 리포스트도 눌러주셨나요?\\n만드신 이미지를 댓글로 공유해 주시면 감사하겠습니다 🤍');
+    }
+    copyNoticeShown = true;
+    try{ sessionStorage.setItem(key, 'shown'); }catch(error){}
+  }catch(error){ /* Notice errors must not interrupt copying or counts. */ }
 }
 
 function resetBack(){
@@ -680,7 +711,7 @@ function renderArchive(
     formatDate(date);
 
   meta.textContent =
-    `${archiveLabel} · 공개 세트 ${sets.length}개`;
+    `${model.startsWith("plan-") ? planningTitle(sets[0].page) : archiveLabel} · 공개 세트 ${sets.length}개`;
 
   content.innerHTML = '';
 
@@ -738,20 +769,6 @@ function renderPrompt(page){
     '← 세트 목록'
   );
 
-  if(pageModels(page).length > 1){
-    if(!page.source_page_id) showBack('/', '← 전체 목록');
-    const links = document.createElement('div');
-    links.className = 'model-links';
-    pageModels(page).forEach(model => {
-      const link = document.createElement('a');
-      link.className = 'back';
-      link.href = `/archive/${model}/${page.date}`;
-      link.textContent = `${model.toUpperCase()} 세트 목록 →`;
-      link.style.marginRight = '16px';
-      links.appendChild(link);
-    });
-    content.appendChild(links);
-  }
   const cutRefs = [];
 
   (page.cuts || []).forEach(cut => {
@@ -826,6 +843,8 @@ function renderPrompt(page){
 
         status.textContent =
           '✓ Prompt copied';
+
+        showCopyNoticeOnce();
 
         if(COUNTS_ENABLED){
           try{
@@ -949,5 +968,6 @@ async function renderStats(pages){
 </script>
 </body>
 </html>
+
 
 
