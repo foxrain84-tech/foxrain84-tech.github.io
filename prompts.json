@@ -12675,6 +12675,35 @@
       }
     ]
   },
+  "/yugeon/20261004/set01": {
+    "model": "yugeon",
+    "models": [
+      "yugeon"
+    ],
+    "source_page_id": "3ee284b3f9b581128212f19da906eb2a",
+    "source_models": [
+      "eunjae",
+      "seoil",
+      "taeju",
+      "yugeon"
+    ],
+    "source_title": "각자의 전선, 하나의 약속 — Different Fronts, One Promise",
+    "source_set": 1,
+    "date": "20261004",
+    "set": 1,
+    "cuts": [
+      {
+        "cut": 1,
+        "title": "어둠을 가르는 대치",
+        "prompt": "Edit the supplied image with ONLY these two changes:\n\n1. DARKER OVERALL EXPOSURE\nLower the overall exposure slightly, approximately 0.4 stop darker than the supplied image. Deepen the shadows across the room, uniform, and camera-facing side of the face. Keep the existing cool cyan light direction and restrained highlights on the facial profile, exposed forearm, and knife. Dim the background openings proportionally so they do not dominate the darker image. Preserve faint detail in the illuminated areas. No new fill light, lifted shadows, HDR, or added glow.\n\n2. SMALLER SUBJECT WITHIN THE FRAME\nKeep the LANDSCAPE 4:3 aspect ratio. Pull the camera back so the entire subject, including the arms, hands, and knife, appears approximately 20% smaller in linear screen size than in the supplied image. Reveal more of the surrounding dark room, including additional space above the head and beyond the knife. Keep the person in the left half, facing right, with the knife hand extending toward the right half. Preserve the existing camera angle and perspective. Expand the scene naturally; do not shrink the person's anatomy, shorten the arms, or resize the knife independently.\n\nPreserve the person's exact facial identity, hairstyle, camouflage face paint, expression, gaze, body rotation, arm positions, gloved grip, and the knife's exact visible orientation. Preserve the wardrobe and existing background structure. Keep the same tense cinematic atmosphere.\n\nMaintain the exact watermark “ⓒyulim_mood” at bottom center, with its existing size, lettering style, and safe margin. Keep it fixed to the final frame rather than scaling it with the subject.\n\nMake no other changes."
+      },
+      {
+        "cut": 2,
+        "title": "정면에 마주한 긴장",
+        "prompt": "Edit the ATTACHED LANDSCAPE PHOTOGRAPH into ONE VERTICAL 3:4 image. Use this exact photograph as the source for the person and the entire scene.\n\nReconstruct the same frozen moment from a new camera position directly in front of the man's face. Preserve his pose and the existing dark cinematic atmosphere.\n\n1. Preserve the Source\nKeep the same adult man, recognizable facial identity, hairstyle, camouflage face paint, tense expression, clothing, rolled sleeves, exposed forearms, fingerless tactical gloves, and military knife. Preserve the original skin and fabric texture.\n\nKeep his torso rotation, head direction, shoulder positions, elbow angles, extended knife arm, gripping hand, and opposite hand held near his collarbone. Do not make him adopt a different stance.\n\n2. Move the Camera to the Front\nIn the attached photograph, the man faces toward image-right and extends the knife arm in that direction. Move the camera around toward that existing forward direction until it looks directly at the front of his face.\n\nThe MAN DOES NOT TURN. The CAMERA MOVES. Keep his head angle and gaze fixed in the scene; his gaze now naturally faces the relocated camera.\n\nPreserve the original camera height and natural lens perspective. Show the face frontally while allowing the shoulders and torso to remain angled according to the original stance.\n\nThe extended arm now projects toward the viewer and appears foreshortened. Its actual extension and elbow bend remain unchanged. Do not pull the fist back toward his chest or fold the extended arm into a new pose.\n\n3. Knife Orientation — Essential Visual Result\nThe knife TIP points UPWARD.\nThe SHARPENED CUTTING EDGE faces the NEW CAMERA.\nThe BLUNT SPINE faces away from the camera, deeper into the scene.\n\nThe attached side view shows the broad flat surface of the blade. From the new frontal camera position, show that same knife almost EDGE-ON: a narrow metal profile rising above the gripping hand. Its broad flat sides recede into depth and are barely visible.\n\nPreserve the knife's physical orientation relative to the hand and body. Obtain the edge-facing view through the camera change. Do not retain the broad blade silhouette from the original viewpoint.\n\nThe broad metal face and central groove must not face the viewer in the final image. Do not point the tip toward the lens. Do not turn the knife into a needle or physically narrow its blade; the thin appearance comes from perspective.\n\nKeep blade, guard, and handle connected as one rigid object, with the same natural gloved grip. Preserve the knife's original proportions.\n\n4. Vertical Framing\nChange the canvas to VERTICAL 3:4. Compose an environmental upper-body portrait with the full head, gripping hand, and entire knife inside the frame. Retain dark breathing room above and around the man rather than making a tight face crop.\n\nKeep the subject at a restrained scale. Do not enlarge his face to fill the frame. Preserve natural overlap and foreshortening from the new viewpoint.\n\n5. Keep the Lighting and Darkness\nKeep all light sources fixed in the room. Preserve the existing cool cyan light through the openings, its intensity, atmospheric haze, falloff, and the source photograph's dark exposure.\n\nReconstruct the room from the new viewpoint. Background openings and light shafts must follow their existing physical positions, not remain pasted in the same screen coordinates.\n\nDo not add frontal fill or brighten the face for visibility. Keep most of the face, hair, uniform, gloves, and room in deep shadow. Let the existing light reveal only the surfaces it physically reaches.\n\nThe knife's reflections change naturally with the viewing angle. Its edge remains subdued cool-gray metal, without a bright white glow.\n\nPreserve the existing color grading, grain, contrast, and photographic texture.\n\n6. Watermark and Finish\nKeep the exact watermark “ⓒyulim_mood” centered at the bottom of the new vertical frame. Preserve its white calligraphic italic style and apparent size, with a safe bottom margin.\n\nNo additional people, headwear, insignia, text, or objects. No changes to the scene beyond the requested camera viewpoint and vertical composition."
+      }
+    ]
+  },
   "/yulim/20260710/set01": {
     "model": "yulim",
     "models": [
