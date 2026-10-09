@@ -2,6 +2,11 @@ name: Sync prompts from Notion
 
 on:
   workflow_dispatch:
+    inputs:
+      force_full_sync:
+        description: '전체 다시 수집 (발행완료 세트 본문 수정 후 선택)'
+        type: boolean
+        default: false
   schedule:
     - cron: "*/10 * * * *"
 
@@ -20,9 +25,19 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Restore published prompt cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .sync-cache/notion-cuts.json
+          key: notion-cuts-v1-${{ hashFiles('scripts/sync_notion.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            notion-cuts-v1-${{ hashFiles('scripts/sync_notion.py') }}-
+
       - name: Generate prompts.json from Notion
+        id: generate
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_FORCE_FULL_SYNC: ${{ inputs.force_full_sync || false }}
         run: python3 scripts/sync_notion.py
 
       - name: Commit changes
@@ -38,3 +53,10 @@ jobs:
           git add prompts.json
           git commit -m "Sync prompts from Notion"
           git push
+
+      - name: Save published prompt cache
+        if: success() && steps.generate.outputs.cache_changed == 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .sync-cache/notion-cuts.json
+          key: notion-cuts-v1-${{ hashFiles('scripts/sync_notion.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
