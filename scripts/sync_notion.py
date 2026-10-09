@@ -308,11 +308,31 @@ def block_text(block):
     return plain_text(payload.get("rich_text"))
 
 
+def extract_set_title(text, model_names=None):
+    """Remove the set marker and a leading model field, preserving title words."""
+    match = SET_PATTERN.search(text)
+    if not match:
+        return ""
+    title = text[match.end():].strip(" .:—–-·|\t")
+    aliases = sorted(set(MODEL_SLUGS) | set(MODEL_SLUGS.values()) | set(model_names or [])
+                     | {model_slug(name) for name in (model_names or [])}, key=len, reverse=True)
+    names = "|".join(re.escape(name) for name in aliases)
+    prefix = re.compile(
+        rf"^(?:{names})(?:\s*(?:&|＆|/|,|·|및|와|과)\s*(?:{names}))*"
+        rf"(?=\s|[—–:|·-]|$)", re.IGNORECASE,
+    )
+    model_match = prefix.match(title)
+    if model_match:
+        title = title[model_match.end():].strip(" .:—–-·|\t")
+    return title
+
+
 def extract_prompt_cuts(token, page_id, model_names=None):
     blocks = flatten_blocks(token, page_id)
 
     current_set = None
     current_models = []
+    set_titles = {}
     current_cut = None
     waiting_for_prompt_code = False
     implicit_prompt_title = ""
@@ -334,6 +354,9 @@ def extract_prompt_cuts(token, page_id, model_names=None):
                 set_value = set_match.group(1) or set_match.group(2)
                 current_set = int(set_value)
                 current_models = heading_model_names(text, model_names)
+                set_title = extract_set_title(text, model_names)
+                if set_title:
+                    set_titles[current_set] = set_title
 
             cut_match = CUT_PATTERN.search(text)
             if cut_match:
@@ -384,9 +407,9 @@ def extract_prompt_cuts(token, page_id, model_names=None):
 
         if waiting_for_prompt_code and block_type == "code":
             code_payload = block.get("code", {})
-            prompt = plain_text(code_payload.get("rich_text"))
+            prompt = "".join(item.get("plain_text", "") for item in (code_payload.get("rich_text") or []))
 
-            if prompt:
+            if prompt.strip():
                 if implicit_prompt_mode or current_cut is None:
                     cut_number = len(found) + 1
                     prompt_cut = {
@@ -416,6 +439,8 @@ def extract_prompt_cuts(token, page_id, model_names=None):
                 current_cut = None
                 implicit_prompt_title = ""
 
+    for cut in found:
+        cut["set_title"] = set_titles.get(cut["set"], "")
     return found
 
 
@@ -480,6 +505,7 @@ def build_site_pages(token, rows):
                 "title": cut["title"],
                 "prompt": cut["prompt"],
                 "model_names": cut.get("model_names", []),
+                "set_title": cut.get("set_title", ""),
             })
 
         for original_set, set_cuts in sorted(page_groups.items()):
@@ -519,9 +545,10 @@ def build_site_pages(token, rows):
                 "source_models": sorted(model_slug(name) for name in model_names),
                 "source_title": property_text(props.get("기획서", {})),
                 "source_set": original_set,
+                "set_title": next((cut["set_title"] for cut in set_cuts if cut.get("set_title")), ""),
                 "date": date,
                 "set": set_number,
-                "cuts": [{k: v for k, v in cut.items() if k != "model_names"}
+                "cuts": [{k: v for k, v in cut.items() if k not in {"model_names", "set_title"}}
                          for cut in set_cuts],
             }
             if len(models) > 1:
