@@ -289,6 +289,8 @@ a.list-link:hover{
 .copy-notice::backdrop{background:rgba(30,24,18,.45);}
 .copy-notice h2{font-size:1.2rem;margin:0 0 16px;}
 .copy-notice p{line-height:1.7;margin:0 0 22px;word-break:keep-all;}
+.prompt-set{margin:26px 0;scroll-margin-top:20px;}
+.prompt-set h2{font-size:1.15rem;line-height:1.6;overflow-wrap:anywhere;border-bottom:1px solid var(--line);padding-bottom:12px;}
 </style>
 <link rel="stylesheet" href="/assets/stats-dashboard.css?v=20260921">
 </head>
@@ -629,7 +631,7 @@ function renderHome(pages){
 
       item.label,
 
-      `${item.sets}세트 · 목록 →`
+      `${item.sets}세트 · ${item.cuts}컷 · 복사 →`
     );
     content.lastElementChild.classList.add('plan-link');
   });
@@ -701,77 +703,61 @@ function renderArchive(
     return;
   }
 
-  const archiveLabel = model.startsWith('plan-')
-    ? (sets[0].page.source_models || pageModels(sets[0].page)).map(x => x.toUpperCase()).join(' & ')
-    : model.includes('--') ? pageLabel(sets[0].page) : model.toUpperCase();
-  document.title =
-    `${archiveLabel} ${date} Prompt Sets`;
-
-  title.textContent =
-    formatDate(date);
-
-  meta.textContent =
-    `${model.startsWith("plan-") ? planningTitle(sets[0].page) : archiveLabel} · 공개 세트 ${sets.length}개`;
-
-  content.innerHTML = '';
-
-  showBack(
-    '/',
-    '← 날짜 목록'
-  );
-
-  sets.forEach(item => {
-    addListLink(
-      content,
-
-      item.route,
-
-      `SET ${String(
-        item.page.source_set || item.page.set
-      ).padStart(2, '0')}`,
-
-      ` · ${pageLabel(item.page)} · ${(item.page.cuts || []).length}컷`,
-
-      '복사 →'
-    );
-  });
-
-  notice.textContent =
-    '세트를 선택하면 원클릭 복사 페이지로 이동합니다.';
+  renderPromptSets(sets, date, model.startsWith('plan-')
+    ? planningTitle(sets[0].page) : model.toUpperCase());
 }
 
-function renderPrompt(page){
-  const title =
-    document.getElementById('title');
+function setAnchor(page){
+  return `set-${page.source_page_id || page.model}-${page.source_set || page.set}`;
+}
 
-  const meta =
-    document.getElementById('meta');
-
-  const content =
-    document.getElementById('content');
-
-  const notice =
-    document.getElementById('notice');
-
-  document.title =
-    `${pageLabel(page)} ${page.date} SET ${String(page.source_set || page.set).padStart(2, '0')} Prompt Copy`;
-
-  title.textContent =
-    pageLabel(page);
-
-  meta.textContent =
-    `${formatDate(page.date)} · SET ${String(page.source_set || page.set).padStart(2, '0')}`;
-
+function renderPromptSets(sets, date, label){
+  document.title = `${label} ${date} Prompt Copy`;
+  document.getElementById('title').textContent = formatDate(date);
+  document.getElementById('meta').textContent =
+    `${label} · ${sets.length}세트 · ${sets.reduce((n, item) => n + (item.page.cuts || []).length, 0)}컷`;
+  const content = document.getElementById('content');
   content.innerHTML = '';
-
-  showBack(
-    `/archive/${page.source_page_id ? "plan-" + page.source_page_id : String(page.model).toLowerCase()}/${page.date}`,
-    '← 세트 목록'
-  );
-
+  showBack('/', '← 기획서 목록');
   const cutRefs = [];
+  sets.forEach(item => {
+    const page = item.page;
+    const group = document.createElement('section');
+    group.className = 'prompt-set';
+    group.id = setAnchor(page);
+    const heading = document.createElement('h2');
+    const number = String(page.source_set || page.set).padStart(2, '0');
+    heading.textContent = `SET ${number} · ${page.set_title || '세트 제목 미등록'}`;
+    group.appendChild(heading);
+    content.appendChild(group);
+    appendPromptCuts(page, group, cutRefs);
+  });
+  if(COUNTS_ENABLED){
+    loadCounts().then(counts => {
+      cutRefs.forEach(ref => {
+        if(ref.state.recorded) return;
+        ref.state.count = ref.keys.reduce((sum, key) =>
+          sum + (typeof counts[key] === 'number' ? counts[key] : 0), 0);
+        ref.render();
+      });
+    });
+  }
+  document.getElementById('notice').innerHTML =
+    '각 버튼은 해당 컷의 프롬프트만 복사합니다.<br>프롬프트 전문은 화면에 표시되지 않습니다.';
+}
 
-  (page.cuts || []).forEach(cut => {
+function renderPrompt(page, pages){
+  // Existing shared set links open the same plan, positioned at their original set.
+  if(page.source_page_id){
+    renderArchive(pages, `plan-${page.source_page_id}`, String(page.date));
+  }else{
+    renderPromptSets([{page}], page.date, planningTitle(page));
+  }
+  document.getElementById(setAnchor(page))?.scrollIntoView({block:'start'});
+}
+
+function appendPromptCuts(page, content, cutRefs){
+  [...(page.cuts || [])].sort((a, b) => a.cut - b.cut).forEach(cut => {
     const section =
       document.createElement('section');
 
@@ -876,20 +862,6 @@ function renderPrompt(page){
     content.appendChild(section);
   });
 
-  if(COUNTS_ENABLED){
-    loadCounts().then(counts => {
-      cutRefs.forEach(ref => {
-        if(ref.state.recorded) return; // Do not overwrite a completed increment with an older read.
-        ref.state.count = ref.keys.reduce((sum, key) =>
-          sum + (typeof counts[key] === 'number' ? counts[key] : 0), 0);
-
-        ref.render();
-      });
-    });
-  }
-
-  notice.innerHTML =
-    '각 버튼은 해당 컷의 프롬프트만 복사합니다.<br>프롬프트 전문은 화면에 표시되지 않습니다.';
 }
 
 async function renderStats(pages){
@@ -955,7 +927,7 @@ async function renderStats(pages){
       return;
     }
 
-    renderPrompt(page);
+    renderPrompt(page, pages);
 
   }catch(error){
     console.error(error);
