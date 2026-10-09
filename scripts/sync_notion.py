@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import json
+import hashlib
 import math
 import random
 import time
@@ -140,8 +141,8 @@ def property_text(prop):
     if prop_type == "rich_text":
         return plain_text(prop.get("rich_text"))
 
-    if prop_type == "select":
-        selected = prop.get("select") or {}
+    if prop_type in {"select", "status"}:
+        selected = prop.get(prop_type) or {}
         return selected.get("name", "").strip()
 
     if prop_type == "date":
@@ -444,7 +445,102 @@ def extract_prompt_cuts(token, page_id, model_names=None):
     return found
 
 
-def build_site_pages(token, rows):
+CACHE_FILE = Path(".sync-cache/notion-cuts.json")
+CACHE_VERSION = 1
+
+
+def cache_code_signature():
+    return hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+
+
+def row_signature(row):
+    return hashlib.sha256(json.dumps({
+        "edited": row.get("last_edited_time"),
+        "properties": row.get("properties", {}),
+    }, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
+
+
+class PromptCache:
+    """Published pages are immutable; unfinished pages always get a fresh read.
+
+    A child-only edit may not change the root's timestamp. Force a full refresh
+    after editing a published child page, or change the root status temporarily.
+    Only currently public cuts are persisted in the Actions cache.
+    """
+    def __init__(self, path=CACHE_FILE, force=False):
+        self.path = Path(path)
+        self.force = force
+        self.old_entries = {}
+        self.entries = {}
+        self.hits = 0
+        self.reads = 0
+        self.code_signature = cache_code_signature()
+        if not force and self.path.exists():
+            try:
+                payload = json.loads(self.path.read_text(encoding="utf-8"))
+                if (payload.get("version") == CACHE_VERSION
+                        and payload.get("code_signature") == self.code_signature
+                        and isinstance(payload.get("entries"), dict)):
+                    self.old_entries = payload["entries"]
+            except (ValueError, OSError, AttributeError):
+                print("캐시를 읽지 못해 전체 수집으로 복구합니다.", file=sys.stderr)
+
+    @staticmethod
+    def valid_cuts(cuts):
+        return isinstance(cuts, list) and all(
+            isinstance(cut, dict)
+            and type(cut.get("set")) is int and cut["set"] > 0
+            and type(cut.get("cut")) is int and cut["cut"] > 0
+            and isinstance(cut.get("title"), str)
+            and isinstance(cut.get("set_title"), str)
+            and isinstance(cut.get("prompt"), str) and bool(cut["prompt"].strip())
+            and isinstance(cut.get("model_names"), list)
+            and all(isinstance(name, str) for name in cut["model_names"])
+            for cut in cuts
+        )
+
+    def get_cuts(self, token, row, model_names, public_sets):
+        page_id = row["id"]
+        signature = row_signature(row)
+        published = property_text(row.get("properties", {}).get("상태", {})) == "발행완료"
+        previous = self.old_entries.get(page_id)
+        if (published and not self.force and row.get("last_edited_time")
+                and isinstance(previous, dict) and previous.get("signature") == signature
+                and self.valid_cuts(previous.get("cuts"))):
+            self.hits += 1
+            self.entries[page_id] = previous
+            return previous["cuts"]
+        self.reads += 1
+        cuts = extract_prompt_cuts(token, page_id, model_names)
+        if published:
+            self.entries[page_id] = {
+                "signature": signature,
+                "cuts": [cut for cut in cuts if cut["set"] in public_sets],
+            }
+        return cuts
+
+    def save(self):
+        # entries contains only rows seen and publicly eligible in this run.
+        # Deleted, private, or unfinished pages therefore leave the cache.
+        atomic_write_json(self.path, {
+            "version": CACHE_VERSION,
+            "code_signature": self.code_signature,
+            "entries": dict(sorted(self.entries.items())),
+        })
+
+
+def atomic_write_json(path, payload):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(path.name + ".tmp")
+    try:
+        temporary.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        temporary.replace(path)
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
+def build_site_pages(token, rows, cache=None):
     grouped = defaultdict(list)
     used_routes = set()
 
@@ -492,7 +588,8 @@ def build_site_pages(token, rows):
             raise ValueError(f"{row.get('id')}: 기획일을 확인해 주세요.")
 
         page_id = row.get("id")
-        cuts = extract_prompt_cuts(token, page_id, model_names)
+        cuts = (cache.get_cuts(token, row, model_names, public_set_numbers)
+                if cache is not None else extract_prompt_cuts(token, page_id, model_names))
 
         if not cuts:
             continue
@@ -573,19 +670,22 @@ def main():
         )
         return 1
 
+    started = time.monotonic()
+    cache = PromptCache(force=os.environ.get("NOTION_FORCE_FULL_SYNC", "").lower() == "true")
+    before_cache = cache.path.read_bytes() if cache.path.exists() else None
     planning_pages = query_all_planning_pages(token)
     site_pages, skipped_pages, skipped_sets = build_site_pages(
-        token, planning_pages
+        token, planning_pages, cache=cache
     )
 
-    OUTPUT_FILE.write_text(
-        json.dumps(
-            site_pages,
-            ensure_ascii=False,
-            indent=2,
-        ) + "\n",
-        encoding="utf-8",
-    )
+    # No writes occur until every publicly eligible page has been processed.
+    atomic_write_json(OUTPUT_FILE, site_pages)
+    cache.save()
+    if os.environ.get("GITHUB_OUTPUT"):
+        changed = before_cache != cache.path.read_bytes()
+        with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+            output.write(f"cache_changed={str(changed).lower()}\n")
+    print(f"본문 재사용 {cache.hits}건 / 다시 수집 {cache.reads}건 / {time.monotonic() - started:.1f}초")
 
     total_cuts = sum(
         len(page.get("cuts", []))
